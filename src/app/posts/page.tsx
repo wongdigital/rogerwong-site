@@ -4,6 +4,7 @@ import PostPreview from '@/components/PostPreview';
 import { getSortedPostsData } from '@/lib/posts';
 import { calculateReadTime } from '@/lib/readTime';
 import Pagination from '@/components/Pagination';
+import { FolderOpenIcon } from '@heroicons/react/24/outline';
 
 const POSTS_PER_PAGE = 10;
 
@@ -49,6 +50,7 @@ export default async function PostsIndex({
                 slug={post.id}
                 imageSrc={post.imageSrc}
                 imageAlt={post.imageAlt}
+                categories={post.categories}
               />
             </article>
           ))}

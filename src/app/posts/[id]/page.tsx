@@ -3,8 +3,9 @@
 import { getPostData, getSortedPostsData } from '@/lib/posts';
 import { notFound } from 'next/navigation';
 import { calculateReadTime } from '@/lib/readTime';
-import Link from 'next/link';  // Add this import at the top
+import Link from 'next/link';
 import type { Metadata } from 'next';
+import { FolderOpenIcon } from '@heroicons/react/24/outline';
 
 type Params = {
   params: {
@@ -91,7 +92,8 @@ export default async function Post({ params }: Params) {
         {postData.categories && postData.categories.length > 0 && (
           <div className="mt-8 pt-8 border-t border-slate-200">
             <div className="text-sm text-slate-500">
-              Categories: {postData.categories?.map((category, index) => (
+              <FolderOpenIcon className="w-4 h-4 inline-block mr-2 -mt-1" />
+              Filed under {postData.categories?.map((category, index) => (
                 <span key={category}>
                   <Link 
                     href={`/posts?category=${encodeURIComponent(category)}`}

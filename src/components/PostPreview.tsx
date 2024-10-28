@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FolderOpenIcon } from '@heroicons/react/24/outline';
 
 interface PostPreviewProps {
   title: string;
@@ -10,6 +11,7 @@ interface PostPreviewProps {
   imageAlt?: string;  // Make optional
   excerpt: string;
   slug: string;
+  categories?: string[];  // Add this line
 }
 
 function formatDate(dateString: string) {
@@ -31,6 +33,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   imageAlt,
   excerpt,
   slug,
+  categories,
 }) => {
   return (
     <div className="mb-4 space-y-2">
@@ -52,6 +55,19 @@ const PostPreview: React.FC<PostPreviewProps> = ({
         />
       )}
       <p className="text-slate-600">{excerpt}</p>
+      {categories && categories.length > 0 && (
+        <div className="text-sm text-slate-500">
+          <FolderOpenIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+          {categories.map((category, index) => (
+            <React.Fragment key={category}>
+              {index > 0 && ", "}
+              <Link href={`/posts?category=${category.toLowerCase()}`} className="text-blue-600 hover:underline hover:text-blue-800">
+                {category}
+              </Link>
+            </React.Fragment>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
