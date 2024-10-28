@@ -60,7 +60,7 @@ body {
 }
 
 .prose p {
-  @apply text-base text-slate-600 dark:text-white mb-6;
+  @apply text-lg text-slate-600 dark:text-white mb-6;
 }
 
 .prose ol {
@@ -96,11 +96,11 @@ body {
 }
 
 .prose th {
-  @apply border border-slate-200 bg-slate-50 px-4 py-2 text-left text-sm font-semibold text-slate-600;
+  @apply border border-slate-200 bg-slate-50 px-4 py-2 text-left text-base font-semibold text-slate-600;
 }
 
 .prose td {
-  @apply border border-slate-200 px-4 py-2 text-sm text-slate-600;
+  @apply border border-slate-200 px-4 py-2 text-base text-slate-600;
 }
 
 .prose th:first-child {
