@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-ibm-plex-sans), sans-serif;
+}
+
+.prose img {
+  @apply w-[calc(100%+4em)] -mx-8 h-auto my-8 rounded;
+  max-width: calc(100% + 4em);
+}
+
+.prose blockquote p {
+  @apply !text-2xl text-slate-500 dark:text-white !mb-0;
+}
+
+.prose blockquote {
+  @apply my-4 p-6 border-l-4 border-slate-400;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  @apply text-slate-600 dark:text-white;
+}
+
+.prose h1 {
+  @apply text-3xl font-bold mb-6;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mb-6;
+}
+
+.prose h3 {
+  @apply text-xl font-bold mb-6;
+}
+
+.prose h4 {
+  @apply text-lg font-bold mb-6;
+}
+
+.prose h5 {
+  @apply text-base font-bold mb-6;
+}
+
+.prose h6 {
+  @apply text-sm font-bold mb-6;
+}
+
+.prose p {
+  @apply text-base text-slate-600 dark:text-white mb-6;
+}
+
+.prose ol {
+  @apply list-decimal list-outside pl-8 mb-6;
+}
+
+.prose ul {
+  @apply list-disc list-outside pl-8 mb-6;
+}
+
+.prose li {
+  @apply text-base text-slate-600 dark:text-white mb-2;
+}
+
+.prose li:last-child {
+  @apply mb-0;
+}
+
+.prose pre {
+  @apply bg-slate-100 dark:bg-slate-800 p-6 rounded overflow-x-auto mb-6;
+}
+
+.prose code {
+  @apply font-mono !text-xs bg-slate-100 dark:bg-slate-800 dark:text-slate-200 px-1.5 py-0.5 rounded font-[IBM_Plex_Mono];
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-base font-[IBM_Plex_Mono];
+}
+
+.prose table {
+  @apply w-full border-separate border-spacing-0 mb-6;
+}
+
+.prose th {
+  @apply border border-slate-200 bg-slate-50 px-4 py-2 text-left text-sm font-semibold text-slate-600;
+}
+
+.prose td {
+  @apply border border-slate-200 px-4 py-2 text-sm text-slate-600;
+}
+
+.prose th:first-child {
+  @apply rounded-tl;
+}
+
+.prose th:last-child {
+  @apply rounded-tr;
+}
+
+.prose tr:last-child td:first-child {
+  @apply rounded-bl;
+}
+
+.prose tr:last-child td:last-child {
+  @apply rounded-br;
+}
+
+.prose hr {
+  @apply my-8 border-none text-center;
+  height: 1em;
+}
+
+.prose hr::before {
+  @apply text-slate-400 text-base;
+  content: "•••";
+  letter-spacing: 2em;
+  padding-left: 2em;
+}
+
+.prose a {
+  @apply text-blue-600 hover:underline;
+}
+
+.prose a:hover {
+  @apply text-blue-800;
+}
+  
