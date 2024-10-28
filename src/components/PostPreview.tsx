@@ -61,7 +61,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
           {categories.map((category, index) => (
             <React.Fragment key={category}>
               {index > 0 && ", "}
-              <Link href={`/posts?category=${category.toLowerCase()}`} className="text-blue-600 hover:underline hover:text-blue-800">
+              <Link href={`/posts?category=${encodeURIComponent(category)}`} className="text-blue-600 hover:underline hover:text-blue-800">
                 {category}
               </Link>
             </React.Fragment>

@@ -22,7 +22,11 @@ export default async function PostsIndex({
 
   // Filter posts by category if one is specified
   const filteredPosts = typeof resolvedParams.category === 'string'
-    ? allPosts.filter(post => post.categories?.includes(resolvedParams.category as string))
+    ? allPosts.filter(post => 
+        post.categories?.some(category => 
+          category.toLowerCase() === resolvedParams.category.toLowerCase()
+        )
+      )
     : allPosts;
 
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
