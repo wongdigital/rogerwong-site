@@ -2,22 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: @apply bg-zinc-50;
-  --foreground: @apply text-slate-800;
-}
-
-.dark {
-  --background: @apply bg-zinc-900;
-  --foreground: @apply text-slate-50;
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: var(--font-ibm-plex-sans), sans-serif;
 }
 
+/* Add transitions for theme switching */
+*, *::before, *::after {
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              fill 0.3s ease;
+}
+
+/* Exclude transitions for media elements */
+.prose img,
+img,
+video,
+svg {
+  transition: none;
+}
+
+/* Rest of your prose styles */
 .prose img {
   @apply w-[calc(100%+4em)] -mx-8 h-auto my-8 rounded;
   max-width: calc(100% + 4em);

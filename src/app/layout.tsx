@@ -52,9 +52,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
-      <body suppressHydrationWarning>
+      <body className="bg-zinc-50 dark:bg-zinc-900 text-slate-800 dark:text-slate-50" suppressHydrationWarning>
         <Providers>
-          <SkipToMain />
           <div className="container mx-auto">
             <Header />
             {children}
