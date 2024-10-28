@@ -69,6 +69,19 @@ export default async function Post({ params }: Params) {
 
   const readTime = calculateReadTime(postData.contentHtml);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": postData.title,
+    "datePublished": postData.date,
+    "author": {
+      "@type": "Person",
+      "name": "Roger Wong"
+    },
+    "image": postData.imageSrc,
+    "description": postData.excerpt
+  };
+
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 lg:px-20 md:px-0 md:py-20">
       <article>
@@ -108,6 +121,10 @@ export default async function Post({ params }: Params) {
           </div>
         )}
       </article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }

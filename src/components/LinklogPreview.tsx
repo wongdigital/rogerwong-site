@@ -13,6 +13,7 @@ type LinklogPreviewProps = {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`${title} (opens in new tab)`}
         >
           <p>{title}</p>
         </a>

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes'
 import { Providers } from '@/components/Providers'
+import SkipToMain from '@/components/SkipToMain'
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700'],
@@ -53,6 +54,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
       <body suppressHydrationWarning>
         <Providers>
+          <SkipToMain />
           <div className="container mx-auto">
             <Header />
             {children}

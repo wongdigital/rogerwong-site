@@ -71,3 +71,13 @@ export default async function PostsIndex({
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Posts | Roger Wong',
+  description: 'Read the latest articles about design, technology, and creative direction from Roger Wong.',
+  openGraph: {
+    title: 'Posts | Roger Wong',
+    description: 'Read the latest articles about design, technology, and creative direction from Roger Wong.',
+    type: 'website',
+  }
+};

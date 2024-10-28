@@ -51,7 +51,9 @@ const PostPreview: React.FC<PostPreviewProps> = ({
           alt={imageAlt || ''} 
           width={800} 
           height={400} 
-          className="w-full h-auto rounded" 
+          className="w-full h-auto rounded"
+          loading="lazy"
+          sizes="(max-width: 768px) 100vw, 800px"
         />
       )}
       <p className="text-slate-600">{excerpt}</p>

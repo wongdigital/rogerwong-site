@@ -27,8 +27,14 @@ export default function Header() {
 
   return (
     <header className="text-lg text-slate-500 dark:text-slate-400 font-medium py-4">
-      <nav className="container mx-auto px-4 lg:px-20 md:px-0 flex justify-between items-center">
-        <Link href="/" className="hover:underline hover:text-slate-600 dark:hover:text-slate-300">Roger Wong</Link>
+      <nav role="navigation" className="container mx-auto px-4 lg:px-20 md:px-0 flex justify-between items-center">
+        <Link 
+          href="/" 
+          aria-label="Home"
+          className="hover:underline hover:text-slate-600 dark:hover:text-slate-300"
+        >
+          Roger Wong
+        </Link>
         <ul className="flex space-x-8 items-center">
           <li><Link href="/about" className="hover:underline hover:text-slate-600 dark:hover:text-slate-300">About</Link></li>
           <li><Link href="/posts" className="hover:underline hover:text-slate-600 dark:hover:text-slate-300">Posts</Link></li>
