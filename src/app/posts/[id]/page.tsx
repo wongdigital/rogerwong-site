@@ -1,9 +1,10 @@
 'use server';
 
-import { getPostData, getSortedPostsData } from '../../../lib/posts';
+import { getPostData, getSortedPostsData } from '@/lib/posts';
 import { notFound } from 'next/navigation';
 import { calculateReadTime } from '@/lib/readTime';
 import Link from 'next/link';  // Add this import at the top
+import type { Metadata } from 'next';
 
 type Params = {
   params: {
@@ -26,6 +27,35 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     id: post.id,
   }));
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { id } = await params;
+  const post = await getPostData(id);
+  
+  if (!post) {
+    return {
+      title: 'Post Not Found'
+    };
+  }
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      publishedTime: post.date,
+      images: post.imageSrc ? [post.imageSrc] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: post.imageSrc ? [post.imageSrc] : [],
+    }
+  };
 }
 
 export default async function Post({ params }: Params) {
