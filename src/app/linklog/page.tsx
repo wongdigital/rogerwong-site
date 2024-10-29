@@ -9,7 +9,7 @@ const ITEMS_PER_PAGE = 20;
 export default async function LinklogIndex({
   searchParams,
 }: {
-  searchParams: { page?: string }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const params = await searchParams;
   const allLinks = await getSortedLinklogData();

@@ -11,7 +11,7 @@ const POSTS_PER_PAGE = 10;
 export default async function PostsIndex({
   searchParams,
 }: {
-  searchParams: { page?: string; category?: string }
+  searchParams: Promise<{ page?: string; category?: string }>
 }) {
   const allPosts = await getSortedPostsData();
   
