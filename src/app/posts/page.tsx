@@ -1,29 +1,28 @@
-export const dynamic = 'force-dynamic';
-
+import { Metadata } from 'next';
 import PostPreview from '@/components/PostPreview';
 import { getSortedPostsData } from '@/lib/posts';
 import { calculateReadTime } from '@/lib/readTime';
 import Pagination from '@/components/Pagination';
+
+export const dynamic = 'force-dynamic';
 
 const POSTS_PER_PAGE = 10;
 
 export default async function PostsIndex({
   searchParams,
 }: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }> | { [key: string]: string | string[] | undefined }
+  searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  const resolvedParams = await Promise.resolve(searchParams);
   const allPosts = await getSortedPostsData();
   
-  const currentPage = typeof resolvedParams.page === 'string' 
-    ? Number(resolvedParams.page) 
-    : 1;
+  const params = await (searchParams as any);
+  const currentPage = Number(params.page) || 1;
 
   // Filter posts by category if one is specified
-  const filteredPosts = typeof resolvedParams.category === 'string'
+  const filteredPosts = params.category 
     ? allPosts.filter(post => 
         post.categories?.some(category => 
-          category.toLowerCase() === resolvedParams.category.toLowerCase()
+          category.toLowerCase() === params.category.toLowerCase()
         )
       )
     : allPosts;
@@ -39,7 +38,7 @@ export default async function PostsIndex({
       <main className="lg:w-7/12 lg:py-20 md:py-10 sm:py-8">
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-slate-600">
-            {resolvedParams.category ? `Posts in ${resolvedParams.category}` : 'Posts'}
+            {params.category ? `Posts in ${params.category}` : 'Posts'}
           </h1>
         </header>
         <section className="space-y-8">

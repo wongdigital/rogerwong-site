@@ -9,11 +9,11 @@ const ITEMS_PER_PAGE = 20;
 export default async function LinklogIndex({
   searchParams,
 }: {
-  searchParams: { page?: string };
+  searchParams: { page?: string }
 }) {
   const allLinks = await getSortedLinklogData();
-  const params = await searchParams;
-  const currentPage = Number(params?.page) || 1;
+  const params = await (searchParams as any);
+  const currentPage = Number(params.page) || 1;
   const totalPages = Math.ceil(allLinks.length / ITEMS_PER_PAGE);
   
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -31,7 +31,6 @@ export default async function LinklogIndex({
             <article key={link.url}>
               <LinklogPreview
                 title={link.title}
-                date={link.date}
                 url={link.url}
                 source={link.source}
               />
