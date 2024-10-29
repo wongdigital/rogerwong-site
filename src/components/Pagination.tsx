@@ -18,7 +18,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
     const pageNumbers = [];
     const maxPages = 5;
     let start = Math.max(1, currentPage - Math.floor(maxPages / 2));
-    let end = Math.min(totalPages, start + maxPages - 1);
+    const end = Math.min(totalPages, start + maxPages - 1);
 
     // Adjust start if we're near the end
     if (end - start + 1 < maxPages) {
