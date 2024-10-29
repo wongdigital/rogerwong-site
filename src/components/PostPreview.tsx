@@ -54,6 +54,8 @@ const PostPreview: React.FC<PostPreviewProps> = ({
           className="w-full h-auto rounded"
           loading="lazy"
           sizes="(max-width: 768px) 100vw, 800px"
+          priority={false}
+          quality={75}
         />
       )}
       <p className="text-slate-600 dark:text-slate-200">{excerpt}</p>
