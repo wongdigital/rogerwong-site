@@ -11,18 +11,18 @@ const POSTS_PER_PAGE = 10;
 export default async function PostsIndex({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: { page?: string; category?: string }
 }) {
   const allPosts = await getSortedPostsData();
   
-  const params = await (searchParams as any);
+  const params = await searchParams;
   const currentPage = Number(params.page) || 1;
 
   // Filter posts by category if one is specified
   const filteredPosts = params.category 
     ? allPosts.filter(post => 
         post.categories?.some(category => 
-          category.toLowerCase() === params.category.toLowerCase()
+          category.toLowerCase() === params.category?.toLowerCase()
         )
       )
     : allPosts;
