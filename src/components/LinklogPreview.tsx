@@ -1,11 +1,10 @@
 type LinklogPreviewProps = {
     title: string;
-    date: string;
     url: string;
     source: string;
   };
   
-  export default function LinklogPreview({ title, date: _date, url, source }: LinklogPreviewProps) {
+  export default function LinklogPreview({ title, url, source }: LinklogPreviewProps) {
     return (
       <div className="mb-4">
         <a 
