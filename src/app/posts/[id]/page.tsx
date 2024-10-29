@@ -8,10 +8,10 @@ import type { Metadata } from 'next';
 import { FolderOpenIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image'
 
-type Params = {
-  params: {
+type Props = {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 function formatDate(dateString: string) {
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const post = await getPostData(id);
   
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   };
 }
 
-export default async function Post({ params }: Params) {
+export default async function Post({ params }: Props) {
   const { id } = await params;
   const postData = await getPostData(id);
   
