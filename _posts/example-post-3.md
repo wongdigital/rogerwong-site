@@ -1,8 +1,8 @@
 ---
 title: 'Example Post 3'
 date: '2024-03-20'
-excerpt: 'This is an example post'
-imageSrc: '/images/AVP_Hero.jpg'
+excerpt: 'Magna ex ea nisi. Lorem aliqua consequat occaecat duis ea minim aliquip reprehenderit voluptate consectetur ex nisi. Fugiat commodo do eiusmod elit ut commodo. Minim dolore qui cupidatat qui. Aliquip laboris id reprehenderit minim aliqua laboris.'
+imageSrc: '/images/NYTvsApple.jpg'
 imageAlt: 'Example image'
 ---
 

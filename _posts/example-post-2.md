@@ -2,7 +2,7 @@
 title: 'Example Post 2'
 date: '2024-03-20'
 excerpt: 'Magna ex ea nisi. Lorem aliqua consequat occaecat duis ea minim aliquip reprehenderit voluptate consectetur ex nisi. Fugiat commodo do eiusmod elit ut commodo. Minim dolore qui cupidatat qui. Aliquip laboris id reprehenderit minim aliqua laboris.'
-imageSrc: '/images/AVP_Hero.jpg'
+imageSrc: '/images/Transported-into-Spatial-Computing-Feature.jpg'
 imageAlt: 'Example image'
 ---
 

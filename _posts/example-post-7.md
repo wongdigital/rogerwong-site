@@ -1,5 +1,5 @@
 ---
-title: 'Example Post 4'
+title: 'Example Post 7'
 date: '2024-03-20'
 excerpt: 'This is an example post'
 imageSrc: '/images/AVP_Hero.jpg'
