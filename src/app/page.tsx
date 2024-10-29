@@ -39,7 +39,6 @@ export default async function Home() {
                   title={link.title}
                   url={link.url}
                   source={link.source}
-                  date={link.date}
                 />
               ))}
             </div>
