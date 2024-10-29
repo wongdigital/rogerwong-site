@@ -2,7 +2,7 @@
 title: 'Example Post 5'
 date: '2024-03-20'
 excerpt: 'This is an example post'
-imageSrc: '/images/AVP_Hero.jpg'
+imageSrc: '/images/AVP_hero.jpg'
 imageAlt: 'Example image'
 ---
 
