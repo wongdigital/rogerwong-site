@@ -14,7 +14,7 @@ export default async function Home() {
     <>
       <HomeHero />
       <div className="h-[1px] bg-slate-300 w-full"></div>
-      <section className="my-8 lg:p-20 md:px-4 md:py-8">
+      <section className="my-8 px-4 sm:px-0 lg:px-20 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="lg:w-7/12">
             <h3 className="text-sm font-extrabold mb-4 text-slate-400">Latest Post</h3>

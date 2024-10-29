@@ -26,8 +26,8 @@ export default function Header() {
   };
 
   return (
-    <header className="text-lg text-slate-500 dark:text-slate-400 font-medium py-4">
-      <nav role="navigation" className="container mx-auto px-4 lg:px-20 md:px-0 flex justify-between items-center">
+    <header className="text-lg text-slate-500 dark:text-slate-400 font-medium py-4 px-4 sm:px-0 lg:px-20">
+      <nav role="navigation" className="max-w-7xl mx-auto flex justify-between items-center">
         <Link 
           href="/" 
           aria-label="Home"

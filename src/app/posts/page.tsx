@@ -36,7 +36,7 @@ export default async function PostsIndex({
   const currentPosts = filteredPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 lg:px-20 md:px-0">
+    <div className="flex flex-col md:flex-row gap-8 px-4 sm:px-0 lg:px-20">
       <main className="lg:w-7/12 lg:py-20 md:py-10 sm:py-8">
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-slate-600">
