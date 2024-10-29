@@ -4,6 +4,7 @@ import { getSortedPostsData } from '../lib/posts';
 import { calculateReadTime } from '../lib/readTime';
 import { getSortedLinklogData } from '../lib/linklog';
 import HomeHero from '../components/HomeHero';
+import Link from 'next/link'
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
@@ -27,7 +28,7 @@ export default async function Home() {
               excerpt={latestPost.excerpt}
               slug={latestPost.id}
             />
-            <a className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/posts">More Posts…</a>
+            <Link className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/posts">More Posts…</Link>
           </div>
           <div className="lg:w-5/12">
             <h3 className="text-sm font-extrabold mb-4 text-slate-400">Latest Links</h3>
@@ -42,7 +43,7 @@ export default async function Home() {
                 />
               ))}
             </div>
-            <a className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/linklog">More Links…</a>
+            <Link className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/linklog">More Links…</Link>
           </div>
         </div>
       </section>

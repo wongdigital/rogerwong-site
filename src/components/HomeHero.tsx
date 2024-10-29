@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function HomeHero() {
     return (
       <>
@@ -25,10 +27,12 @@ export default function HomeHero() {
                     </mask>
                   </defs>
                   <foreignObject width="100%" height="100%" mask="url(#image-mask)">
-                    <img
+                    <Image
                       src="/images/Roger-Wong.jpg"
                       alt="Roger Wong"
                       className="w-full h-full object-cover"
+                      width={308}
+                      height={308}
                     />
                   </foreignObject>
                 </svg>

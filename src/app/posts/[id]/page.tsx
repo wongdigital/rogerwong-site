@@ -6,6 +6,7 @@ import { calculateReadTime } from '@/lib/readTime';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { FolderOpenIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image'
 
 type Params = {
   params: {
@@ -91,10 +92,12 @@ export default async function Post({ params }: Params) {
         </div>
         <div className="relative left-[50%] right-[50%] mx-[-50vw] w-screen mb-8">
           <div className="md:aspect-auto aspect-[4/3] w-full overflow-hidden">
-            <img 
+            <Image 
               src={postData.imageSrc} 
               alt={postData.imageAlt}
               className="w-full h-full object-cover"
+              width={1920}
+              height={722}
             />
           </div>
         </div>
