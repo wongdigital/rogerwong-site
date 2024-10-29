@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <>
       <HomeHero />
-      <div className="h-[1px] bg-slate-300 w-full"></div>
+      <div className="h-[1px] bg-slate-300 dark:bg-slate-700 w-full"></div>
       <section className="my-8 px-4 sm:px-0 lg:px-20 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="lg:w-7/12">
@@ -27,7 +27,7 @@ export default async function Home() {
               excerpt={latestPost.excerpt}
               slug={latestPost.id}
             />
-            <a className="text-blue-600 hover:underline hover:text-blue-800" href="/posts">More Posts…</a>
+            <a className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/posts">More Posts…</a>
           </div>
           <div className="lg:w-5/12">
             <h3 className="text-sm font-extrabold mb-4 text-slate-400">Latest Links</h3>
@@ -42,7 +42,7 @@ export default async function Home() {
                 />
               ))}
             </div>
-            <a className="text-blue-600 hover:underline hover:text-blue-800" href="/linklog">More Links…</a>
+            <a className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/linklog">More Links…</a>
           </div>
         </div>
       </section>

@@ -29,7 +29,7 @@ svg {
 }
 
 .prose blockquote p {
-  @apply !text-2xl text-slate-500 dark:text-white !mb-0;
+  @apply !text-2xl text-slate-500 dark:text-slate-200 !mb-0;
 }
 
 .prose blockquote {
@@ -37,7 +37,7 @@ svg {
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  @apply text-slate-600 dark:text-white;
+  @apply text-slate-600 dark:text-slate-100;
 }
 
 .prose h1 {
@@ -65,7 +65,7 @@ svg {
 }
 
 .prose p {
-  @apply text-lg text-slate-600 dark:text-white mb-6;
+  @apply text-lg text-slate-600 dark:text-slate-200 mb-6;
 }
 
 .prose ol {
@@ -77,7 +77,7 @@ svg {
 }
 
 .prose li {
-  @apply text-base text-slate-600 dark:text-white mb-2;
+  @apply text-base text-slate-600 dark:text-slate-200 mb-2;
 }
 
 .prose li:last-child {
@@ -105,7 +105,7 @@ svg {
 }
 
 .prose td {
-  @apply border border-slate-200 dark:border-slate-700 px-4 py-2 text-base text-slate-600 dark:text-slate-300;
+  @apply border border-slate-200 dark:border-slate-700 px-4 py-2 text-base text-slate-600 dark:text-slate-200;
 }
 
 .prose th:first-child {
@@ -137,9 +137,5 @@ svg {
 }
 
 .prose a {
-  @apply text-blue-600 hover:underline;
-}
-
-.prose a:hover {
-  @apply text-blue-800;
+  @apply text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400 no-underline;
 }
