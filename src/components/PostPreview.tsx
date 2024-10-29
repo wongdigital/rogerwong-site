@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FolderOpenIcon } from '@heroicons/react/24/outline';
@@ -37,8 +37,6 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   slug,
   categories,
 }) => {
-  const [imageError, setImageError] = useState(false);
-
   return (
     <div className="mb-4 space-y-2">
       <h2 className="text-3xl font-bold">
@@ -49,24 +47,18 @@ const PostPreview: React.FC<PostPreviewProps> = ({
       <span className="text-sm text-slate-500 dark:text-slate-200">
         {formatDate(date)}&nbsp;&nbsp;•&nbsp;&nbsp;{readTime} read
       </span>
-      {imageSrc && !imageError && (
-        <div className="relative">
-          <Image 
-            src={imageSrc} 
-            alt={imageAlt || ''} 
-            width={800} 
-            height={400} 
-            className="w-full h-auto rounded"
-            loading="lazy"
-            sizes="(max-width: 768px) 100vw, 800px"
-            priority={false}
-            quality={75}
-            onError={() => {
-              console.error(`Failed to load image: ${imageSrc}`);
-              setImageError(true);
-            }}
-          />
-        </div>
+      {imageSrc && (
+        <Image 
+          src={imageSrc} 
+          alt={imageAlt || ''} 
+          width={800} 
+          height={400} 
+          className="w-full h-auto rounded"
+          loading="lazy"
+          sizes="(max-width: 768px) 100vw, 800px"
+          priority={false}
+          quality={75}
+        />
       )}
       <p className="text-slate-600 dark:text-slate-200">{excerpt}</p>
       {categories && categories.length > 0 && (
