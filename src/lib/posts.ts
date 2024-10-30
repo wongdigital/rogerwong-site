@@ -7,6 +7,19 @@ import remarkGfm from 'remark-gfm'
 
 const postsDirectory = path.join(process.cwd(), '_posts')
 
+function normalizeCategories(categories: any): string[] | undefined {
+  if (!categories) return undefined;
+  
+  return categories
+    .map((category: string) => 
+      category
+        .split(' ')
+        .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ')
+    )
+    .filter(Boolean);  // Remove any empty strings
+}
+
 export async function getPostData(id: string) {
     const fullPath = path.join(postsDirectory, `${id}.md`);
     
@@ -18,6 +31,7 @@ export async function getPostData(id: string) {
   
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
+    const categories = normalizeCategories(matterResult.data.categories);
   
     // Use remark to convert markdown into HTML string
     const processedContent = await remark()
@@ -36,8 +50,9 @@ export async function getPostData(id: string) {
         excerpt: string; 
         imageSrc: string; 
         imageAlt: string;
-        categories?: string[];  // Add categories here
-      })
+        categories?: string[];
+      }),
+      categories
     };
   }
 
@@ -54,6 +69,7 @@ export async function getPostData(id: string) {
   
       // Use gray-matter to parse the post metadata section
       const matterResult = matter(fileContents);
+      const categories = normalizeCategories(matterResult.data.categories);
   
       // Combine the data with the id
       return {
@@ -65,8 +81,9 @@ export async function getPostData(id: string) {
           excerpt: string; 
           imageSrc: string; 
           imageAlt: string;
-          categories?: string[];  // And here
-        })
+          categories?: string[];
+        }),
+        categories
       };
     });
   

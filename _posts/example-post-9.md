@@ -1,9 +1,6 @@
 ---
 title: 'Example Post 9'
 date: '2024-03-20'
-excerpt: 'This is an example post'
-imageSrc: '/images/AVP_hero.jpg'
-imageAlt: 'Example image'
 ---
 
 Your markdown content here... Irure sunt ut nulla et cupidatat sit id. Laboris sit consectetur occaecat do deserunt. Nulla mollit cupidatat cupidatat excepteur cillum irure anim sit. Fugiat excepteur officia anim deserunt ex eu mollit esse minim veniam. Aliquip amet aliqua quis.
