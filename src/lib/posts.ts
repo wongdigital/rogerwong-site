@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm'
 
 const postsDirectory = path.join(process.cwd(), '_posts')
 
-function normalizeCategories(categories: any): string[] | undefined {
+function normalizeCategories(categories: string[] | undefined): string[] | undefined {
   if (!categories) return undefined;
   
   return categories
