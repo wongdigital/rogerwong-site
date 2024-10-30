@@ -36,13 +36,13 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
       {currentPage > 1 ? (
         <Link
           href={`${basePath}?page=${currentPage - 1}`}
-          className="px-2 py-2 text-slate-600 hover:text-slate-900 border border-slate-200 rounded transition-colors"
+          className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
           aria-label="Previous page"
         >
           <ArrowLeftIcon className="w-4 h-4" />
         </Link>
       ) : (
-        <div className="px-2 py-2 text-slate-300 border border-slate-200 rounded">
+        <div className="px-2 py-2 text-slate-300 border border-slate-300 opacity-25 rounded">
           <ArrowLeftIcon className="w-4 h-4" />
         </div>
       )}
@@ -54,8 +54,8 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
             href={`${basePath}?page=${pageNum}`}
             className={`px-3 py-1 rounded border ${
               pageNum === currentPage
-                ? 'bg-slate-900 text-white border-slate-900'
-                : 'text-slate-600 border-slate-200 hover:border-slate-900 transition-colors'
+                ? 'bg-blue-600 text-white border-blue-600'
+                : 'text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors'
             }`}
           >
             {pageNum}
@@ -66,13 +66,13 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
       {currentPage < totalPages ? (
         <Link
           href={`${basePath}?page=${currentPage + 1}`}
-          className="px-2 py-2 text-slate-600 hover:text-slate-900 border border-slate-200 rounded transition-colors"
+          className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
           aria-label="Next page"
         >
           <ArrowRightIcon className="w-4 h-4" />
         </Link>
       ) : (
-        <div className="px-2 py-2 text-slate-300 border border-slate-200 rounded">
+        <div className="px-2 py-2 text-slate-300 border border-slate-300 opacity-25 rounded">
           <ArrowRightIcon className="w-4 h-4" />
         </div>
       )}
