@@ -24,7 +24,7 @@ export default async function LinklogIndex({
     <div className="flex flex-col md:flex-row gap-8 px-4 sm:px-0 lg:px-20">
       <main className="lg:w-7/12 lg:py-20 md:py-10 sm:py-8">
         <header className="mb-8">
-          <h1 className="text-3xl font-bold text-slate-600">Links</h1>
+          <h1 className="text-3xl font-bold mb-2 text-slate-600 dark:text-slate-200">Links</h1>
         </header>
         <section className="space-y-8">
           {currentLinks.map((link) => (
