@@ -6,8 +6,8 @@ const linklogDirectory = path.join(process.cwd(), '_linklog');  // Updated path
 
 export type LinklogEntry = {
   title: string;
-  url: string;
-  source: string;
+  linkUrl: string;
+  linkSource: string;
   date: string;
 }
 
@@ -25,8 +25,8 @@ export function getSortedLinklogData(): LinklogEntry[] {
     // Combine the data
     return {
       title: matterResult.data.title,
-      url: matterResult.data.url,
-      source: matterResult.data.source,
+      linkUrl: matterResult.data.linkUrl,
+      linkSource: matterResult.data.linkSource,
       date: matterResult.data.date
     } as LinklogEntry;
   });

@@ -28,11 +28,11 @@ export default async function LinklogIndex({
         </header>
         <section className="space-y-8">
           {currentLinks.map((link) => (
-            <article key={link.url}>
+            <article key={link.linkUrl}>
               <LinklogPreview
                 title={link.title}
-                url={link.url}
-                source={link.source}
+                linkUrl={link.linkUrl}
+                linkSource={link.linkSource}
               />
             </article>
           ))}

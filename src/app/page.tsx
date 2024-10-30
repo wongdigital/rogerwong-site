@@ -37,8 +37,8 @@ export default async function Home() {
                 <LinklogPreview
                   key={index}
                   title={link.title}
-                  url={link.url}
-                  source={link.source}
+                  linkUrl={link.linkUrl}
+                  linkSource={link.linkSource}
                 />
               ))}
             </div>
