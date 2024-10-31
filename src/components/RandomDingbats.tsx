@@ -26,22 +26,43 @@ function shuffleArray<T>(array: T[]): T[] {
 
 export default function RandomDingbats() {
   const [randomDingbats, setRandomDingbats] = useState(DINGBATS.slice(0, 3));
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     setRandomDingbats(shuffleArray(DINGBATS).slice(0, 3));
   }, []);
 
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout;
+    
+    if (isHovering) {
+      intervalId = setInterval(() => {
+        setRandomDingbats(shuffleArray(DINGBATS).slice(0, 3));
+      }, 150); // Adjust this value to control animation speed
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [isHovering]);
+
   return (
-    <div className="mt-20 flex flex-row gap-4 justify-center">
-      {randomDingbats.map((dingbat) => (
-        <Image
-          key={dingbat.src}
-          src={dingbat.src}
-          alt={dingbat.alt}
-          width={64}
-          height={64}
-        />
-      ))}
+    <div className="mt-20 flex justify-center">
+      <div 
+        className="flex flex-row gap-4 w-fit"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
+        {randomDingbats.map((dingbat) => (
+          <Image
+            key={dingbat.src}
+            src={dingbat.src}
+            alt={dingbat.alt}
+            width={64}
+            height={64}
+          />
+        ))}
+      </div>
     </div>
   );
 }
