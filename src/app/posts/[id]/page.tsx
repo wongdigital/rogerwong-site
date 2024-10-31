@@ -8,21 +8,13 @@ import type { Metadata } from 'next';
 import { FolderOpenIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image'
 import RandomDingbats from '@/components/RandomDingbats';
+import RelatedPosts from '@/components/RelatedPosts';
+import { formatDate } from '@/lib/utils';
 
 type Props = {
   params: Promise<{
     id: string
   }>
-}
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString + 'T00:00:00Z');
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC'
-  }).format(date);
 }
 
 export async function generateStaticParams() {
@@ -64,6 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Post({ params }: Props) {
   const { id } = await params;
   const postData = await getPostData(id);
+  const allPosts = await getSortedPostsData();
   
   if (!postData) {
     notFound();
@@ -126,6 +119,11 @@ export default async function Post({ params }: Props) {
         )}
       </article>
       <RandomDingbats />
+      <RelatedPosts 
+        currentPostId={id}
+        currentPostCategories={postData.categories}
+        allPosts={allPosts}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

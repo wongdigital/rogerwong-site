@@ -4,6 +4,8 @@ date: '2024-03-20'
 excerpt: 'Magna ex ea nisi. Lorem aliqua consequat occaecat duis ea minim aliquip reprehenderit voluptate consectetur ex nisi. Fugiat commodo do eiusmod elit ut commodo. Minim dolore qui cupidatat qui. Aliquip laboris id reprehenderit minim aliqua laboris.'
 imageSrc: '/images/Trump_Featured.jpg'
 imageAlt: 'Example image'
+categories:
+- Web development
 ---
 
 Your markdown content here... Irure sunt ut nulla et cupidatat sit id. Laboris sit consectetur occaecat do deserunt. Nulla mollit cupidatat cupidatat excepteur cillum irure anim sit. Fugiat excepteur officia anim deserunt ex eu mollit esse minim veniam. Aliquip amet aliqua quis.

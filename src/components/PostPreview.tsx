@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FolderOpenIcon } from '@heroicons/react/24/outline';
+import { formatDate } from '@/lib/utils';
 
 interface PostPreviewProps {
   title: string;
@@ -14,17 +15,6 @@ interface PostPreviewProps {
   excerpt: string;
   slug: string;
   categories?: string[];  // Add this line
-}
-
-function formatDate(dateString: string) {
-  // Force UTC interpretation by appending 'T00:00:00Z'
-  const date = new Date(dateString + 'T00:00:00Z');
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC'  // Force UTC output
-  }).format(date);
 }
 
 const PostPreview: React.FC<PostPreviewProps> = ({
