@@ -86,7 +86,7 @@ export default async function Post({ params }: Props) {
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 lg:px-20 md:px-0 md:py-20">
       <article>
-        <h1 className="text-3xl text-slate-600 font-bold mb-2">{postData.title}</h1>
+        <h1 className="page-title">{postData.title}</h1>
         <div className="text-sm text-slate-500 mb-8">
           {formatDate(postData.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{readTime} read
         </div>
@@ -102,7 +102,7 @@ export default async function Post({ params }: Props) {
           </div>
         </div>
         <div 
-          className="prose"
+          className="prose prose-slate dark:prose-dark"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
         />
         {postData.categories && postData.categories.length > 0 && (

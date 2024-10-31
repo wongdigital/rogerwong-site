@@ -1,5 +1,5 @@
 ---
-title: 'Example Post'
+title: 'Example Post Original'
 date: '2024-03-20'
 excerpt: 'This is an example post'
 imageSrc: '/images/AVP_hero.jpg'
@@ -9,7 +9,7 @@ categories:
 - Web development
 ---
 
-In today's fast-evolving digital landscape, artificial intelligence (AI) is more than a buzzword; it's a catalyst transforming user experience (UX) and shaping the future of design. From personalizing interfaces to predicting user behavior, AI has the potential to make products smarter, more intuitive, and accessible to all.
+In today's fast-evolving digital landscape, **artificial intelligence (AI)** is more than a buzzword; it's a catalyst transforming user experience (UX) and shaping the future of design. From _personalizing interfaces_ to predicting user behavior, AI has the potential to make products smarter, more intuitive, and accessible to all.
 
 ![AI in UX Design](https://example.com/path/to/ai-ux-design-image.jpg)
 
