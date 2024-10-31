@@ -14,7 +14,7 @@ export default function HomeHero() {
       <section className="my-8 px-4 sm:px-0 lg:px-20 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-7/12 content-center order-2 md:order-1">
-            <p className="text-3xl font-bold mb-2 text-slate-600 dark:text-slate-200">
+            <p className="md:text-3xl text-2xl font-bold mb-2 text-slate-600 dark:text-slate-200">
               I’m Roger Wong, a seasoned design leader and creative director of the brand and software studio Wong.Digital. Previously at Apple, Pixar, Razorfish, and TrueCar.
             </p>
           </div>
