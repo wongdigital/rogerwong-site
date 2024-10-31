@@ -56,6 +56,12 @@ export default async function About() {
                 </ul>
                 </div>
             </div>
+            <div>
+                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Contact</h3>
+                <div className="mb-4 prose prose-slate dark:prose-dark">
+                <p>For inquiries, including requests for my portfolio, send an email to hello[at]rogerwong[dot]me.</p>
+                </div>
+            </div>
           </div>
         </div>
       </section>
