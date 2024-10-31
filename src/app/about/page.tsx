@@ -27,7 +27,7 @@ export default async function About() {
           </div>
           <div className="w-full lg:w-5/12 space-y-8">
             <div>
-                <h3 className="text-sm font-extrabold mb-4 text-slate-400">Career Highlights</h3>
+                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Career Highlights</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark">
                 <ul>
                     <li>Head of Design at BuildOps</li>
@@ -43,7 +43,7 @@ export default async function About() {
                 </div>
             </div>
             <div>
-                <h3 className="text-sm font-extrabold mb-4 text-slate-400">Industry Engagement</h3>
+                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Industry Engagement</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark">
                 <ul>
                     <li>Former adjunct professor of graphic design at San Diego City College</li>

@@ -18,7 +18,7 @@ export default async function Home() {
       <section className="my-8 px-4 sm:px-0 lg:px-20 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="w-full lg:w-7/12">
-            <h3 className="text-sm font-extrabold mb-4 text-slate-400">Latest Post</h3>
+            <h3 className="text-sm font-extrabold mb-4 text-slate-500">Latest Post</h3>
             <PostPreview
               title={latestPost.title}
               date={latestPost.date}
@@ -31,7 +31,7 @@ export default async function Home() {
             <Link className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/posts">More Posts…</Link>
           </div>
           <div className="w-full lg:w-5/12">
-            <h3 className="text-sm font-extrabold mb-4 text-slate-400">Latest Links</h3>
+            <h3 className="text-sm font-extrabold mb-4 text-slate-500">Latest Links</h3>
             <div className="mb-4">
               {sortedLinks.slice(0, 5).map((link, index) => (
                 <LinklogPreview
