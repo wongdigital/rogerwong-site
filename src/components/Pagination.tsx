@@ -42,7 +42,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
           <ArrowLeftIcon className="w-4 h-4" />
         </Link>
       ) : (
-        <div className="px-2 py-2 text-slate-300 border border-slate-300 opacity-25 rounded">
+        <div className="px-2 py-2 text-slate-600 border border-slate-600 opacity-40 rounded">
           <ArrowLeftIcon className="w-4 h-4" />
         </div>
       )}
@@ -72,7 +72,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
           <ArrowRightIcon className="w-4 h-4" />
         </Link>
       ) : (
-        <div className="px-2 py-2 text-slate-300 border border-slate-300 opacity-25 rounded">
+        <div className="px-2 py-2 text-slate-600 border border-slate-600 opacity-40 rounded">
           <ArrowRightIcon className="w-4 h-4" />
         </div>
       )}
