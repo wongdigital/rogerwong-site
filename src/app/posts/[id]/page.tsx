@@ -7,6 +7,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { FolderOpenIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image'
+import RandomDingbats from '@/components/RandomDingbats';
 
 type Props = {
   params: Promise<{
@@ -113,7 +114,7 @@ export default async function Post({ params }: Props) {
                 <span key={category}>
                   <Link 
                     href={`/posts?category=${encodeURIComponent(category)}`}
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-600 hover:underline hover:text-blue-500 dark:hover:text-blue-400"
                   >
                     {category}
                   </Link>
@@ -124,6 +125,7 @@ export default async function Post({ params }: Props) {
           </div>
         )}
       </article>
+      <RandomDingbats />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
