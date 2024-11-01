@@ -78,16 +78,18 @@ export default function RootLayout({
       </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
         <Providers>
-          <SkipToMain />
-          <header role="banner">
-            <Header />
-          </header>
-          <main id="main-content" role="main" className="px-4 md:px-8 lg:px-16">
-            {children}
-          </main>
-          <footer role="contentinfo">
-            <Footer />
-          </footer>
+          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-20">
+            <SkipToMain />
+            <header role="banner">
+              <Header />
+            </header>
+            <main id="main-content" role="main">
+              {children}
+            </main>
+            <footer role="contentinfo">
+              <Footer />
+            </footer>
+          </div>
         </Providers>
       </body>
     </html>
