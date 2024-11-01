@@ -14,7 +14,7 @@ export default async function About() {
                 alt="Roger Wong" 
                 width={1280}
                 height={854}
-                className="w-full h-auto mx-0 my-0 rounded"
+                className="!w-full h-auto !mx-0 rounded"
               />
               <p>I am a forward-thinking design leader with extensive experience in cultivating brand loyalty and enhancing customer experiences for prominent tech companies like Apple, Microsoft, Cisco, and Intel. My career spans over two decades during which I founded Wong.Digital, led design at Convex as VP, and managed significant creative teams, notably for Samsung Mobile. My passion for innovation is demonstrated through my cofounding of Transported VR, a pioneering venture in virtual reality real estate, and my current work on developing an AI tool aimed at assisting designers in crafting brand strategies. My contributions to the design field have been recognized by <em>Communication Arts</em>, <em>Graphis</em>, One Show, Clio Awards, and Cannes Lions. Holding a BFA in graphic design from the California College of the Arts, I have also contributed to academics as a professor and advisory board member at San Diego City College. I live in San Diego with my family. I do not surf.</p>
               <h3>Follow Me</h3>
