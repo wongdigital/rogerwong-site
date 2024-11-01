@@ -55,3 +55,7 @@ svg {
     @apply relative w-[calc(100%+4rem)] -mx-8;
   }
 }
+
+.prose {
+  font-size: 1.125rem;
+}
