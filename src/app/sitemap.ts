@@ -1,10 +1,8 @@
 import { getSortedPostsData } from '@/lib/posts';
-import { getSortedLinklogData } from '@/lib/linklog';
 
 export default async function sitemap() {
   const baseUrl = 'https://rogerwong.me';
   const posts = await getSortedPostsData();
-  const links = await getSortedLinklogData();
 
   const postUrls = posts.map((post) => ({
     url: `${baseUrl}/posts/${post.id}`,
