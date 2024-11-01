@@ -43,3 +43,15 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/* Update the prose image styles */
+.prose img {
+  @apply relative w-full mx-0 rounded;  /* Default mobile styling */
+}
+
+/* On larger screens, extend slightly beyond container */
+@media (min-width: 640px) {
+  .prose img {
+    @apply relative w-[calc(100%+4rem)] -mx-8;
+  }
+}
