@@ -82,7 +82,7 @@ export default function RootLayout({
           <header role="banner">
             <Header />
           </header>
-          <main id="main-content" role="main">
+          <main id="main-content" role="main" className="px-4 md:px-8 lg:px-16">
             {children}
           </main>
           <footer role="contentinfo">

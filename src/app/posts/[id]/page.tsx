@@ -87,7 +87,7 @@ export default async function Post({ params }: Props) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 lg:px-20 md:px-0 md:py-20">
+    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-8 md:px-12 lg:px-20">
       <article>
         <h1 className="page-title">{postData.title}</h1>
         <div className="text-sm text-slate-500 mb-8">
