@@ -51,6 +51,15 @@ const config: Config = {
             h6: {
               color: '#475569',
             },
+            img: {
+              marginLeft: '-2rem',
+              marginRight: '-2rem',
+              maxWidth: 'calc(100% + 4rem)',
+              width: 'calc(100% + 4rem)',
+              '@media (min-width: 640px)': {
+                borderRadius: '4px',
+              },
+            },
           },
         },
         dark: {
@@ -87,6 +96,15 @@ const config: Config = {
             },
             h6: {
               color: '#f1f5f9',
+            },
+            img: {
+              marginLeft: '-2rem',
+              marginRight: '-2rem',
+              maxWidth: 'calc(100% + 4rem)',
+              width: 'calc(100% + 4rem)',
+              '@media (min-width: 640px)': {
+                borderRadius: '4px',
+              },
             },
           },
         },
