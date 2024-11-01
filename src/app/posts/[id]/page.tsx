@@ -34,21 +34,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const canonical = `https://rogerwong.me/posts/${id}`;
+
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: canonical,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: 'article',
       publishedTime: post.date,
+      authors: ['Roger Wong'],
       images: post.imageSrc ? [post.imageSrc] : [],
+      url: canonical,
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
       images: post.imageSrc ? [post.imageSrc] : [],
+      creator: '@lunarboy',
+      site: '@lunarboy',
     }
   };
 }

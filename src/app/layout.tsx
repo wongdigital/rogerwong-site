@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
 import { Providers } from '@/components/Providers'
+import Script from 'next/script'
+import SkipToMain from '@/components/SkipToMain'
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700'],
@@ -48,17 +50,39 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Roger Wong",
+    "url": "https://rogerwong.me",
+    "description": "Personal website of Roger Wong, design leader and creative director",
+    "author": {
+      "@type": "Person",
+      "name": "Roger Wong",
+      "sameAs": [
+        "https://linkedin.com/in/yourprofile",
+        "https://twitter.com/yourprofile"
+      ]
+    }
+  };
+
   return (
-    <html lang="en" suppressHydrationWarning className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
-      <body className="bg-zinc-50 dark:bg-zinc-900 text-slate-800 dark:text-slate-50" suppressHydrationWarning>
+    <html lang="en">
+      <head>
+        <Script
+          id="schema-markup"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
+      <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
         <Providers>
-          <div className="container mx-auto">
-            <Header />
-            {children}
-            <Footer />
-          </div>
+          <SkipToMain />
+          <Header />
+          {children}
+          <Footer />
         </Providers>
       </body>
     </html>
-  )
+  );
 }
