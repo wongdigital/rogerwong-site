@@ -32,50 +32,74 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
   };
 
   return (
-    <div className="flex items-center justify-start space-x-4">
-      {currentPage > 1 ? (
-        <Link
-          href={`${basePath}?page=${currentPage - 1}`}
-          className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
-          aria-label="Previous page"
-        >
-          <ArrowLeftIcon className="w-4 h-4" />
-        </Link>
-      ) : (
-        <div className="px-2 py-2 text-slate-600 border border-slate-600 opacity-40 rounded">
-          <ArrowLeftIcon className="w-4 h-4" />
-        </div>
-      )}
-      
-      <div className="flex space-x-2">
-        {getPageNumbers().map((pageNum) => (
-          <Link
-            key={pageNum}
-            href={`${basePath}?page=${pageNum}`}
-            className={`px-3 py-1 rounded border ${
-              pageNum === currentPage
-                ? 'bg-blue-600 text-white border-blue-600'
-                : 'text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors'
-            }`}
-          >
-            {pageNum}
-          </Link>
-        ))}
+    <>
+      <div 
+        aria-live="polite" 
+        aria-atomic="true"
+        className="sr-only"
+      >
+        {`Page ${currentPage} of ${totalPages}`}
       </div>
+      
+      <div className="flex items-center justify-start space-x-4">
+        <nav aria-label="Pagination">
+          <ul role="list" className="flex justify-center space-x-2">
+            {currentPage > 1 ? (
+              <li>
+                <Link
+                  href={`${basePath}?page=${currentPage - 1}`}
+                  className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
+                  aria-label="Previous page"
+                >
+                  <ArrowLeftIcon className="w-4 h-4" />
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <div className="px-2 py-2 text-slate-600 border border-slate-600 opacity-40 rounded">
+                  <ArrowLeftIcon className="w-4 h-4" />
+                </div>
+              </li>
+            )}
+            
+            <li>
+              <div className="flex space-x-2">
+                {getPageNumbers().map((pageNum) => (
+                  <Link
+                    key={pageNum}
+                    href={`${basePath}?page=${pageNum}`}
+                    className={`px-3 py-1 rounded border ${
+                      pageNum === currentPage
+                        ? 'bg-blue-600 text-white border-blue-600'
+                        : 'text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors'
+                    }`}
+                  >
+                    {pageNum}
+                  </Link>
+                ))}
+              </div>
+            </li>
 
-      {currentPage < totalPages ? (
-        <Link
-          href={`${basePath}?page=${currentPage + 1}`}
-          className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
-          aria-label="Next page"
-        >
-          <ArrowRightIcon className="w-4 h-4" />
-        </Link>
-      ) : (
-        <div className="px-2 py-2 text-slate-600 border border-slate-600 opacity-40 rounded">
-          <ArrowRightIcon className="w-4 h-4" />
-        </div>
-      )}
-    </div>
+            {currentPage < totalPages ? (
+              <li>
+                <Link
+                  href={`${basePath}?page=${currentPage + 1}`}
+                  className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
+                  aria-label="Next page"
+                >
+                  <ArrowRightIcon className="w-4 h-4" />
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <div className="px-2 py-2 text-slate-600 border border-slate-600 opacity-40 rounded">
+                  <ArrowRightIcon className="w-4 h-4" />
+                </div>
+              </li>
+            )}
+          </ul>
+        </nav>
+      </div>
+    </>
   );
 }

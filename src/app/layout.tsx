@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from 'react';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -67,7 +68,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script
           id="schema-markup"
@@ -78,9 +79,15 @@ export default function RootLayout({
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
         <Providers>
           <SkipToMain />
-          <Header />
-          {children}
-          <Footer />
+          <header role="banner">
+            <Header />
+          </header>
+          <main id="main-content" role="main">
+            {children}
+          </main>
+          <footer role="contentinfo">
+            <Footer />
+          </footer>
         </Providers>
       </body>
     </html>

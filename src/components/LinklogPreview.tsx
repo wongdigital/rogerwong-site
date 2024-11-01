@@ -20,8 +20,11 @@ export default function LinklogPreview({ title, linkUrl, linkSource }: LinklogPr
                 aria-label={`${title} (opens in new tab)`}
             >
                 <p>{title}</p>
+                <p className="sr-only">(opens in new tab)</p>
             </a>
-            <span className="text-sm text-slate-500 dark:text-slate-200">{linkSource}</span>
+            <p className="text-sm text-slate-500 dark:text-slate-200" aria-label={`Source: ${linkSource}`}>
+                {linkSource}
+            </p>
         </div>
     );
 }
