@@ -2,16 +2,20 @@
   "name": "rogerwong-site",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate": "node scripts/validate-frontmatter.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "chalk": "^5.3.0",
     "gray-matter": "^4.0.3",
     "html-react-parser": "^5.1.18",
+    "js-yaml": "^4.1.0",
     "next": "15.0.1",
     "next-themes": "^0.3.0",
     "react": "^18.2.0",
