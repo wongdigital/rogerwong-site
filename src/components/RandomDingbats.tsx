@@ -1,7 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { getRandomPostId } from '@/lib/actions';
 
 const DINGBATS = [
   { src: '/images/Dingbat-Bits.svg', alt: 'Dingbat Bits' },
@@ -24,9 +26,11 @@ function shuffleArray<T>(array: T[]): T[] {
   return newArray;
 }
 
-export default function RandomDingbats() {
+export default function RandomDingbats({ currentPostId }: { currentPostId?: string }) {
+  const router = useRouter();
   const [randomDingbats, setRandomDingbats] = useState(DINGBATS.slice(0, 3));
   const [isHovering, setIsHovering] = useState(false);
+  const [isNavigating, setIsNavigating] = useState(false);
 
   useEffect(() => {
     setRandomDingbats(shuffleArray(DINGBATS).slice(0, 3));
@@ -35,23 +39,55 @@ export default function RandomDingbats() {
   useEffect(() => {
     let intervalId: NodeJS.Timeout;
     
-    if (isHovering) {
+    if (isHovering && !isNavigating) {
       intervalId = setInterval(() => {
         setRandomDingbats(shuffleArray(DINGBATS).slice(0, 3));
-      }, 150); // Adjust this value to control animation speed
+      }, 150);
     }
 
     return () => {
       if (intervalId) clearInterval(intervalId);
     };
-  }, [isHovering]);
+  }, [isHovering, isNavigating]);
+
+  const handleClick = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (isNavigating) {
+      console.log('Already navigating, ignoring click');
+      return;
+    }
+    
+    try {
+      console.log('Starting navigation');
+      setIsNavigating(true);
+      setIsHovering(false); // Stop the animation immediately
+      
+      const randomId = await getRandomPostId(currentPostId);
+      console.log('Got random ID:', randomId);
+      
+      router.push(`/posts/${randomId}`);
+    } catch (error) {
+      console.error('Navigation failed:', error);
+      setIsNavigating(false); // Reset if there's an error
+    }
+  };
 
   return (
     <div className="mt-20 flex justify-center">
       <div 
-        className="flex flex-row gap-4 w-fit"
+        className="flex flex-row gap-4 w-fit cursor-pointer"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
+        onClick={handleClick}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            handleClick(e as unknown as React.MouseEvent);
+          }
+        }}
       >
         {randomDingbats.map((dingbat) => (
           <Image
@@ -60,6 +96,7 @@ export default function RandomDingbats() {
             alt={dingbat.alt}
             width={64}
             height={64}
+            style={{ pointerEvents: 'none' }} // Prevent image from capturing clicks
           />
         ))}
       </div>
