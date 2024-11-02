@@ -7,6 +7,7 @@ import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
 import { Providers } from '@/components/Providers'
 import Script from 'next/script'
 import SkipToMain from '@/components/SkipToMain'
+import { Analytics } from "@vercel/analytics/react"
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700'],
