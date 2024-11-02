@@ -10,6 +10,7 @@ import Image from 'next/image'
 import RandomDingbats from '@/components/RandomDingbats';
 import RelatedPosts from '@/components/RelatedPosts';
 import { formatDate } from '@/lib/utils';
+import MDXContent from '@/components/MDXContent';
 
 type Props = {
   params: Promise<{
@@ -105,10 +106,9 @@ export default async function Post({ params }: Props) {
             />
           </div>
         </div>
-        <div 
-          className="prose prose-slate dark:prose-dark"
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
-        />
+        <div className="prose prose-slate dark:prose-dark">
+          <MDXContent content={postData.contentHtml} />
+        </div>
         {postData.categories && postData.categories.length > 0 && (
           <div className="mt-8 pt-8 border-t border-slate-200">
             <div className="text-sm text-slate-500">

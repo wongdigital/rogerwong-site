@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['rogerwong-site.vercel.app', 'images.unsplash.com','vercel.app'], // Add any external domains you're using
+    domains: ['rogerwong-site.vercel.app', 'images.unsplash.com', 'vercel.app'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -10,11 +10,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
-
-export default nextConfig;
-
-module.exports = {
   async redirects() {
     return [
       {
@@ -23,5 +18,7 @@ module.exports = {
         permanent: true,
       },
     ]
-  },
-}
+  }
+};
+
+export default nextConfig;
