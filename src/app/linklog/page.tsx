@@ -27,8 +27,8 @@ export default async function LinklogIndex({
           <h1 className="page-title">Links</h1>
         </header>
         <section className="space-y-8">
-          {currentLinks.map((link) => (
-            <article key={link.linkUrl}>
+          {currentLinks.map((link, index) => (
+            <article key={`${link.linkUrl}-${index}`}>
               <LinklogPreview
                 title={link.title}
                 linkUrl={link.linkUrl}
