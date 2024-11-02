@@ -80,7 +80,7 @@ export default function RootLayout({
         <Providers>
           <div className="container mx-auto px-4">
             <SkipToMain />
-            <header role="banner">
+            <header role="banner" className="py-2">
               <Header />
             </header>
             <main id="main-content" role="main">
