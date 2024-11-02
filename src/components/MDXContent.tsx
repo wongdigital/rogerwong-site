@@ -1,10 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import Script from 'next/script';
 import parse, { Element, HTMLReactParserOptions, domToReact, DOMNode } from 'html-react-parser';
-import { useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { useEffect } from 'react';
 
 type Props = {
   content: string;
@@ -20,8 +19,8 @@ declare global {
   }
 }
 
-const ClientOnlyDiv = dynamic(() => Promise.resolve(({ children }: { children: React.ReactNode }) => (
-  <div suppressHydrationWarning>{children}</div>
+const ClientOnlyDiv = dynamic(() => Promise.resolve(({ children, ...props }: Partial<React.HTMLProps<HTMLDivElement>>) => (
+  <div suppressHydrationWarning {...props}>{children}</div>
 )), { ssr: false });
 
 const InstagramWrapper = dynamic(() => Promise.resolve(({ children }: { children: React.ReactNode }) => (
@@ -29,6 +28,16 @@ const InstagramWrapper = dynamic(() => Promise.resolve(({ children }: { children
     {children}
   </div>
 )), { ssr: false });
+
+const InstagramEmbed = dynamic(() => Promise.resolve(({ html }: { html: string }) => {
+  useEffect(() => {
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  }, [html]);
+  
+  return <ClientOnlyDiv dangerouslySetInnerHTML={{ __html: html }} />;
+}), { ssr: false });
 
 function convertStyleStringToObject(styleString: string): Record<string, string> {
   if (!styleString) return {};
@@ -48,9 +57,11 @@ function convertStyleStringToObject(styleString: string): Record<string, string>
 
 if (typeof window !== 'undefined') {
   const originalError = console.error;
-  console.error = (...args: any[]) => {
-    if (args[0]?.includes('Warning: Invalid DOM property')) return;
-    if (args[0]?.includes('Hydration failed')) return;
+  console.error = (...args: unknown[]) => {
+    if (typeof args[0] === 'string') {
+      if (args[0].includes('Warning: Invalid DOM property')) return;
+      if (args[0].includes('Hydration failed')) return;
+    }
     originalError.call(console, ...args);
   };
 }
