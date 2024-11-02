@@ -94,18 +94,20 @@ export default async function Post({ params }: Props) {
         <div className="text-sm text-slate-500 mb-8">
           {formatDate(postData.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{readTime} read
         </div>
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] mb-8">
-          <div className="md:aspect-auto aspect-[4/3] w-full overflow-hidden">
-            <Image 
-              src={postData.imageSrc} 
-              alt={postData.imageAlt}
-              className="w-full h-full object-cover"
-              width={1920}
-              height={722}
-              priority
-            />
+        {postData.imageSrc && (
+          <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] mb-8">
+            <div className="md:aspect-auto aspect-[4/3] w-full overflow-hidden">
+              <Image 
+                src={postData.imageSrc} 
+                alt={postData.imageAlt}
+                className="w-full h-full object-cover"
+                width={1920}
+                height={722}
+                priority
+              />
+            </div>
           </div>
-        </div>
+        )}
         <div className="prose prose-slate dark:prose-dark">
           <MDXContent content={postData.contentHtml} />
         </div>
