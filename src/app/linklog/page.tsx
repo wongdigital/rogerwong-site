@@ -21,8 +21,8 @@ export default async function LinklogIndex({
   const currentLinks = allLinks.slice(startIndex, endIndex);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 px-4 sm:px-0 lg:px-20">
-      <main className="lg:w-7/12 lg:py-20 md:py-10 sm:py-8">
+    <div className="flex flex-col md:flex-row gap-8">
+      <section className="lg:w-7/12 py-8 lg:py-20 md:py-10">
         <header className="mb-8">
           <h1 className="page-title">Links</h1>
         </header>
@@ -44,7 +44,7 @@ export default async function LinklogIndex({
             basePath="/linklog" 
           />
         </nav>
-      </main>
+      </section>
       <aside className="lg:w-5/12" aria-hidden="true" />
     </div>
   );
