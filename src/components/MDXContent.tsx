@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import parse, { Element, domToReact } from 'html-react-parser';
+import parse, { Element, HTMLReactParserOptions } from 'html-react-parser';
 
 type Props = {
   content: string;
 };
 
 export default function MDXContent({ content }: Props) {
-  const options = {
-    replace: (domNode: any) => {
+  const options: HTMLReactParserOptions = {
+    replace: (domNode) => {
       if (domNode instanceof Element && domNode.name === 'img') {
         const { src, alt, width, height } = domNode.attribs;
         return (
