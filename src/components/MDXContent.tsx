@@ -23,12 +23,6 @@ const ClientOnlyDiv = dynamic(() => Promise.resolve(({ children, ...props }: Par
   <div suppressHydrationWarning {...props}>{children}</div>
 )), { ssr: false });
 
-const InstagramWrapper = dynamic(() => Promise.resolve(({ children }: { children: React.ReactNode }) => (
-  <div suppressHydrationWarning className="instagram-wrapper">
-    {children}
-  </div>
-)), { ssr: false });
-
 const InstagramEmbed = dynamic(() => Promise.resolve(({ html }: { html: string }) => {
   useEffect(() => {
     if (window.instgrm) {
