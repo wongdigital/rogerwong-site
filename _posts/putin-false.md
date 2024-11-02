@@ -2,7 +2,6 @@
 title: "Putin: False"
 date: "2022-06-12"
 categories: 
-  - "design"
   - "politics"
   - "projects"
 imageSrc: "/images/Putin-Featured.jpg"

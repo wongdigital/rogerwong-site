@@ -2,7 +2,6 @@
 title: "Trump: False God"
 date: "2022-08-08"
 categories: 
-  - "design"
   - "politics"
   - "projects"
 imageSrc: "/images/Trump_Featured.jpg"
