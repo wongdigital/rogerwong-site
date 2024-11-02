@@ -4,6 +4,7 @@ date: "2020-06-06"
 categories: 
   - "design-ethics"
 imageSrc: "/images/FBHatespeechBanner.jpg"
+imageAlt: "Screenshot of Facebook's hate speech banner"
 excerpt: "In the wake of Twitter finally fact-checking Trump's tweets and growing protests over George Floyd's murder, tech companies are being forced to confront their role in enabling harmful content. As designers, we're not just passive observers in this system - we help shape the digital world that billions of people interact with every day."
 ---
 

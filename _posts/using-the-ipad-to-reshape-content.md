@@ -15,7 +15,7 @@ When Apple introduced the iPad a year ago, many print publishers saw it as a pan
 
 What that first generation of attempts miss though, is they are trying to replicate 20th century print experience on a 21st century device. The magazine apps feel very one way. But the iPad is an Internet-connected device and users on the Internet demand more interactive experiences. They want to copy and paste passages to put on their blogs. They want to share articles via Facebook and Twitter. Using Adobe's Digital Magazine Solution, Condé Nast is starting to address some of these issues.
 
-![](/images/flipboard.jpg)
+![Flipboard](/images/flipboard.jpg)
 
 Meanwhile apps such as [Flipboard](http://flipboard.com/ "Flipboard for iPad") are aggregating content and repackaging it for their users. Flipboard presents news items according to a user's social graph, creating a personalized and highly relevant news stream. Additionally, the app presents this content in a unique way: as a paper magazine. The visual is striking, yet it still holds familiarity with users since it loosely mimics the experience of reading a real-world magazine, with the benefits of interactivity. And so far it has been a hit with users, even earning an [App of the Year](http://www.businessinsider.com/apple-calls-flipboard-ipad-app-of-the-year-2010-12 "Apple Calls Flipboard "iPad App Of The Year"") award from Apple.
 
@@ -32,6 +32,6 @@ We set out to create something that designers would enjoy using and become part 
 
 The UI we designed is sparse—a simple grid that takes advantage of the screen real estate afforded by the tablet. Users flick through the various grid cells to see an assortment of images. They can enlarge the images to fill the screen or read the accompanying text from the original source via the built-in web browser. DesignScene surfaces up the latest inspirational images of not only design, but also architecture, photography, art and so on. The content is a curated list of sources and—as a whole—has an editorial point of view to enhance discovery.
 
-![](/images/DesignScene.jpg)
+![Design Scene](/images/DesignScene.jpg)
 
 It's been two weeks since DesignScene launched. _\[This was originally posted three weeks ago on the PJA blog.\]_ So far we've had great response from [users](http://shawnblanc.net/2011/01/designscene/ "DesignScene — Shawn Blanc") and [media](http://www.macstories.net/reviews/designscene-an-inspiration-browser-for-graphic-designers/ "DesignScene: An Inspiration Browser For Graphic Designers"). We built social sharing into the app and we can already see hundreds of discoveries being [shared on Twitter](http://search.twitter.com/search?q=%22via+%40DesignSceneApp%22). Our users are interacting with content in a way that was not possible just a year ago.

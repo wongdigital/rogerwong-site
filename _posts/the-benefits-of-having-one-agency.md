@@ -12,7 +12,7 @@ Instead the question should be "Why are clients splitting up campaign work based
 
 Despite the maturing of digital agencies such as [Razorfish](http://www.razorfish.com/ "Razorfish: The Agency for Marketing, Experience & Enterprise Designs for the Digital World") (for whom I work), [R/GA](http://www.rga.com/ "R/GA") and [AKQA](http://www.akqa.com/ "AKQA.COM"), today's clients are still sending digital work to digital agencies and traditional work to traditional agencies. And equally bad is having a third company plan and buy their media (sometimes there's a traditional media agency and a digital one). Why is this bad?
 
-[![Client Campaign Anatomy: The Way It Is Now](/images/client-campaign-anatomy-now.png "Client Campaign Anatomy: The Way It Is Now")](/images/client-campaign-anatomy-now.png)
+[![Client Campaign Anatomy: The Way It Is Now](/images/client-campaign-anatomy-now.png)](/images/client-campaign-anatomy-now.png)
 
 OK, the end-zone is down that way 50 yards! Make sure you talk to each other along the way. Now go! \[[Download PDF](https://www.dropbox.com/s/o426m0wkc5yjns1/client-campaign-anatomy-now.pdf?dl=0)\] [![Creative Commons License](/images/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/us/)
 
@@ -20,7 +20,7 @@ I've seen it time and time again: if you want an integrated marketing campaign, 
 
 What should instead happen is the client needs to brief one agency who will create a singular idea and execute on that idea across different tactics and mediums. Therefore the messaging, art direction and strategy for the campaign are cohesive.
 
-[![Client Campaign Anatomy: The Way It Should Be](/images/client-campaign-anatomy-should.png "Client Campaign Anatomy: The Way It Should Be")](/images/client-campaign-anatomy-should.png)
+[![Client Campaign Anatomy: The Way It Should Be](/images/client-campaign-anatomy-should.png)](/images/client-campaign-anatomy-should.png)
 
 Let the one Agency bring in specialists as needed to serve the idea. \[[Download PDF](https://www.dropbox.com/s/qi2r3kzjtdkgd3n/client-campaign-anatomy-should.pdf?dl=0)\] [![Creative Commons License](/images/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/us/)
 

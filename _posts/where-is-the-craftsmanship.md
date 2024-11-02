@@ -8,7 +8,7 @@ excerpt: "As a designer, I can't help but notice typography everywhere I go—fr
 
 ![quotes_main](/images/quotes_main.gif)
 
-![](/images/quotes_pro.jpg)
+![Quotes Pro](/images/quotes_pro.jpg)
 
 Whenever I look at anything with words on it, I look at the typography. Bring me to a local corner lunch cafe with a menu typed out and printed from Microsoft Word and I will have a field day. I would judge even more harshly at a more expensive restaurant. I can’t help it as I—like most designers, I’m sure—just look at everything with a critical eye.
 

@@ -4,6 +4,7 @@ date: "2014-05-09"
 categories: 
   - "apple"
 imageSrc: "/images/your-verse-hero.jpg"
+imageAlt: "Still from Apple's Your Verse ad"
 excerpt: "Apple's recent advertising campaigns 'Your Verse' and 'Powerful' aren't just commercials—they're rallying cries for the faithful. As a long-time Apple fan and former employee, I see these ads following in the footsteps of the legendary 'Think Different' campaign, serving to inspire existing users rather than convert new ones."
 ---
 

@@ -5,6 +5,7 @@ categories:
   - "apple"
   - "life"
 imageSrc: "/images/macbuddy-hero.jpg"
+imageAlt: "Welcome animation"
 excerpt: "While working at Apple, I had the unique experience of presenting the Mac OS X Panther setup animation directly to Steve Jobs. After 14 rounds of revisions, his dedication to perfection taught me an invaluable lesson: Keep going until it's right. Don't settle."
 ---
 
@@ -22,4 +23,4 @@ What my time at Apple and working with Steve taught me was this: Keep going unti
 
 Thank you, Steve.
 
-![](/images/macbuddy.jpg)
+![Macbuddy](/images/macbuddy.jpg)

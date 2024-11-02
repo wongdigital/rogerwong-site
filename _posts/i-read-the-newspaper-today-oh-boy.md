@@ -4,6 +4,7 @@ date: "2022-02-18"
 categories: 
   - "design"
 imageSrc: "/images/Newspapers-Featured.jpg"
+imageAlt: "Newspaper"
 excerpt: "After decades away from print newspapers, I rediscovered the tactile joy of reading the San Francisco Chronicle over breakfast. The crisp pages, inky scent, and familiar sections brought back memories of Sunday mornings in North Beach cafes—reminding me that sometimes the medium truly is part of the message."
 ---
 
@@ -13,29 +14,11 @@ I used to read the _Chronicle_ all the time. Whether I bought it for a quarter f
 
 I rarely read each story in every edition of the _Chronicle_. Instead, I had some favorite sections. I’d usually read the main stories in the A section and then US news. The B section was world news, which I often skipped. Usually, a few stories in the C section, Business, piqued my interest. And I always read through the Datebook, the paper’s entertainment and lifestyle area.
 
-<figure>
+![Newspapers Comics](/images/Newspapers-Comics.jpg)
+_Reading a newspaper encourages discovery. In the Datebook section, I stumbled into the Comics & Puzzles spread. The signature green-tinted Sporting Green section is pictured behind._
 
-![](/images/Newspapers-Comics-1024x768.jpg)
-
-<figcaption>
-
-Reading a newspaper encourages discovery. In the Datebook section, I stumbled into the Comics & Puzzles spread. The signature green-tinted Sporting Green section is pictured behind.
-
-</figcaption>
-
-</figure>
-
-<figure>
-
-![](/images/Newspapers-TV-Guide-1024x576.jpg)
-
-<figcaption>
-
-Way before streaming, TV schedules were printed in newspapers and in _TV Guide_. I guess the _Chronicle_ still does.
-
-</figcaption>
-
-</figure>
+![Newspapers TV Guide](/images/Newspapers-TV-Guide.jpg)
+_Way before streaming, TV schedules were printed in newspapers and in _TV Guide_. I guess the _Chronicle_ still does._
 
 Physically, the newspaper is an ephemeral object. Its thin, crispy paper with perforated top and bottom edges dotted with small punched holes from the grabber, and ink that is kissed onto the paper with just enough resolution for the type and photos, but not enough to make them beautiful. There is no binding, no staples or glue to hold pages together—only folding. Each section is folded together, and the first section holds all the sections in a bundle. The newspaper is disposable; its only purpose is to convey the news, the content printed on its surface. It is not a keepsake. The paper stock yellows, and the ink fades relatively quickly, reflecting the freshness of the news within.
 

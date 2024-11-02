@@ -5,6 +5,7 @@ categories:
   - "apple"
   - "design"
 imageSrc: "/images/Creative_Selection.jpg"
+imageAlt: "Creative Selection book with Roger Wong's Apple badge"
 excerpt: "Drawing from my time at Apple and insights from Ken Kocienda's 'Creative Selection,' I share how Steve Jobs shaped Apple's legendary design process through relentless exploration and refinement. From creating hundreds of packaging mockups to weekly design reviews in the mysterious Diplomacy room, this is an insider's look at how Apple's obsession with quality came to life under Steve's ultimate creative direction."
 ---
 

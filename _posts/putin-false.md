@@ -6,6 +6,7 @@ categories:
   - "politics"
   - "projects"
 imageSrc: "/images/Putin-Featured.jpg"
+imageAlt: "Poster of Putin as a false idol with the word FALSE"
 excerpt: "My poster depicting Vladimir Putin as a false idol won a Gold Award in the Graphis Poster 2024 Awards. Created in response to Russia's invasion of Ukraine, the design features a golden bust of Putin against a red backdrop with \"FALSE\" written in both Russian and English. The poster was printed and displayed in Kyiv, and a limited-edition screen print raised funds for Ukrainian humanitarian aid."
 ---
 
@@ -27,7 +28,7 @@ Vladimir Putin has long been regarded as a divine hero in Russia. [Propagandist 
 
 Evoking the biblical story of the Golden Calf, this poster calls out the worship of Vladimir Putin as a false idol or god. He is not the righteous leader many Russians believe him to be. Instead, he is a vengeful, scheming autocrat who assassinates those he perceives have wronged him or Mother Russia. And he wages wars with sovereign nations under the guise of anti-Naziism. 
 
-[![Golden bust of Vladimir Putin, against a red backdrop, and below with the word FALSE in Russian and English](/images/Putin_False-Roger_Wong-683x1024.jpg)](/images/Putin_False-Roger_Wong-scaled.jpg)
+[![Golden bust of Vladimir Putin, against a red backdrop, and below with the word FALSE in Russian and English](/images/Putin_False-Roger_Wong-scaled.jpg)](/images/Putin_False-Roger_Wong-scaled.jpg)
 
 This cultish infatuation with Putin’s strongman qualities has [extended beyond Russia’s borders](https://www.ft.com/content/da08b08c-eac3-4586-abe3-c3691cb54f44) to inspire the acceptance and admiration of other autocratic leaders, including Viktor Orban of Hungary, Rodrigo Duterte of the Philippines, and Benjamin Netanyahu, former prime minister of Israel. But most chilling was the rise of Donald Trump as president of the United States.
 
@@ -51,17 +52,17 @@ Last month I reached out to fellow graphic designer [Kateryna Korolevtseva](http
 
 I worked with the wonderful people at 24print, and they printed 30 copies of my poster and sent me some photos…
 
-![Protest poster mounted on some fencing](/images/3-768x1024.jpg)
+![Protest poster mounted on some fencing](/images/3-scaled.jpg)
 
-![Protest poster affixed to a burned Russian tank](/images/5-768x1024.jpg)
+![Protest poster affixed to a burned Russian tank](/images/5-scaled.jpg)
 
-![Protest poster affixed to a burned Russian tank](/images/8-768x1024.jpg)
+![Protest poster affixed to a burned Russian tank](/images/8-scaled.jpg)
 
-![Protest posters and signs mounted on a fence](/images/10-768x1024.jpg)
+![Protest posters and signs mounted on a fence](/images/10-scaled.jpg)
 
-![Protest poster held next to a burned Russian military vehicle](/images/7-768x1024.jpg)
+![Protest poster held next to a burned Russian military vehicle](/images/7-scaled.jpg)
 
-![Protest poster mounted on some fencing](/images/photo_1-768x1024.jpg)
+![Protest poster mounted on some fencing](/images/photo_1.jpg)
 
 * * *
 
@@ -79,12 +80,12 @@ To raise money for the victims of Russia’s inhumane war on Ukraine, I have scr
 
 Please support this effort by purchasing a poster from [my Etsy shop](https://www.etsy.com/listing/1330944723/false-anti-vladimir-putin-poster-18-x-24).
 
-![Woman holding up a protest poster. Poster is an image of an angry Putin, with the word FALSE below in Russian and English.](/images/Karen-holding-Putin-poster-819x1024.jpg)
+![Woman holding up a protest poster. Poster is an image of an angry Putin, with the word FALSE below in Russian and English.](/images/Karen-holding-Putin-poster.jpg)
 
 * * *
 
 ## Update July 14, 2023: Gold Award Winner
 
-![](/images/graphis-2024-gold-1024x324.jpg)
+![Graphis 2024 Gold 1024x324](/images/graphis-2024-gold.jpg)
 
 I am incredibly honored to have my “Putin: False” poster recognized as a [Gold winner in the Graphis Poster 2024 Awards](https://www.graphis.com/entry/39b4bd5c-6841-4248-a55d-b167369d3fde/). This was a passion project after the invasion of Ukraine, and I am glad to have helped even just a little.

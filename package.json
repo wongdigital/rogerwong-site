@@ -8,11 +8,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "validate": "node scripts/validate-frontmatter.js"
+    "validate": "node scripts/validate-frontmatter.js",
+    "validate-images": "tsx scripts/validate-image-alt.ts",
+    "validate-local-images": "tsx scripts/validate-local-images.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@types/glob": "^8.1.0",
     "chalk": "^5.3.0",
+    "glob-promise": "^6.0.7",
     "gray-matter": "^4.0.3",
     "html-react-parser": "^5.1.18",
     "js-yaml": "^4.1.0",
@@ -33,6 +37,8 @@
     "eslint-config-next": "15.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5"
   }
 }

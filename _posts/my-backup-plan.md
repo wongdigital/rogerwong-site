@@ -4,6 +4,7 @@ date: "2017-04-03"
 categories: 
   - "technology"
 imageSrc: "/images/backup1-hero.jpg"
+imageAlt: "Photo of assorted media"
 excerpt: "After losing years of work to a catastrophic hard drive failure, I developed a comprehensive backup strategy using both local and cloud solutions. Here's my battle-tested approach to keeping data safe using RAID, NAS, Dropbox, and automated cloud backups."
 ---
 
@@ -15,7 +16,7 @@ Anyone who works with any type of data files should have a comprehensive backup 
 
 I’m a data packrat. Since my early days with my 512K Mac, I’ve tried to save everything that I’ve produced. Therefore there’s a big plastic bin filled with 400KB and 800KB floppies, DAT backup tapes, [SyQuest cartridges](http://www.obsoletemedia.org/syquest-5-25-inch/), [Zip disks](http://www.obsoletemedia.org/iomega-zip/), [Jaz disks](http://www.obsoletemedia.org/iomega-jaz/), CD-Rs, and SCSI hard drives, containing many years of work. Eventually, I’d like to extract all those files onto a modern medium, like say, _the cloud,_ but that’ll have to wait until I have much more time on my hands.
 
-![Container full of obsolete disk media](/images/obsolete-media-1024x640.jpg)
+![Container full of obsolete disk media](/images/obsolete-media.jpg)
 
 Anyway, as a designer, I accumulate a lot of work files. At some point in the mid-aughts, I had a massive hard disk failure on my main work drive, which contained portfolio pieces from three or four jobs. Five-to-seven years of archived work disappeared with a screech. I sent the poor silver LaCie Big Disk (all 2GB worth!) to a data recovery company and crossed my fingers. A couple of weeks and $2,000 later, all they were able to recover was about 60% of the data, _in loose, unorganized files_, some even with generic names like “Photoshop Document 01.psd.” Because a lot of my work from that time were Adobe Illustrator or QuarkXPress files with placed assets, it was all pretty much useless. Sigh.
 
@@ -27,7 +28,7 @@ RAID stands for Redundant Array of Independent Disks. It’s a technology that 
 
 It worked fine for a couple of years until my storage needs started to grow exponentially (I just had a child and therefore wanted to take digital pictures of _everything_ she did!). But I realized that upgrading the storage on the Terastation wasn’t exactly easy. While theoretically it was RAID 5 and pulling out a hard disk and replacing it with a bigger one should have been fine (then repeat for each of the four disks), I just wasn’t confident. The tools they had at the time made it look like a chore. So the next move was to a [Drobo](http://www.drobo.com).
 
-![Drobo RAID hard drive](/images/Drobo-300x281.png)
+![Drobo RAID hard drive](/images/Drobo.png)
 
 Drobo’s proprietary RAID system seems like a dream because I could expand it whenever I wanted to! It also involved me getting a Mac mini and connecting the Drobo to it, since they didn’t have a NAS option at the time. Also around this time I discovered [CrashPlan](https://www.crashplan.com/). So now I could use CrashPlan to continuously back up to the cloud _and_ to my Mac mini plus Drobo server. Additionally, I had CrashPlan running on the Mac mini and it backed up the entire Drobo to CrashPlan’s datacenter as well.
 
@@ -35,7 +36,7 @@ The Mac mini plus Drobo combo served me well enough for a few years. But I did h
 
 Because I’ve had to move around a bit in the last few years, the mini and Drobo went into storage. Recently I finally settled down and started to think about setting up the Mac mini + Drobo server again. But I also knew that it had been in storage for over four years. My hunch was that it would be dicey, so I decided to upgrade to a new NAS.
 
-![Synology NAS](/images/synology-300x208.png)
+![Synology NAS](/images/synology.png)
 
 In the years since buying the Drobo, NAS technology really accelerated. Modern NAS servers seem to have come down to two brands: [Synology](https://www.synology.com) and [QNAP](https://www.qnap.com). After much research, I purchased the Synology DS916+, a four-bay NAS, and I outfitted it with four 3TB drives, formatted the unit as RAID 10, for a total of 5.5TB of storage. Synology’s DSM operating system software is pretty cool in that you can install numerous apps and use it as a mini server. Although it’s really not recommended that you use a NAS server for anything robust, as their processors are usually underpowered. I chose to format the volume as RAID 10 for both redundancy and speed. Although in hindsight, I would probably use Synology’s SHR format next time to eke out a little more space.
 

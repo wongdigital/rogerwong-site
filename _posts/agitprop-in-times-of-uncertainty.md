@@ -5,6 +5,7 @@ categories:
   - "design"
   - "politics"
 imageSrc: "/images/LordOfTheLies.jpg"
+imageAlt: "Graphic of a T shaped like a swastika"
 excerpt: "In times of political and social upheaval, protest art emerges as a powerful voice of resistance. From Design Is Play's anti-Trump posters to Hong Kong's protest art and Shepard Fairey's \"We the People\" series, I explore how modern agitprop channels frustration into compelling visual statements against authoritarianism and injustice."
 ---
 

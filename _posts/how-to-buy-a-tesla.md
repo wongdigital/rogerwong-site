@@ -4,6 +4,7 @@ date: "2021-08-22"
 categories: 
   - "technology"
 imageSrc: "/images/Tesla-Model-Y.jpg"
+imageAlt: "Tesla Model Y electric car"
 excerpt: "After dealing with frustrating CarPlay issues in my Honda CR-V, I decided to make the switch to Tesla. The buying process was unlike any car purchase I'd experienced before—both easier in some ways and more confusing in others. Here's my complete guide to help you navigate buying a Tesla, from test drive to delivery."
 ---
 
@@ -59,17 +60,8 @@ TL;DR…
 
 Depending on where you live and how fast Tesla’s factories are building cars, you may have to wait weeks or months. In fact, my first estimated delivery date was “3–13 weeks,” i.e., three weeks to over three months! (FWIW, my car was delivered about eight weeks after my order.)
 
-<figure>
-
-[![Chart showing the estimated delivery date changing](/images/MY-EDD_2021-07-22@1920w-725x1024.png)](/images/MY-EDD_2021-07-22@1920w.png)
-
-<figcaption>
-
-I charted the changes to my EDD on my account page.
-
-</figcaption>
-
-</figure>
+[![Chart showing the estimated delivery date changing](/images/MY-EDD_2021-07-22@1920w.png)](/images/MY-EDD_2021-07-22@1920w.png)
+_I charted the changes to my EDD on my account page._
 
 In the meantime, get all your paperwork together for Tesla. They’ll want proof of insurance and maybe a couple other items, but now it’s just a waiting game.
 

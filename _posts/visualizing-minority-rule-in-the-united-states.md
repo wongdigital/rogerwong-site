@@ -6,6 +6,7 @@ categories:
   - "politics"
   - "projects"
 imageSrc: "/images/Minority-Rule-Featured.jpg"
+imageAlt: "Chart showing the nine current Supreme Court justices, with column graphs displaying the popular vote for each nominating president and the population represented by their senate confirmation votes"
 excerpt: "After NPR's Mara Liasson commented on minority rule in the United States, I wanted to investigate the numbers behind Supreme Court appointments. What I found about presidential popular votes and Senate confirmations was striking enough that I needed to visualize it."
 ---
 
@@ -19,7 +20,7 @@ This data visualization is meant to show the cumulative power Republicans have b
 
 In our representative government, each state gets two senators. Both represent the total residents in their state. And as we know, the populations of all 50 states vary a lot. The senators of Wyoming, the least populous state in the Union, represent 289,000\* residents each. In comparison, the senators of California represent 19.6 million\* residents each, over 6,780% more! In other words, each resident of Wyoming gets an outsized voice in the US Senate.
 
-[![Chart showing the nine current Supreme Court justices, with column graphs displaying the popular vote for each nominating president and the population represented by their senate confirmation votes](/images/Minority-Rule-in-the-US-Supreme-Court-Justices-V2-1024x576.png)](/images/Minority-Rule-in-the-US-Supreme-Court-Justices-V2.png)
+[![Chart showing the nine current Supreme Court justices, with column graphs displaying the popular vote for each nominating president and the population represented by their senate confirmation votes](/images/Minority-Rule-in-the-US-Supreme-Court-Justices-V2.png)](/images/Minority-Rule-in-the-US-Supreme-Court-Justices-V2.png)
 
 ## Methodology
 

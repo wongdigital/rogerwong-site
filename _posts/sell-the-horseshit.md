@@ -6,7 +6,7 @@ categories:
 excerpt: "When a leaked presentation for Pepsi's million-dollar logo redesign surfaced, it was pure horseshit—but it reminded me how we all have to sell our creative work. Sometimes the strategy follows the design, and that's when you need to get creative with your justification."
 ---
 
-![](/images/pepsi.gif)
+![Pepsi](/images/pepsi.gif)
 
 Yesterday the design and advertising community was [abuzz over the leaked presentation deck](http://www.reddit.com/r/funny/comments/7w0i2/pepsi_logo_a_response/c07k9l7 "abuzz over the leaked presentation deck") for the new Pepsi logo by the [Arnell Group](http://www.arnellgroup.com/ "Arnell Group"). Yes it is absolutely a work of pure horseshit. But, I was reminded of the decks that my colleagues and I create every day and how somebody's horseshit may be someone else's chocolate cake.
 

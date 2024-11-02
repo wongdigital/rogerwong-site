@@ -4,6 +4,7 @@ date: "2020-11-15"
 categories: 
   - "announcements"
 imageSrc: "/images/Steps-scaled-1.jpg"
+imageAlt: "Photo of a staircase"
 excerpt: "As someone who's always enjoyed writing across various platforms, I've finally decided to create a single home for all my thoughts and musings. Here's why I'm consolidating my content and what you can expect to find here."
 ---
 

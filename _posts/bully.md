@@ -9,6 +9,6 @@ excerpt: "Here's my latest personal project…"
 
 Here's my latest personal project…
 
-![](/images/XrayOfTrumpsBrain-663x1024.png)
+![Xray Of Trumps Brain 663x1024](/images/XrayOfTrumpsBrain.png)
 
 Read more at the [website](http://trumpsbrain.org).

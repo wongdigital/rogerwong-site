@@ -5,6 +5,7 @@ categories:
   - "apple"
   - "design"
 imageSrc: "/images/Adapt-Or-Die-Hero.jpg"
+imageAlt: "Illustration of a snake in a tablet"
 excerpt: "As tablets and smartphones become our primary computing devices, the line between work and personal life continues to blur. For designers and marketers, ignoring this shift toward mobile-first content consumption isn't just shortsighted—it's potentially fatal."
 ---
 

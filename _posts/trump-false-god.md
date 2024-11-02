@@ -6,12 +6,13 @@ categories:
   - "politics"
   - "projects"
 imageSrc: "/images/Trump_Featured.jpg"
+imageAlt: "Poster of Donald Trump as a false god with the phrase FALSE GOD"
 excerpt: "Donald Trump's rallies draw thousands of devoted followers who wait hours to see him speak, creating an almost religious fervor among his base. This cult-like devotion inspired me to design a poster depicting him as a false idol."
 ---
 
 _Update: A 18" x 24" screenprinted version of this poster is [now available](https://www.etsy.com/listing/1387088543/donald-trump-poster-trump-as-a-golden) at my [Etsy shop](https://www.etsy.com/shop/RogerWongDesign)._
 
-[![Golden bust of Donald Trump](/images/Trump_False_God_Roger_Wong-757x1024.jpg)](/images/Trump_False_God_Roger_Wong.jpg)
+[![Golden bust of Donald Trump](/images/Trump_False_God_Roger_Wong.jpg)](/images/Trump_False_God_Roger_Wong.jpg)
 
 > \[Trump rally regulars\] describe, in different ways, a euphoric flow of emotions between themselves and the president, a sort of adrenaline-fueled, psychic cleansing that follows 90 minutes of chanting and cheering with 15,000 other like-minded Trump junkies.  
 > “Once you start going, it’s kind of like an addiction, honestly,” said April Owens, a 49-year-old financial manager in Kingsport, Tenn., who has been to 11 rallies. “I love the energy. I wouldn’t stand in line for 26 hours to see any rock band. He’s the only person I would do this for, and I’ll be here as many times as I can.”

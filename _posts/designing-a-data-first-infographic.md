@@ -5,6 +5,7 @@ categories:
   - "design"
   - "projects"
 imageSrc: "/images/TC-Exotic-Car-Marques-Hero.jpg"
+imageAlt: "Exotic car marques timeline"
 excerpt: "When tasked with creating an infographic about exotic car company ownership, what started as a simple timeline evolved into something much more ambitious. Through deep research into automotive history and exploration of various visualization techniques, I developed a detailed 24\" x 36\" radial timeline poster that tells the complex story of luxury automotive brands and their changing corporate parents over the past century."
 ---
 

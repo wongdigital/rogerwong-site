@@ -5,6 +5,7 @@ categories:
   - "apple"
   - "business"
 imageSrc: "/images/NYTvsApple.jpg"
+imageAlt: "New York Times vs Apple"
 excerpt: "As a tech industry observer, I've long been frustrated by mainstream media's misrepresentation of technology issues. The New York Times' recent coverage of Apple's App Store policies demonstrates this problem perfectly - from misunderstanding MDM technology to making flawed monopoly arguments, their reporting shows a fundamental lack of technical understanding while sending mixed messages about platform responsibility."
 ---
 
@@ -16,7 +17,7 @@ The latest examples come courtesy of _The New York Times._ I was alerted to th
 
 ## Privacy, Security, and Violation of Terms
 
-![](/images/NYTApple-913x1024.png)
+![NYT Apple](/images/NYTApple.png)
 
 The premise of the article is that Apple has “removed or restricted at least 11 of the 17 most downloaded screen-time and parental-control apps” over the past year. There are quotes and POVs from app developers and parents, and there are a couple quotes from Apple defending its actions. This is the full quote of what they printed from Phil Schiller, Apple’s marketing chief:
 
@@ -40,7 +41,7 @@ Apple does not have an issue that there are apps that compete with its own apps 
 
 ## Who Owns a Marketplace?
 
-![](/images/NYTApple2-1024x1016.png)
+![NYT Apple2 1024x1016](/images/NYTApple2.png)
 
 The second piece referenced by the BGR article is an op-ed by The Times’ Editorial Board, “[Why Does Apple Control Its Competitors?](https://www.nytimes.com/2019/05/02/opinion/apple-app-store-iphone.html)”
 

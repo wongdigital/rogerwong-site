@@ -5,6 +5,7 @@ categories:
   - "design"
   - "how-to"
 imageSrc: "/images/Interview-12_1920x722.jpg"
+imageAlt: "Illustration of an interview"
 excerpt: "As a design hiring manager, I've seen what works and what doesn't in product design interviews. From nailing the screening call to acing design challenges, here's my insider perspective on how to present yourself effectively throughout the interview process."
 ---
 

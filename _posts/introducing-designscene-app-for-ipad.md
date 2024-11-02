@@ -14,7 +14,7 @@ I'll be frank and say that this app was really made for _me_. Like many designer
 
 When Apple announced the iPad 12 months ago it struck me that this device was the perfect thing to _visually_ browse through all of my design-related feeds. It didn't take me too long to sketch and comp up something.
 
-![](/images/ds_early_comp.jpg)
+![Ds Early Comp](/images/ds_early_comp.jpg)
 
 Of course I am just a designer and had zero Objective-C skills whatsoever. I can do simple HTML, CSS and even PHP, but real programming languages elude me. I knew I had to find a development partner. Problem is that there are _tons_ of people like me with an idea, while developers are in high demand. I asked my network of friends and contacts, posted on Craigslist and [BuildItWithMe](http://builditwith.me/ "Build It With Me") but didn't really find anyone. I had a couple of meetings with friends of friends who were iPhone developers but they had their own objectives. Finally I got in touch with an old friend who was working on his first iPhone app.
 

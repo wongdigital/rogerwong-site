@@ -6,7 +6,7 @@ categories:
 excerpt: "In a memorable scene from Mad Men, Peggy Olson delivers a masterclass in creative direction that resonates deeply with my own views on design and ideation."
 ---
 
-![](/images/peggy_idea-1024x574.jpg)
+![Peggy Idea](/images/peggy_idea.jpg)
 
 Watching the premiere of _Mad Men_ season six, I _loved_ that Peggy Olson blasted her creative team for bringing her three variations on the same idea. These are words to remember.
 

@@ -19,17 +19,8 @@ Many [great articles](https://www.theverge.com/24054862/apple-vision-pro-review-
 
 Augmented reality, mixed reality, or spatial computing—as Apple calls it—on a “consumer” device is pretty new. You could argue that [Microsoft HoloLens](https://en.wikipedia.org/wiki/Microsoft_HoloLens#Criticism) did it first, but that didn’t generate the same cultural currency as AVP has, and the HoloLens line has been relegated to industrial applications. The [Meta Quest 3](https://www.wired.com/review/review-meta-quest-3/), launched last October, also has a passthrough camera, but they don’t market the feature; it’s still sold as a purely virtual reality headset.
 
-<figure>
-
-![](/images/AVP_home-screen.jpeg)
-
-<figcaption>
-
-Vision Pro Home Screen in my messy home office.
-
-</figcaption>
-
-</figure>
+![AVP Home Screen](/images/AVP_home-screen.jpeg)
+_Vision Pro Home Screen in my messy home office._
 
 Putting on Vision Pro for the first time is pretty magical. I saw the world around me—though a slightly muted and grainy version of my reality—and I saw UI floating and pinned to reality. Unlike any other headset I’ve tried, there is no screen door effect. I couldn’t see the pixels. It’s genuinely a retina display just millimeters away from my actual retinas. 
 
@@ -65,33 +56,15 @@ It is only the first version of visionOS (currently 1.1). I expect many of these
 
 In many ways, Apple has been telegraphing what they want to achieve with Vision Pro for years. [Apple’s API for augmented reality, ARKit](https://en.wikipedia.org/wiki/ARKit), was released way back in June 2017, a full six years before Vision Pro was unveiled. Some of the early AR apps for Vision Pro are cool tech demos.
 
-<figure>
-
 ![3D model of a jet engine floating in a living room](/images/AVP_JigSpace.jpeg)
-
-<figcaption>
-
-There’s a jet engine in my living room!
-
-</figcaption>
-
-</figure>
+_There’s a jet engine in my living room!_
 
 The [JigSpace app](https://apps.apple.com/us/app/jigspace-3d-presentations/id6456791766) plunks real-world objects into your living room. I pulled up a working jet engine and was able to peel away the layers to see how it worked. There’s even a Formula 1 race car that you can load into your environment.
 
 The [Super Fruit Ninja](https://apps.apple.com/us/app/super-fruit-ninja/id6450550849) game was fun. I turned my living room into a fruit-splattered dojo. I could even launch throwing stars from my hands that would get stuck on my walls.
 
-<figure>
-
 ![Glitchy UI over a 3D house tour](/images/AVP_Zillow-Immerse.jpeg)
-
-<figcaption>
-
-That's half a floor plan on top of a low-resolution 360° photo.
-
-</figcaption>
-
-</figure>
+_That's half a floor plan on top of a low-resolution 360° photo._
 
 Some Vision Pro apps were rushed out the door and are just awful. The Zillow Immerse app is one of them. I found the app glitchy and all the immersive house tours very low-quality. The problem is that the environments that ship with Vision Pro are so high-resolution and detailed that anything short of that is jarringly inferior. 
 
@@ -113,49 +86,22 @@ The single most compelling use case for Apple Vision Pro right now is consuming 
 
 Watching content in the IMAX —only a couple of trailers were free—reminded me of the best IMAX screen I’ve ever been to, which is the one in the Metreon in San Francisco. The screen is floor-to-ceiling high with a curved railing in front of it. On either side is a backlit IMAX logo, and I could choose from a few different positions in the theater!
 
-<figure>
-
 ![A movie floats above a landspeeder from Star Wars](/images/AVP_Disney-Plus.jpg)
-
-<figcaption>
-
-Watching a Star Wars movie on Tatooine.
-
-</figcaption>
-
-</figure>
+_Watching a Star Wars movie on Tatooine._
 
 Disney leverages its IP very well by giving us various sets to watch their content. I could watch _Avengers: End Game_ from Avengers Tower, _Monsters, Inc._ from the scare floor, or _The Empire Strikes Back_ from Luke’s land speeder on Tatooine. 
 
 With Apple TV, I could watch _Masters of the Air_ in a window in my space or go into an immersive environment. Whether it’s lakeside looking towards Mount Hood, on the surface of the moon, or in a discrete movie theater, the content was the star. My wife goes to sleep before me, and I usually put on my AirPods and watch something on my iPad. With Vision Pro, I could be much more engrossed in the show because the screen is as big as my room.
 
-<figure>
-
 ![A man wearing a VR headset lying on a couch, watching a TV show projected on his ceiling](/images/AVP_Apple-TV.jpg)
-
-<figcaption>
-
-From the Apple commercial “First Timer”
-
-</figcaption>
-
-</figure>
+_From the Apple commercial “First Timer”_
 
 I rewatched _Dune_ from 2021 and was blown away by the audio quality of my AirPods Pro. The movie has incredible sound and uses bass and sub-bass frequencies a lot, so I was surprised at how well the AirPods performed. Of course, I didn’t feel the bass rumble in my chest, but I could certainly hear it in my ears.
 
 ## Vision Pro Industrial Design
 
-<figure>
-
 ![Apple Vision Pro virtual reality headset sitting on a table](/images/AVP_hardware.jpg)
-
-<figcaption>
-
-The Vision Pro hardware is gorgeous.
-
-</figcaption>
-
-</figure>
+_The Vision Pro hardware is gorgeous._
 
 As many others have pointed out, the hardware is incredible. It feels very premium and is a technological marvel. The cool-looking Solo Knit Band works pretty well for me, but everyone’s heads are so different that your mileage may vary. Everyone’s face is also very different, and Apple uses the Face ID scanner on the iPhone to scan your face when you order it. This determines the exact light seal they’ll include with your Vision Pro.
 
@@ -193,17 +139,8 @@ Which brings us to the price tag of the Apple Vision Pro. It starts at $3,499. F
 
 For Vision Pro, today, I’m not so sure. The obvious use case is 3D modeling and animation. Already, someone is figuring out how to [visualize 3D models from Blender](https://twitter.com/pushmatrix/status/1767898459024040088) in AVP space. It’s tied to the instance of Blender running on his Mac, though, isn’t it? 3D modeling and animation software is notoriously complicated. The [UI for Cinema 4D](https://www.threads.net/@lunarboy/post/C0qa_rEO3UZ/?xmt=AQGz4IIkuI457IS7TcTQob5DhjAIPz5KL3O95WSiqYPNLA), the 3D software that I know best, has so many options and commands and so many keyboard shortcuts and combinations that it would be impossible to replicate in visionOS. Or take simpler apps like Final Cut Pro or Photoshop. Both have iPad apps, but a combination of the keyboard and mouse can make a user so much more productive. Imagine having to look at precisely the right UI element in Vision Pro, then pinch at exactly the right thing in a dense interface like Final Cut Pro. It would be a nightmare.
 
-<figure>
-
 ![Hand holding a virtual turntable arm](/images/AVP_djay.jpg)
-
-<figcaption>
-
-Being creative with djay in Apple Vision Pro
-
-</figcaption>
-
-</figure>
+_Being creative with djay in Apple Vision Pro_
 
 I do think that creative apps will eventually find their way to the platform. One of the launch apps is [djay](https://developer.apple.com/news/?id=q0cq9dv9), the DJing app, of course. But it will take some time to figure out.
 

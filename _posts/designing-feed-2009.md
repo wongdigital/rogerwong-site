@@ -7,7 +7,7 @@ categories:
 excerpt: "A behind-the-scenes look at designing Razorfish's FEED 2009 report, where we paired David Fullarton's organic illustrations with clean data visualization to tell the story of customer engagement. From reimagining the FEED logo to choosing the perfect paper stock, here's how we brought the digital insights into physical form."
 ---
 
-![](/images/FEED09_Book.jpg)
+![F E E D09  Book](/images/FEED09_Book.jpg)
 
 [FEED 2009](http://feed.razorfish.com/feed09 "FEED 2009") has now been released and I feel privileged to have been a part of this one. If you haven't already checked it out, please do so. The report and findings are very compelling and eye-opening. \[[Download PDF](http://feed.razorfish.com/downloads/Razorfish_FEED09.pdf "Download PDF")\]
 
@@ -19,18 +19,18 @@ So the answer was obvious in my mind. The design had to be simple (and elegant) 
 
 When I briefed David, I gave him a draft of the report and some loose direction. What he came back with was sheer genius. Because of his copy in conjunction with his art, the illustrations became another layer of commentary about the state of our industry and even our hyperconnected society. Yelpers are not only reviewing restaurants, but also doctors and schools. It doesn't seem far off that they might be reviewing police officers in the future.
 
-![](/images/FEED09_Officer.jpg)
+![F E E D09  Officer](/images/FEED09_Officer.jpg)
 
 Meanwhile, I took another look at the nameplate for FEED. Last year's design element of the small rectangular bars was inspired by the holes in [computer punchcards](http://en.wikipedia.org/wiki/Punched_card "Punched card - Wikipedia, the free encyclopedia"). This year, I took the idea a little further by incorporating the actual shape of the punchcard and making the name a part of that.
 
-![](/images/FEED08_Logo.jpg)
+![F E E D08  Logo](/images/FEED08_Logo.jpg)
 
-![](/images/FEED09_Logo.gif)
+![F E E D09  Logo](/images/FEED09_Logo.gif)
 
 Garrick and I also talked a lot about the format of the physical book. He liked the idea of putting it up on [Blurb](http://www.blurb.com/ "Make your own photo book with Blurb") for anyone to [order their own copy](http://www.blurb.com/my/book/detail/941524). The small 7x7 size felt right for the amount of content we had. In addition to Blurb, we have also offset-printed 2,000 copies of the book. For this I chose a natural white cover stock for the interior pages which alludes to [Moleskine sketchbooks](http://www.moleskine.com/catalogue/folio/sketching/ "Moleskine Â® English: Sketching Archives") and fits well with David's illustration style. And we even made temporary tattoos of the back cover illustration.
 
-![](/images/FEED09_RIP-Tattoo.jpg)
+![F E E D09  R I P  Tattoo](/images/FEED09_RIP-Tattoo.jpg)
 
 At Razorfish most of my days are filled with high-level, large-scale strategizing or pushing tiny colored squares around on a screen. It's always nice to work on a small project and make something that can be felt, picked up and even [smelled](http://twitter.com/lunarboy/status/5265992619). I hope you enjoy looking at it as much as I have enjoyed making it.
 
-![](/images/FEED09_Stack.jpg)
+![F E E D09  Stack](/images/FEED09_Stack.jpg)

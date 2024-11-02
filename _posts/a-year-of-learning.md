@@ -4,6 +4,7 @@ date: "2021-04-18"
 categories: 
   - "life"
 imageSrc: "/images/Gold-1_Super-CU-2_0389.jpg"
+imageAlt: "Gold #1"
 excerpt: "During the pandemic lockdown, I turned to learning as a way to stay occupied. What started with optimizing my work-from-home setup led to rediscovering old passions in photography, videography, and 3D animation, eventually culminating in creating art and launching a newsletter."
 ---
 
