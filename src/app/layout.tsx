@@ -78,7 +78,7 @@ export default function RootLayout({
       </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
         <Providers>
-          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-20">
+          <div className="container mx-auto px-4">
             <SkipToMain />
             <header role="banner">
               <Header />

@@ -11,7 +11,7 @@ export default function HomeHero() {
 
   return (
     <>
-      <section className="my-8 px-4 sm:px-0 lg:px-20 py-8">
+      <section className="my-8 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-7/12 content-center order-2 md:order-1">
             <h2 className="page-title">

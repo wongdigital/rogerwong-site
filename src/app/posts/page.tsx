@@ -34,8 +34,8 @@ export default async function PostsIndex({
   const currentPosts = filteredPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 px-4 sm:px-8 md:px-12 lg:px-20">
-      <main className="lg:w-7/12 lg:py-20 md:py-10 sm:py-8">
+    <div className="flex flex-col md:flex-row gap-8">
+      <section className="lg:w-7/12 py-8 lg:py-20 md:py-10">
         <header className="mb-8">
           <h1 className="page-title">
             {params.category ? `Posts in ${params.category}` : 'Posts'}
@@ -64,7 +64,7 @@ export default async function PostsIndex({
             basePath="/posts" 
           />
         </nav>
-      </main>
+      </section>
       <aside className="lg:w-5/12" aria-hidden="true" />
     </div>
   );

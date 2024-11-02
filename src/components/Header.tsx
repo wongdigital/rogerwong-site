@@ -37,7 +37,7 @@ export default function Header() {
   };
 
   return (
-    <div className="text-lg text-slate-500 dark:text-slate-400 py-4 px-4 sm:px-6 md:px-8 lg:px-20">
+    <div className="text-lg text-slate-500 dark:text-slate-400">
       <div 
         aria-live="polite" 
         aria-atomic="true"
@@ -46,7 +46,7 @@ export default function Header() {
         {mounted && `${resolvedTheme === 'dark' ? 'Dark' : 'Light'} mode enabled`}
       </div>
 
-      <nav role="navigation" className="max-w-7xl mx-auto flex justify-between items-center">
+      <nav role="navigation" className="flex justify-between items-center">
         <Link 
           href="/" 
           aria-label="Home"

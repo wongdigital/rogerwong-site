@@ -4,9 +4,9 @@ export default async function About() {
   
   return (
     <>
-      <section className="my-8 px-4 sm:px-0 lg:px-20 py-8">
+      <section className="my-8 py-8 lg:py-20 md:py-10">
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full lg:w-7/12">
+          <main>
             <h1 className="page-title">About Me</h1>
             <div className="prose prose-slate dark:prose-dark">
               <Image 
@@ -24,8 +24,8 @@ export default async function About() {
                 <li><a href="https://www.instagram.com/lunarboy/" target="_blank">Instagram</a></li>
               </ul>
             </div>
-          </div>
-          <div className="w-full lg:w-5/12 space-y-8">
+          </main>
+          <aside className="w-full md:w-5/12 space-y-8">
             <div>
                 <h3 className="text-sm font-extrabold mb-4 text-slate-500">Career Highlights</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
@@ -62,7 +62,7 @@ export default async function About() {
                 <p>For inquiries, including requests for my portfolio, send an email to hello[at]rogerwong[dot]me.</p>
                 </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
     </>
