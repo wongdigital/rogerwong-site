@@ -62,6 +62,12 @@ export default async function About() {
                 <p>For inquiries, including requests for my portfolio, send an email to hello[at]rogerwong[dot]me.</p>
                 </div>
             </div>
+            <div>
+                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Colophon</h3>
+                <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
+                  <p>This site is built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>. The typeface is <a href="https://fonts.google.com/specimen/IBM+Plex+Sans/about" target="_blank">IBM Plex Sans</a>, designed by Mike Abbink for IBM. The code is edited with <a href="https://www.cursor.com/" target="_blank">Cursor</a>.</p>
+                </div>
+            </div>
           </aside>
         </div>
       </section>
