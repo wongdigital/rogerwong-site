@@ -36,6 +36,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const canonical = `https://rogerwong.me/posts/${id}`;
+  
+  // Create image object if imageSrc exists
+  const imageObj = post.imageSrc ? {
+    url: post.imageSrc,
+    width: 1920,
+    height: 722,
+    alt: post.imageAlt || post.title,
+  } : null;
 
   return {
     title: post.title,
@@ -49,14 +57,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
       authors: ['Roger Wong'],
-      images: post.imageSrc ? [post.imageSrc] : [],
+      images: imageObj ? [imageObj] : [], // Use the full image object
       url: canonical,
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: post.imageSrc ? [post.imageSrc] : [],
+      images: imageObj ? [imageObj] : [], // Use the full image object
       creator: '@lunarboy',
       site: '@lunarboy',
     }
