@@ -6,7 +6,7 @@ categories:
   - "technology"
 imageSrc: "/images/Replatform-AI-Featured.jpg"
 imageAlt: "Closeup of MU/TH/UR 9000 computer screen from the movie Alien:Romulus"
-excerpt: "XXX"
+excerpt: "Re-platforming my website from WordPress to React seemed daunting for a non-developer like me. Yet, with AI tools like Cursor, I managed to navigate the complexities of modern web development. This article shares my journey and insights for others venturing into AI-assisted coding."
 ---
 
 I decided to re-platform my personal website, moving it from WordPress to React. It was spurred by a curiosity to learn a more modern tech stack like React and the [drama in the WordPress community](https://techcrunch.com/2024/10/29/wordpress-vs-wp-engine-drama-explained/) that erupted last month. While I [doubt WordPress is going away](https://www.wpbeginner.com/news/wordpress-drama-explained-and-how-it-may-affect-your-website/) anytime soon, I do think this rift opens the door for designers, developers, and clients to consider alternatives. 
