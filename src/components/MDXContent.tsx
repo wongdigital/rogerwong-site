@@ -9,30 +9,6 @@ type Props = {
   content: string;
 };
 
-declare global {
-  interface Window {
-    instgrm?: {
-      Embeds: {
-        process(): void;
-      };
-    };
-  }
-}
-
-const ClientOnlyDiv = dynamic(() => Promise.resolve(({ children, ...props }: Partial<React.HTMLProps<HTMLDivElement>>) => (
-  <div suppressHydrationWarning {...props}>{children}</div>
-)), { ssr: false });
-
-const InstagramEmbed = dynamic(() => Promise.resolve(({ html }: { html: string }) => {
-  useEffect(() => {
-    if (window.instgrm) {
-      window.instgrm.Embeds.process();
-    }
-  }, [html]);
-  
-  return <ClientOnlyDiv dangerouslySetInnerHTML={{ __html: html }} />;
-}), { ssr: false });
-
 function convertStyleStringToObject(styleString: string): Record<string, string> {
   if (!styleString) return {};
   
@@ -110,12 +86,6 @@ export default function MDXContent({ content }: Props) {
               {domToReact(domNode.children as DOMNode[], options)}
             </blockquote>
           );
-        }
-        
-        // Wrap Instagram embeds in client-only component
-        if (domNode.name === 'blockquote' && domNode.attribs?.class?.includes('instagram-media')) {
-          const html = domNode.toString().replace(/class=/g, 'className=');
-          return <InstagramEmbed html={html} />;
         }
       }
     }
