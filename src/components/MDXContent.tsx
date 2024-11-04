@@ -2,28 +2,10 @@
 
 import Image from 'next/image';
 import parse, { Element, HTMLReactParserOptions, domToReact, DOMNode } from 'html-react-parser';
-import dynamic from 'next/dynamic';
-import { useEffect } from 'react';
 
 type Props = {
   content: string;
 };
-
-function convertStyleStringToObject(styleString: string): Record<string, string> {
-  if (!styleString) return {};
-  
-  return styleString.split(';')
-    .filter(style => style.trim())
-    .reduce((acc: Record<string, string>, current) => {
-      const [property, value] = current.split(':').map(str => str.trim());
-      if (property && value) {
-        // Convert kebab-case to camelCase
-        const camelProperty = property.replace(/-([a-z])/g, g => g[1].toUpperCase());
-        acc[camelProperty] = value;
-      }
-      return acc;
-    }, {});
-}
 
 if (typeof window !== 'undefined') {
   const originalError = console.error;
@@ -70,21 +52,6 @@ export default function MDXContent({ content }: Props) {
               height={height ? parseInt(height, 10) : 600}
               className="w-full h-auto"
             />
-          );
-        }
-        
-        // Pass through blockquotes with converted styles
-        if (domNode.name === 'blockquote') {
-          const { style, ...otherAttribs } = domNode.attribs;
-          const styleObject = style ? convertStyleStringToObject(style) : {};
-          
-          return (
-            <blockquote 
-              {...otherAttribs} 
-              style={styleObject}
-            >
-              {domToReact(domNode.children as DOMNode[], options)}
-            </blockquote>
           );
         }
       }
