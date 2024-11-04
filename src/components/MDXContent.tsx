@@ -64,6 +64,25 @@ export default function MDXContent({ content }: Props) {
   const options: HTMLReactParserOptions = {
     replace: (domNode) => {
       if (domNode instanceof Element) {
+        // Handle external links
+        if (domNode.name === 'a') {
+          const { href, ...otherAttribs } = domNode.attribs;
+          const isExternal = href?.startsWith('http') && !href?.includes('rogerwong.me');
+          
+          if (isExternal) {
+            return (
+              <a 
+                href={href}
+                {...otherAttribs}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {domToReact(domNode.children as DOMNode[], options)}
+              </a>
+            );
+          }
+        }
+
         // Handle images
         if (domNode.name === 'img') {
           const { src, alt, width, height } = domNode.attribs;
