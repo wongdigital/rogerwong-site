@@ -12,7 +12,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-  {
+      {
+        "source": "/links",
+        "destination": "/linklog",
+        "permanent": true
+      },
+      {
         "source": "/sell-the-horseshit",
         "destination": "/posts/sell-the-horseshit",
         "permanent": true
