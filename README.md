@@ -1,3 +1,7 @@
+This is the code repository for the personal site of Roger Wong. Things are still messy and may or may never be cleaned up.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
