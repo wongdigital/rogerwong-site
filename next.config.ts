@@ -226,6 +226,56 @@ const nextConfig: NextConfig = {
         "source": "/thoughts-on-apple-vision-pro",
         "destination": "/posts/thoughts-on-apple-vision-pro",
         "permanent": true
+      },
+      {
+        "source": "/design",
+        "destination": "/posts?category=Design",
+        "permanent": true
+    },
+    {
+        "source": "/apple",
+        "destination": "/posts?category=Apple",
+        "permanent": true
+    },
+    {
+        "source": "/projects",
+        "destination": "/posts?category=Projects",
+        "permanent": true
+    },
+    {
+        "source": "/politics",
+        "destination": "/posts?category=Politics",
+        "permanent": true
+    },
+    {
+        "source": "/technology",
+        "destination": "/posts?category=Technology",
+        "permanent": true
+    },
+    {
+        "source": "/how-to",
+        "destination": "/posts?category=How-to",
+        "permanent": true
+    },
+    {
+        "source": "/life",
+        "destination": "/posts?category=Life",
+        "permanent": true
+    },
+    {
+        "source": "/announcements",
+        "destination": "/posts?category=Announcements",
+        "permanent": true
+    },
+    {
+        "source": "/business",
+        "destination": "/posts?category=Business",
+        "permanent": true
+    },
+    {
+        "source": "/design-ethics",
+        "destination": "/posts?category=Design-Ethics",
+        "permanent": true
       }
     ]
   }

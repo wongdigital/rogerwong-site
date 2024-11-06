@@ -10,7 +10,8 @@
     "lint": "next lint",
     "validate": "node scripts/validate-frontmatter.js",
     "validate-images": "tsx scripts/validate-image-alt.ts",
-    "validate-local-images": "tsx scripts/validate-local-images.ts"
+    "validate-local-images": "tsx scripts/validate-local-images.ts",
+    "categories": "tsx scripts/compile-categories.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
