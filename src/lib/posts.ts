@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import remarkGfm from 'remark-gfm'
+import { remarkVideo } from './remarkVideo';
 
 const postsDirectory = path.join(process.cwd(), '_posts')
 
@@ -40,6 +41,7 @@ export async function getPostData(id: string) {
         allowDangerousHtml: true 
       })
       .use(remarkGfm)
+      .use(remarkVideo)
       .process(matterResult.content);
     const contentHtml = processedContent.toString();
   

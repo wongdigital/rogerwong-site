@@ -104,7 +104,7 @@ export default async function Post({ params }: Props) {
         </div>
         {postData.imageSrc && (
           <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] mb-8">
-            <div className="md:aspect-auto aspect-[4/3] w-full overflow-hidden">
+            <div className="md:aspect-[2.66/1] aspect-[4/3] w-full overflow-hidden">
               <Image 
                 src={postData.imageSrc} 
                 alt={postData.imageAlt}
