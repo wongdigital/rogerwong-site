@@ -70,12 +70,23 @@ export default async function PostsIndex({
   );
 }
 
-export const metadata: Metadata = {
-  title: 'Posts | Roger Wong',
-  description: 'Read the latest articles about design, technology, and creative direction from Roger Wong.',
-  openGraph: {
-    title: 'Posts | Roger Wong',
+export async function generateMetadata({ 
+  searchParams 
+}: { 
+  searchParams: Promise<{ category?: string }> 
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const title = params.category 
+    ? `${params.category} Posts`
+    : 'Posts';
+
+  return {
+    title,
     description: 'Read the latest articles about design, technology, and creative direction from Roger Wong.',
-    type: 'website',
-  }
-};
+    openGraph: {
+      title,
+      description: 'Read the latest articles about design, technology, and creative direction from Roger Wong.',
+      type: 'website',
+    }
+  };
+}
