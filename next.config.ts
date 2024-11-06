@@ -276,6 +276,16 @@ const nextConfig: NextConfig = {
         "source": "/design-ethics",
         "destination": "/posts?category=Design-Ethics",
         "permanent": true
+      },
+      {
+        source: "/posts/page/:page(\\d+)",
+        destination: "/posts?page=:page",
+        permanent: true,
+      },
+      {
+        source: "/links/page/:page(\\d+)",
+        destination: "/linklog?page=:page",
+        permanent: true,
       }
     ]
   }
