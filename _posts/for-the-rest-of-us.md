@@ -25,7 +25,14 @@ Here’s the text from the speech:
 
 It ends with a challenge, raising the question for the viewer, “How will you [make your dent](http://allaboutstevejobs.com/sayings/stevejobsinterviews/playboy85.php) in the universe?”
 
-https://www.dailymotion.com/video/x22kvvc
+<div class="rounded-lg overflow-hidden" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe src="https://geo.dailymotion.com/player.html?video=x22kvvc"
+    style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
+    allowfullscreen
+    title="Dailymotion Video Player"
+    allow="web-share">
+  </iframe>
+</div>
 
 And just this week, Apple debuted a similar people-do-awesome-things-with-Apple-products video called “Powerful.” It features people using the iPhone to make music, perform art, video their kids, and more. It’s set against a youthful cover of the Pixies’ “Gigantic.” The film is an anthem much like the iPad ad that preceded it, and about how Apple products have empowered millions of people to do some pretty cool things.
 
@@ -39,7 +46,7 @@ So what’s the takeaway?
 
 These ads are not meant to convince the non-believers to buy Apple products. Instead, they’re both calls-to-arms for the Apple faithful. It’s their CRM strategy if you will. These ads are meant to inspire “the rest of us” and reinforce that we made the right choice in terms of the iOS platform and devices. These epic films depict a world made better by Apple products which makes us feel good. With [Samsung](http://appleinsider.com/articles/14/01/27/samsung-widens-lead-in-worldwide-smartphone-marketshare-smaller-oems-rising) and other [Android devices](http://www.pcworld.com/article/2150560/samsung-grabs-tablet-market-share-from-apple.html) eroding at Apple’s historic lead, this is exactly what they need.
 
-<iframe src="//www.youtube.com/embed/tjgtLSHhTPg?rel=0" width="670" height="503" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe>
+https://www.youtube.com/watch?v=tjgtLSHhTPg
 
 These ads are reminiscent of Apple’s classic comeback “Think Different” campaign. Here is the text of the commercial that launched it:
 
