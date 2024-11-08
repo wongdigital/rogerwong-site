@@ -3,6 +3,7 @@ import PostPreview from '@/components/PostPreview';
 import { getSortedPostsData } from '@/lib/posts';
 import { calculateReadTime } from '@/lib/readTime';
 import Pagination from '@/components/Pagination';
+import CategoriesList from '@/components/CategoriesList';
 
 export const dynamic = 'force-dynamic';
 
@@ -65,7 +66,9 @@ export default async function PostsIndex({
           />
         </nav>
       </section>
-      <aside className="lg:w-5/12" aria-hidden="true" />
+      <aside className="lg:w-5/12 py-8 lg:py-20 md:py-10">
+        <CategoriesList />
+      </aside>
     </div>
   );
 }
