@@ -38,17 +38,19 @@ const PostPreview: React.FC<PostPreviewProps> = ({
         {formatDate(date)}&nbsp;&nbsp;•&nbsp;&nbsp;{readTime} read
       </span>
       {imageSrc && (
-        <Image 
-          src={imageSrc} 
-          alt={imageAlt || ''} 
-          width={800} 
-          height={400} 
-          className="w-full h-auto rounded"
-          loading="lazy"
-          sizes="(max-width: 768px) 100vw, 800px"
-          priority={false}
-          quality={75}
-        />
+        <Link href={`/posts/${slug}`}>
+          <Image 
+            src={imageSrc} 
+            alt={imageAlt || ''} 
+            width={800} 
+            height={400} 
+            className="mt-2 w-full h-auto rounded hover:opacity-90 transition-opacity cursor-pointer"
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority={false}
+            quality={75}
+          />
+        </Link>
       )}
       <p className="text-slate-600 dark:text-slate-200">{excerpt}</p>
       {categories && categories.length > 0 && (
