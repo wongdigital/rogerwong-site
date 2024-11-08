@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image'
-
+import Link from 'next/link'
 export default function HomeHero() {
   // Define the paths outside the component for better readability
   const squirclePath = {
@@ -20,13 +20,15 @@ export default function HomeHero() {
           </div>
           <div className="md:w-5/12 order-1 md:order-2 flex justify-start">
             <div className="relative w-36 h-36 md:w-72 md:h-72">
+              <Link href="/about">
               <Image
                 src="/images/Roger-Wong.jpg"
                 alt="Roger Wong"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:opacity-90 transition-opacity cursor-pointer"
                 width={288}
                 height={288}
               />
+              </Link>
             </div>
           </div>
         </div>

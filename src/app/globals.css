@@ -68,6 +68,18 @@ svg {
   font-size: 1.125rem;
 }
 
+/* Add dark mode styles for lists and blockquotes */
+.prose blockquote {
+  @apply border-l-4 px-4 py-0.5 border-slate-300 dark:border-slate-600;
+  @apply text-slate-700 dark:text-slate-300;
+  @apply bg-slate-50 dark:bg-slate-800/50;
+}
+
+.prose ol > li::marker,
+.prose ul > li::marker {
+  @apply text-slate-600 dark:text-slate-300;
+}
+
 .instagram-container blockquote.instagram-media {
   background: #FFF;
   border: 0;
