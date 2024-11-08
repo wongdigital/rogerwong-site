@@ -5,9 +5,10 @@ type PaginationProps = {
   currentPage: number;
   totalPages: number;
   basePath: string;
+  queryParams?: Record<string, string>;
 };
 
-export default function Pagination({ currentPage, totalPages, basePath }: PaginationProps) {
+export default function Pagination({ currentPage, totalPages, basePath, queryParams = {} }: PaginationProps) {
   // Don't render anything if there's only one page or less
   if (totalPages <= 1) {
     return null;
@@ -31,6 +32,12 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
     return pageNumbers;
   };
 
+  // Helper function to build the URL with all query parameters
+  const buildPageUrl = (pageNum: number) => {
+    const params = new URLSearchParams({ ...queryParams, page: pageNum.toString() });
+    return `${basePath}?${params.toString()}`;
+  };
+
   return (
     <>
       <div 
@@ -44,7 +51,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
       <nav aria-label="Pagination" className="flex items-center justify-start space-x-4">
         {currentPage > 1 ? (
           <Link
-            href={`${basePath}?page=${currentPage - 1}`}
+            href={buildPageUrl(currentPage - 1)}
             className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
             aria-label="Previous page"
           >
@@ -60,7 +67,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
           {getPageNumbers().map((pageNum) => (
             <Link
               key={pageNum}
-              href={`${basePath}?page=${pageNum}`}
+              href={buildPageUrl(pageNum)}
               className={`px-3 py-1 rounded border ${
                 pageNum === currentPage
                   ? 'bg-blue-600 text-white border-blue-600'
@@ -74,7 +81,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
 
         {currentPage < totalPages ? (
           <Link
-            href={`${basePath}?page=${currentPage + 1}`}
+            href={buildPageUrl(currentPage + 1)}
             className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
             aria-label="Next page"
           >

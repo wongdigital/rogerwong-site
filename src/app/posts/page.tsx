@@ -63,6 +63,7 @@ export default async function PostsIndex({
             currentPage={currentPage} 
             totalPages={totalPages} 
             basePath="/posts" 
+            queryParams={params.category ? { category: params.category } : undefined}
           />
         </nav>
       </section>
