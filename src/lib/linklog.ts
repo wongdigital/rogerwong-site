@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const linklogDirectory = path.join(process.cwd(), '_linklog');  // Updated path
+const linklogDirectory = path.join(process.cwd(), '_content/linklog');  // Updated path
 
 export type LinklogEntry = {
   title: string;
