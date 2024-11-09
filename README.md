@@ -1,5 +1,8 @@
 This is the code repository for the personal site of Roger Wong. Things are still messy and may or may never be cleaned up.
 
+## License
+The code in this repository is licensed under the MIT License (see LICENSE for details). Please note that all content in the `/content` directory is not licensed for reuse or distribution.
+
 The content below is the default README from Next.js.
 
 ---
