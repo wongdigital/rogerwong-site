@@ -6,7 +6,7 @@ import html from 'remark-html'
 import remarkGfm from 'remark-gfm'
 import { remarkVideo } from './remarkVideo';
 
-const postsDirectory = path.join(process.cwd(), '_posts')
+const postsDirectory = path.join(process.cwd(), '_content/posts')
 
 function normalizeCategories(categories: string[] | undefined): string[] | undefined {
   if (!categories) return undefined;
