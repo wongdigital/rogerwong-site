@@ -1,5 +1,7 @@
 This is the code repository for the personal site of Roger Wong. Things are still messy and may or may never be cleaned up.
 
+The content below is the default README from Next.js.
+
 ---
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
