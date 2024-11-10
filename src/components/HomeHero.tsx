@@ -15,7 +15,7 @@ export default function HomeHero() {
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-7/12 content-center order-2 md:order-1">
             <h2 className="page-title">
-              I’m Roger Wong, a seasoned design leader and creative director of the brand and software studio Wong.Digital. Currently leading design at <a href="https://www.buildops.com" target="_blank" className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400">BuildOps</a>.
+              I'm <Link href="/about" className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400">Roger Wong</Link>, a seasoned design leader and creative director of the brand and software studio Wong.Digital. Currently leading design at <a href="https://www.buildops.com" target="_blank" className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400">BuildOps</a>.
             </h2>
           </div>
           <div className="md:w-5/12 order-1 md:order-2 flex justify-start">
