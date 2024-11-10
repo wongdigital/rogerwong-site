@@ -20,6 +20,7 @@ export default async function About() {
               <h3>Follow Me</h3>
               <ul>
                 <li><a href="https://www.linkedin.com/in/rogerwong/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://bsky.app/profile/lunarboy.com" target="_blank">Bluesky</a></li>
                 <li><a href="https://www.threads.net/@lunarboy" target="_blank">Threads</a></li>
                 <li><a href="https://www.instagram.com/lunarboy/" target="_blank">Instagram</a></li>
               </ul>
