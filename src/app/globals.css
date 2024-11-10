@@ -5,6 +5,7 @@
 body {
   font-family: var(--font-ibm-plex-sans), sans-serif;
   transition: background-color 0.3s ease;
+  @apply bg-slate-50 dark:bg-slate-900;
 }
 
 /* Add base transitions for theme switching */
