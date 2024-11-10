@@ -6,6 +6,7 @@ categories:
   - "How-to"
 imageSrc: "/images/What-is-brand-strategy.jpg"
 imageAlt: "What is brand strategy and why is it so powerful"
+excerpt: "Brand strategy isn't just about logos and color palettes—it's about finding the sweet spot between what your audience wants and what makes your brand unique. When you nail this intersection, you create something truly magical: an emotional connection that transforms casual customers into devoted fans. Let me show you how it works."
 ---
 
 ## Let me tell you a story…
