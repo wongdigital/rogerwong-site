@@ -9,14 +9,14 @@ export default function Footer() {
       <div className="flex gap-4 mt-4 md:mt-0">
         <Link 
           href="/rss.xml"
-          className="hover:text-slate-600 dark:hover:text-slate-300"
+          className="hover:text-slate-600 dark:hover:text-slate-300 hover:underline"
           aria-label="RSS feed for blog posts"
         >
           Posts RSS
         </Link>
         <Link 
           href="/linklog.xml"
-          className="hover:text-slate-600 dark:hover:text-slate-300"
+          className="hover:text-slate-600 dark:hover:text-slate-300 hover:underline"
           aria-label="RSS feed for linklog"
         >
           Links RSS
