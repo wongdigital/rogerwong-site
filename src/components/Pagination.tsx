@@ -52,7 +52,7 @@ export default function Pagination({ currentPage, totalPages, basePath, queryPar
         {currentPage > 1 ? (
           <Link
             href={buildPageUrl(currentPage - 1)}
-            className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
+            className="button-outline !p-2"
             aria-label="Previous page"
           >
             <ArrowLeftIcon className="w-4 h-4" />
@@ -70,8 +70,8 @@ export default function Pagination({ currentPage, totalPages, basePath, queryPar
               href={buildPageUrl(pageNum)}
               className={`px-3 py-1 rounded border ${
                 pageNum === currentPage
-                  ? 'bg-blue-600 text-white border-blue-600'
-                  : 'text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors'
+                  ? 'bg-blue-600 text-white border-blue-600 dark:bg-blue-500 dark:border-blue-500'
+                  : 'button-outline'
               }`}
             >
               {pageNum}
@@ -82,7 +82,7 @@ export default function Pagination({ currentPage, totalPages, basePath, queryPar
         {currentPage < totalPages ? (
           <Link
             href={buildPageUrl(currentPage + 1)}
-            className="px-2 py-2 text-blue-600 hover:text-blue-400 border border-blue-600 hover:border-blue-400 rounded transition-colors"
+            className="button-outline !p-2"
             aria-label="Next page"
           >
             <ArrowRightIcon className="w-4 h-4" />

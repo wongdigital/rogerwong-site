@@ -55,7 +55,7 @@ export default function RelatedPosts({ currentPostId, currentPostCategories, all
             className="w-full h-auto"
           />
           <div className="p-4 space-y-1">
-            <h2 className="text-blue-600 group-hover:text-blue-500 dark:group-hover:text-blue-400 text-xl font-bold">
+            <h2 className="link-primary text-xl font-bold">
               {post.title}
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-200">

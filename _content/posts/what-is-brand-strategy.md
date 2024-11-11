@@ -35,7 +35,7 @@ This isn’t brand strategy. However, it is an excellent illustration of how usi
 
 What is brand strategy? It is identifying the intersection of these two circles of the Venn diagram and finding the emotional truth therein.
 
-![What is brand strategy? It's the intersection of Audience and Brand. It's magic.](https://usegriffin.ai/wp-content/uploads/2024/02/Brand-strategy-Venn-diagram-3.svg)
+![What is brand strategy? It's the intersection of Audience and Brand. It's magic.](/images/Brand-strategy-Venn-diagram-3.svg)
 
 ## Understanding the essence of brand strategy
 
