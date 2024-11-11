@@ -99,7 +99,7 @@ export default async function Post({ params }: Props) {
     <div className="max-w-4xl mx-auto py-8 px-4 sm:px-8 md:px-12 lg:px-20">
       <article>
         <h1 className="page-title">{postData.title}</h1>
-        <div className="text-sm text-slate-500 dark:text-slate-400 mb-8">
+        <div className="text-sm text-slate-500 dark:text-slate-200 mb-8">
           {formatDate(postData.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{readTime} read
         </div>
         {postData.imageSrc && (
@@ -121,7 +121,7 @@ export default async function Post({ params }: Props) {
         </div>
         {postData.categories && postData.categories.length > 0 && (
           <div className="mt-8 pt-8 border-t border-slate-200">
-            <div className="text-sm text-slate-500 dark:text-slate-400">
+            <div className="text-sm text-slate-500 dark:text-slate-200">
               <FolderOpenIcon className="w-4 h-4 inline-block mr-2 -mt-1" />
               Filed under {postData.categories?.map((category, index) => (
                 <span key={category}>
