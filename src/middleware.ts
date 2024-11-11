@@ -6,11 +6,11 @@ export function middleware(request: NextRequest) {
   
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://*.googletagmanager.com https://*.google-analytics.com;
-    script-src-elem 'self' 'nonce-${nonce}' https://*.googletagmanager.com https://*.google-analytics.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.vercel.live https://*.vercel.app;
+    script-src-elem 'self' 'unsafe-inline' https://*.vercel.live https://*.vercel.app https://*.googletagmanager.com https://*.google-analytics.com;
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data: https://*.google-analytics.com https://*.googletagmanager.com;
-    connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
+    connect-src 'self' https://*.vercel.live https://*.vercel.app https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
