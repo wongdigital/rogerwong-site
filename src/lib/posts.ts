@@ -100,13 +100,6 @@ export async function getPostData(id: string) {
     const offset = getTimezoneOffset(timeZone)
     const todayWithOffset = new Date(today.getTime() + offset)
 
-    console.log('Current time Eastern:', todayWithOffset)
-    console.log('Post dates:', allPostsData.map(post => ({
-      id: post.id,
-      date: post.date,
-      included: todayWithOffset >= parseISO(`${post.date}T00:00:00`)
-    })))
-
     return allPostsData
       .filter((post) => {
         // Convert post date to midnight Eastern time
