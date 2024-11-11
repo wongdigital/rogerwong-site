@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { parseISO } from 'date-fns';
+import { getTimezoneOffset } from 'date-fns-tz';
 
 const linklogDirectory = path.join(process.cwd(), '_content/linklog');  // Updated path
 
@@ -31,8 +33,19 @@ export function getSortedLinklogData(): LinklogEntry[] {
     } as LinklogEntry;
   });
 
-  // Sort links by date
-  return allLinksData.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
+  // Get current time in US Eastern
+  const timeZone = 'America/New_York'
+  const today = new Date()
+  const offset = getTimezoneOffset(timeZone)
+  const todayWithOffset = new Date(today.getTime() - offset)
+
+  // Filter out future entries and sort by date
+  return allLinksData
+    .filter((entry) => {
+      const entryDate = parseISO(`${entry.date}T00:00:00`)
+      return todayWithOffset >= entryDate;
+    })
+    .sort((a, b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
 }

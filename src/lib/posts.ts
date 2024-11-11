@@ -5,6 +5,8 @@ import { remark } from 'remark'
 import html from 'remark-html'
 import remarkGfm from 'remark-gfm'
 import { remarkVideo } from './remarkVideo';
+import { getTimezoneOffset } from 'date-fns-tz'
+import { parseISO } from 'date-fns'
 
 const postsDirectory = path.join(process.cwd(), '_content/posts')
 
@@ -92,12 +94,23 @@ export async function getPostData(id: string) {
       };
     });
   
-    // Sort posts by date
-    return allPostsData.sort((a, b) => {
-      if (a.date < b.date) {
-        return 1;
-      } else {
-        return -1;
-      }
-    });
+    // Get current time in US Eastern
+    const timeZone = 'America/New_York'
+    const today = new Date()
+    const offset = getTimezoneOffset(timeZone)
+    const todayWithOffset = new Date(today.getTime() - offset)
+
+    return allPostsData
+      .filter((post) => {
+        // Convert post date to midnight Eastern time
+        const postDate = parseISO(`${post.date}T00:00:00`)
+        return todayWithOffset >= postDate; // Compare with the actual post date
+      })
+      .sort((a, b) => {
+        if (a.date < b.date) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
   }
