@@ -4,8 +4,8 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   const posts = await getSortedPostsData();
-  const feed = generateFeed('Roger Wong', 'Personal blog of Roger Wong');
   const baseUrl = 'https://rogerwong.me';
+  const feed = generateFeed('Roger Wong', 'Personal blog of Roger Wong', 'https://rogerwong.me');
 
   posts.forEach((post) => {
     feed.addItem({

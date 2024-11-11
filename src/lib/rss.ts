@@ -1,7 +1,6 @@
 import { Feed } from 'feed';
 
-export function generateFeed(title: string, description: string) {
-  const baseUrl = 'https://rogerwong.me';
+export function generateFeed(title: string, description: string, baseUrl: string) {
   const author = {
     name: 'Roger Wong',
     email: 'roger@rogerwong.me',
