@@ -37,7 +37,7 @@ export function getSortedLinklogData(): LinklogEntry[] {
   const timeZone = 'America/New_York'
   const today = new Date()
   const offset = getTimezoneOffset(timeZone)
-  const todayWithOffset = new Date(today.getTime() - offset)
+  const todayWithOffset = new Date(today.getTime() + offset)
 
   // Filter out future entries and sort by date
   return allLinksData

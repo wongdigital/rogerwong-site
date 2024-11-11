@@ -98,7 +98,7 @@ export async function getPostData(id: string) {
     const timeZone = 'America/New_York'
     const today = new Date()
     const offset = getTimezoneOffset(timeZone)
-    const todayWithOffset = new Date(today.getTime() - offset)
+    const todayWithOffset = new Date(today.getTime() + offset)
 
     return allPostsData
       .filter((post) => {
