@@ -19,7 +19,7 @@ export default async function Home() {
       <section className="my-8 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="w-full lg:w-7/12">
-            <h3 className="text-sm font-extrabold mb-4 text-slate-500">Latest Posts</h3>
+            <h3 className="section-heading">Latest Posts</h3>
             <div className="space-y-8 mb-4">
               {latestPosts.map((post) => (
                 <PostPreview
@@ -36,7 +36,7 @@ export default async function Home() {
             </div>
             <div className="mt-8">
               <Link 
-                className="px-3 py-1 rounded border text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors inline-flex items-center gap-1" 
+                className="button-outline" 
                 href="/posts"
               >
                 More Posts
@@ -45,7 +45,7 @@ export default async function Home() {
             </div>
           </div>
           <div className="w-full lg:w-5/12">
-            <h3 className="text-sm font-extrabold mb-4 text-slate-500">Latest Links</h3>
+            <h3 className="section-heading">Latest Links</h3>
             <div className="mb-8">
               {sortedLinks.slice(0, 6).map((link, index) => (
                 <LinklogPreview
@@ -57,7 +57,7 @@ export default async function Home() {
               ))}
             </div>
             <Link 
-              className="px-3 py-1 rounded border text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors inline-flex items-center gap-1" 
+              className="button-outline" 
               href="/linklog"
             >
               More Links 

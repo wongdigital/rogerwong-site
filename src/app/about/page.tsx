@@ -19,16 +19,16 @@ export default async function About() {
               <p>I am a forward-thinking design leader with extensive experience in cultivating brand loyalty and enhancing customer experiences for prominent tech companies like Apple, Microsoft, Cisco, and Intel. My career spans over two decades during which I founded Wong.Digital, led design at Convex as VP, and managed significant creative teams, notably for Samsung Mobile. My passion for innovation is demonstrated through my cofounding of Transported VR, a pioneering venture in virtual reality real estate, and my current work on developing an AI tool aimed at assisting designers in crafting brand strategies. My contributions to the design field have been recognized by <em>Communication Arts</em>, <em>Graphis</em>, One Show, Clio Awards, and Cannes Lions. Holding a BFA in graphic design from the California College of the Arts, I have also contributed to academics as a professor and advisory board member at San Diego City College. I live in San Diego with my family. I do not surf.</p>
               <h3>Follow Me</h3>
               <ul>
-                <li><a href="https://www.linkedin.com/in/rogerwong/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://bsky.app/profile/lunarboy.com" target="_blank">Bluesky</a></li>
-                <li><a href="https://www.threads.net/@lunarboy" target="_blank">Threads</a></li>
-                <li><a href="https://www.instagram.com/lunarboy/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/rogerwong/" target="_blank" className="link-primary">LinkedIn</a></li>
+                <li><a href="https://bsky.app/profile/lunarboy.com" target="_blank" className="link-primary">Bluesky</a></li>
+                <li><a href="https://www.threads.net/@lunarboy" target="_blank" className="link-primary">Threads</a></li>
+                <li><a href="https://www.instagram.com/lunarboy/" target="_blank" className="link-primary">Instagram</a></li>
               </ul>
             </div>
           </main>
           <aside className="w-full md:w-5/12 space-y-8">
             <div>
-                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Career Highlights</h3>
+                <h3 className="section-heading">Career Highlights</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
                 <ul>
                     <li>Head of Design at BuildOps</li>
@@ -44,7 +44,7 @@ export default async function About() {
                 </div>
             </div>
             <div>
-                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Industry Engagement</h3>
+                <h3 className="section-heading">Industry Engagement</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
                 <ul>
                     <li>Former adjunct professor of graphic design at San Diego City College</li>
@@ -58,13 +58,13 @@ export default async function About() {
                 </div>
             </div>
             <div>
-                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Contact</h3>
+                <h3 className="section-heading">Contact</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
                 <p>For inquiries, including requests for my portfolio, send an email to hello[at]rogerwong[dot]me.</p>
                 </div>
             </div>
             <div>
-                <h3 className="text-sm font-extrabold mb-4 text-slate-500">Colophon</h3>
+                <h3 className="section-heading">Colophon</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
                   <p>This site is built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>. The typeface is <a href="https://fonts.google.com/specimen/IBM+Plex+Sans/about" target="_blank">IBM Plex Sans</a>, designed by Mike Abbink for IBM. The code is edited with <a href="https://www.cursor.com/" target="_blank">Cursor</a>. Repository (not the content) is <a href="https://github.com/wongdigital/rogerwong-site" target="_blank">open source</a>.</p>
                 </div>

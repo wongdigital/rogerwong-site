@@ -21,8 +21,11 @@ const config: Config = {
           css: {
             a: {
               color: '#2563eb', // blue-600
+              textDecoration: 'underline',
+              textDecorationColor: '#2563eb', // match text color
               '&:hover': {
                 color: '#3b82f6', // blue-500
+                textDecorationColor: '#3b82f6', // match hover color
               },
             },
             strong: {
@@ -67,8 +70,11 @@ const config: Config = {
             color: '#e2e8f0', // slate-200
             a: {
               color: '#3b82f6', // blue-500
+              textDecoration: 'underline',
+              textDecorationColor: '#3b82f6', // match text color
               '&:hover': {
                 color: '#60a5fa', // blue-400
+                textDecorationColor: '#60a5fa', // match hover color
               },
             },
             strong: {

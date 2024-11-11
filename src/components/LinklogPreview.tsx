@@ -13,7 +13,7 @@ export default function LinklogPreview({ title, linkUrl, linkSource }: LinklogPr
     return (
         <div className="mb-4">
             <a 
-                className="block mb-2 text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" 
+                className="block mb-2 link-primary" 
                 href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"

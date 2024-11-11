@@ -30,7 +30,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   return (
     <div className="mb-4 space-y-2">
       <h2 className="md:text-3xl text-2xl font-bold">
-        <Link href={`/posts/${slug}`} className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+        <Link href={`/posts/${slug}`} className="link-primary">
           {title}
         </Link>
       </h2>
@@ -59,7 +59,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
           {categories.map((category, index) => (
             <React.Fragment key={category}>
               {index > 0 && ", "}
-              <Link href={`/posts?category=${encodeURIComponent(category)}`} className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+              <Link href={`/posts?category=${encodeURIComponent(category)}`} className="link-primary">
                 {category}
               </Link>
             </React.Fragment>
