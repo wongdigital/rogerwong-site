@@ -13,13 +13,13 @@ export default function LinklogPreview({ title, linkUrl, linkSource }: LinklogPr
     return (
         <div className="mb-4">
             <a 
-                className="block mb-2 link-primary" 
+                className="block mb-1 link-primary" 
                 href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${title} (opens in new tab)`}
             >
-                <p className="mb-1">{title}</p>
+                <p>{title}</p>
                 <p className="sr-only">(opens in new tab)</p>
             </a>
             <p className="text-sm text-slate-500 dark:text-slate-200" aria-label={`Source: ${linkSource}`}>
