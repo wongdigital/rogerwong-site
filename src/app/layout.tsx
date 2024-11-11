@@ -39,6 +39,12 @@ export const metadata: Metadata = {
     siteName: 'Roger Wong',
     locale: 'en_US',
     type: 'website',
+    images: [{
+      url: '/images/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Roger Wong - Design Leader & Creative Director'
+    }],
   },
   robots: {
     index: true,
@@ -48,6 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Roger Wong - Design Leader & Creative Director",
     description: "Personal website of Roger Wong, design leader and creative director. Previously at Apple, Pixar, Razorfish, and TrueCar.",
+    images: ['/images/og-image.jpg'],
   }
 };
 
