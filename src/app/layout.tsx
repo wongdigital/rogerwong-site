@@ -9,6 +9,8 @@ import Script from 'next/script'
 import SkipToMain from '@/components/SkipToMain'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { headers } from 'next/headers'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 const ibmPlexSans = IBM_Plex_Sans({
@@ -49,11 +51,14 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: ReactNode
 }) {
+  const headersList = await headers()
+  const nonce = headersList.get('x-nonce')
+
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -76,29 +81,14 @@ export default function RootLayout({
         <Script
           id="schema-markup"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <Script
-          id="gtm"
-          strategy="afterInteractive"
+          nonce={nonce ?? undefined}
           dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-55TQ7WV');`,
+            __html: JSON.stringify(websiteSchema)
           }}
         />
       </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-55TQ7WV"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
+        <GoogleTagManager gtmId="GTM-55TQ7WV" />
         <Providers>
           <div className="container mx-auto px-4">
             <SkipToMain />
