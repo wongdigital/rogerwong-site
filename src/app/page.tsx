@@ -5,6 +5,7 @@ import { calculateReadTime } from '../lib/readTime';
 import { getSortedLinklogData } from '../lib/linklog';
 import HomeHero from '../components/HomeHero';
 import Link from 'next/link'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
@@ -34,12 +35,18 @@ export default async function Home() {
               ))}
             </div>
             <div className="mt-8">
-            <Link className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/posts">More Posts…</Link>
+              <Link 
+                className="px-3 py-1 rounded border text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors inline-flex items-center gap-1" 
+                href="/posts"
+              >
+                More Posts
+                <ArrowRightIcon className="w-4 h-4" />
+              </Link>
             </div>
           </div>
           <div className="w-full lg:w-5/12">
             <h3 className="text-sm font-extrabold mb-4 text-slate-500">Latest Links</h3>
-            <div className="mb-4">
+            <div className="mb-8">
               {sortedLinks.slice(0, 6).map((link, index) => (
                 <LinklogPreview
                   key={index}
@@ -49,7 +56,13 @@ export default async function Home() {
                 />
               ))}
             </div>
-            <Link className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400" href="/linklog">More Links…</Link>
+            <Link 
+              className="px-3 py-1 rounded border text-blue-600 border-blue-600 hover:border-blue-400 hover:text-blue-400 transition-colors inline-flex items-center gap-1" 
+              href="/linklog"
+            >
+              More Links 
+              <ArrowRightIcon className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
