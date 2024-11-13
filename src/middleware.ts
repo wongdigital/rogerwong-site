@@ -15,7 +15,7 @@ export function middleware(request: NextRequest) {
     object-src 'none';
     base-uri 'self';
     form-action 'self';
-    frame-src 'self' https://*.googletagmanager.com;
+    frame-src 'self' https://*.googletagmanager.com https://*.mediadelivery.net https://*.vimeo.com https://vimeo.com https://*.youtube.com https://youtube.com https://*.youtu.be;
     frame-ancestors 'none';
     block-all-mixed-content;
     upgrade-insecure-requests;
