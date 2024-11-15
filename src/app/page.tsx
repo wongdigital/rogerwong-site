@@ -31,6 +31,7 @@ export default async function Home() {
                   imageAlt={post.imageAlt}
                   excerpt={post.excerpt}
                   slug={post.id}
+                  categories={post.categories}
                 />
               ))}
             </div>
