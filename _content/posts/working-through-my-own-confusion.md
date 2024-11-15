@@ -12,7 +12,7 @@ I have always liked writing. I don’t fancy myself a professional writer in any
 
 This is officially the first post on this site, but I will be bringing in posts from the various past platforms and backdating them to their original publication dates.
 
-I will also use this site to post links to stories and articles I’m reading. It will inevitably be an assortment of design, tech, Apple, and politics.
+I will also use this site to post links to stories and articles I’m reading. It will inevitably be an assortment of [design](/posts?category=Design), [tech](/posts?category=Technology), [Apple](/posts?category=Apple), and [politics](/posts?category=Politics).
 
 To borrow from one of my favorite authors, [Jack Kerouac](https://www.goodreads.com/quotes/2798-i-like-too-many-things-and-get-all-confused-and): I have nothing to offer except working through my own confusion.
 
