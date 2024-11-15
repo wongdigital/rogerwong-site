@@ -7,6 +7,7 @@ import remarkGfm from 'remark-gfm'
 import { remarkVideo } from './remarkVideo';
 import { getTimezoneOffset } from 'date-fns-tz'
 import { parseISO } from 'date-fns'
+import remarkSmartypants from 'remark-smartypants';
 
 const postsDirectory = path.join(process.cwd(), '_content/posts')
 
@@ -43,6 +44,7 @@ export async function getPostData(id: string) {
         allowDangerousHtml: true 
       })
       .use(remarkGfm)
+      .use(remarkSmartypants)
       .use(remarkVideo)
       .process(matterResult.content);
     const contentHtml = processedContent.toString();
