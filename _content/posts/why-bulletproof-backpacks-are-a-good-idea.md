@@ -1,5 +1,5 @@
 ---
-title: "Why bulletproof backpacks are a good idea"
+title: "Why Bulletproof Backpacks Are a Good Idea"
 date: "2017-11-09"
 categories: 
   - "Politics"
