@@ -1,5 +1,5 @@
 ---
-title: "What Is Brand Strategy and Why Is It so Powerful"
+title: "What Is Brand Strategy and Why Is It So Powerful"
 date: "2024-02-05"
 categories: 
   - "Design"
@@ -93,7 +93,7 @@ Understanding the competitive landscape and strategically positioning the brand 
 
 ![Man in glasses pondering during a meeting.](/images/Harry-crying.jpg)
 
-[Brand strategy](https://rogerwong.me/posts/why-brand-strategy-is-important/) is much more than just a pretty logo or shiny new website. It’s about creating a meaningful connection with a brand’s audience, as demonstrated by Don Draper’s memorable pitch in _Mad Men_. The key lies in storytelling and emotional resonance, moving beyond the novelty to forge a genuine bond with customers.
+[Brand strategy](/posts/why-is-brand-strategy-important) is much more than just a pretty logo or shiny new website. It’s about creating a meaningful connection with a brand’s audience, as demonstrated by Don Draper’s memorable pitch in _Mad Men_. The key lies in storytelling and emotional resonance, moving beyond the novelty to forge a genuine bond with customers.
 
 Alina Wheeler’s work further highlights the importance of a unified narrative that aligns with the company’s mission and resonates with both employees and customers. A successful brand strategy differentiates the brand from competitors, not just through its products or services, but through the story it tells and the values it embodies.
 
