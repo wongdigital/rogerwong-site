@@ -10,8 +10,7 @@ import SkipToMain from '@/components/SkipToMain'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { headers } from 'next/headers'
-import { GoogleTagManager } from '@next/third-parties/google'
-
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700'],
@@ -95,7 +94,6 @@ export default async function RootLayout({
         />
       </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
-        <GoogleTagManager gtmId="GTM-55TQ7WV" />
         <Providers>
           <div className="container mx-auto px-4">
             <SkipToMain />
@@ -112,6 +110,7 @@ export default async function RootLayout({
         </Providers>
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics />
       </body>
     </html>
   );
