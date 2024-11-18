@@ -14,8 +14,25 @@ const DINGBATS = [
   { src: '/images/Dingbat-Stones.svg', alt: 'Dingbat Stones' },
   { src: '/images/Dingbat-Target.svg', alt: 'Dingbat Target' },
   { src: '/images/Dingbat-Triangles.svg', alt: 'Dingbat Triangles' },
-  // Add any additional dingbats here
 ];
+
+// Preload component to handle image preloading
+function PreloadDingbats() {
+  return (
+    <div className="hidden">
+      {DINGBATS.map((dingbat) => (
+        <Image
+          key={dingbat.src}
+          src={dingbat.src}
+          alt={dingbat.alt}
+          width={64}
+          height={64}
+          priority
+        />
+      ))}
+    </div>
+  );
+}
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array];
@@ -75,31 +92,34 @@ export default function RandomDingbats({ currentPostId }: { currentPostId?: stri
   };
 
   return (
-    <div className="mt-20 flex justify-center">
-      <div 
-        className="flex flex-row gap-4 w-fit cursor-pointer"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-        onClick={handleClick}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            handleClick(e as unknown as React.MouseEvent);
-          }
-        }}
-      >
-        {randomDingbats.map((dingbat) => (
-          <Image
-            key={dingbat.src}
-            src={dingbat.src}
-            alt={dingbat.alt}
-            width={64}
-            height={64}
-            style={{ pointerEvents: 'none' }} // Prevent image from capturing clicks
-          />
-        ))}
+    <>
+      <PreloadDingbats />
+      <div className="mt-20 flex justify-center">
+        <div 
+          className="flex flex-row gap-4 w-fit cursor-pointer"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+          onClick={handleClick}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              handleClick(e as unknown as React.MouseEvent);
+            }
+          }}
+        >
+          {randomDingbats.map((dingbat) => (
+            <Image
+              key={dingbat.src}
+              src={dingbat.src}
+              alt={dingbat.alt}
+              width={64}
+              height={64}
+              style={{ pointerEvents: 'none' }} // Prevent image from capturing clicks
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
