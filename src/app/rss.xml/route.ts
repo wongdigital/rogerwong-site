@@ -7,7 +7,7 @@ export async function GET() {
   const baseUrl = 'https://rogerwong.me';
   const feed = generateFeed('Roger Wong', 'Personal blog of Roger Wong', 'https://rogerwong.me');
 
-  posts.forEach((post) => {
+  posts.slice(0, 10).forEach((post) => {
     feed.addItem({
       title: post.title,
       id: `${baseUrl}/posts/${post.id}`,
