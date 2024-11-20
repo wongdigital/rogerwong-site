@@ -17,7 +17,7 @@ export default async function About() {
                 height={468}
                 className="!w-full h-auto !mx-0 rounded"
               />
-              <p>I am a forward-thinking design leader with extensive experience in cultivating brand loyalty and enhancing customer experiences for prominent tech companies like <Link href="/posts/the-apple-design-process">Apple</Link>, Microsoft, Cisco, and Intel. My career spans over two decades during which I founded Wong.Digital, led design at Convex as VP, and managed significant creative teams, notably for Samsung Mobile. My passion for innovation is demonstrated through my cofounding of Transported VR, a pioneering venture in virtual reality real estate, and my side project of developing an AI tool to assist designers in <Link href="/posts/how-i-built-and-launched-an-ai-powered-app">crafting brand strategies</Link>. My contributions to the design field have been recognized by <em>Communication Arts</em>, <em>Graphis</em>, One Show, Clio Awards, and Cannes Lions. Holding a BFA in graphic design from the California College of the Arts, I have also contributed to academics as a professor and advisory board member at San Diego City College. I live in San Diego with my family. I do not surf.</p>
+              <p>I am a forward-thinking design leader with extensive experience in cultivating brand loyalty and enhancing customer experiences for prominent tech companies like <Link href="/posts/the-apple-design-process">Apple</Link>, Microsoft, Cisco, and Intel. My career spans over two decades during which I founded <a href="https://wong.digital" target="_blank">Wong.Digital</a>, led design at Convex as VP, and managed significant creative teams, notably for Samsung Mobile. My passion for innovation is demonstrated through my cofounding of Transported VR, a pioneering venture in virtual reality real estate, and my side project of developing an AI tool to assist designers in <Link href="/posts/how-i-built-and-launched-an-ai-powered-app">crafting brand strategies</Link>. My contributions to the design field have been recognized by <em>Communication Arts</em>, <em>Graphis</em>, One Show, Clio Awards, and Cannes Lions. Holding a BFA in graphic design from the California College of the Arts, I have also contributed to academics as a professor and advisory board member at San Diego City College. I live in San Diego with my family. I do not surf.</p>
               <h3>Follow Me</h3>
               <ul>
                 <li><a href="https://www.linkedin.com/in/rogerwong/" target="_blank" className="link-primary">LinkedIn</a></li>
@@ -32,8 +32,8 @@ export default async function About() {
                 <h3 className="section-heading">Career Highlights</h3>
                 <div className="mb-4 prose prose-slate dark:prose-dark !text-sm">
                 <ul>
-                    <li>Head of Design at BuildOps</li>
-                    <li>VP of Design at Convex (acquired by ServiceTitan)</li>
+                    <li>Head of Design at <a href="https://www.buildops.com/" target="_blank">BuildOps</a></li>
+                    <li>VP of Design at <a href="https://www.convex.com/" target="_blank">Convex</a> (acquired by ServiceTitan)</li>
                     <li>Cofounded VR real estate startup, Transported</li>
                     <li>Built and managed an in-house creative agency at TrueCar</li>
                     <li>Managed team of over 40 creatives to support Samsung Mobile</li>
