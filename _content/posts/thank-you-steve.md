@@ -4,6 +4,7 @@ date: "2011-08-26"
 categories: 
   - "apple"
   - "life"
+  - "projects"
 imageSrc: "/images/macbuddy-hero.jpg"
 imageAlt: "Welcome animation"
 excerpt: "While working at Apple, I had the unique experience of presenting the Mac OS X Panther setup animation directly to Steve Jobs. After 14 rounds of revisions, his dedication to perfection taught me an invaluable lesson: Keep going until it's right. Don't settle."
