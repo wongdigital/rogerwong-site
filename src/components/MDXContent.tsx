@@ -43,7 +43,26 @@ export default function MDXContent({ content }: Props) {
 
         // Handle images
         if (domNode.name === 'img') {
-          const { src, alt, width, height } = domNode.attribs;
+          const { src, alt, width, height, className } = domNode.attribs;
+          
+          // Check if image is inside a div with sm:pb-[75%]
+          const parentDiv = domNode.parent as Element;
+          const isAspectRatioContainer = parentDiv?.attribs?.class?.includes('sm:pb-[75%]');
+          
+          if (isAspectRatioContainer) {
+            return (
+              <Image
+                src={src}
+                alt={alt || ''}
+                width={width ? parseInt(width, 10) : 800}
+                height={height ? parseInt(height, 10) : 600}
+                className="absolute inset-0 w-full h-full object-contain"
+                style={{ position: 'absolute' as const }}
+              />
+            );
+          }
+          
+          // Default image handling
           return (
             <Image
               src={src}
