@@ -120,7 +120,7 @@ export default async function Post({ params }: Props) {
           <MDXContent content={postData.contentHtml} />
         </div>
         {postData.categories && postData.categories.length > 0 && (
-          <div className="mt-8 pt-8 border-t border-slate-200">
+          <div className="mt-8 pt-8 w-2/4 border-t border-slate-200 dark:border-slate-800">
             <div className="text-sm text-slate-500 dark:text-slate-200">
               <FolderOpenIcon className="w-4 h-4 inline-block mr-2 -mt-1" />
               Filed under {postData.categories?.map((category, index) => (
