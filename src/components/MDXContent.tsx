@@ -43,7 +43,7 @@ export default function MDXContent({ content }: Props) {
 
         // Handle images
         if (domNode.name === 'img') {
-          const { src, alt, width, height, className } = domNode.attribs;
+          const { src, alt, width, height } = domNode.attribs;
           
           // Check if image is inside a div with sm:pb-[75%]
           const parentDiv = domNode.parent as Element;
