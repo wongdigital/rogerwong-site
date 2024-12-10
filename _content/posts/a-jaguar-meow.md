@@ -68,7 +68,7 @@ We shall see what Jaguar unveils on December 2. The only teaser shot of the [new
 
 ![Cropped photo of a new Jaguar concept car](/images/jaguar-teaser.jpg)
 
-——-
+---
 
 ## Update
 
