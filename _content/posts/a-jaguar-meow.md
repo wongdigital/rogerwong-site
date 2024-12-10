@@ -67,3 +67,15 @@ Hyundai built a splashy [campaign around the Ioniq 5](https://www.hyundainews.co
 We shall see what Jaguar unveils on December 2. The only teaser shot of the [new vehicle concept](https://insideevs.com/news/741742/jaguar-preview-new-ev-miami/) does look interesting. But the conversation has already started on the wrong foot.
 
 ![Cropped photo of a new Jaguar concept car](/images/jaguar-teaser.jpg)
+
+——-
+
+## Update
+
+_December 3, 2024_
+
+As expected, Jaguar unveiled their new car yesterday. Actually, it’s not a new car, but a new concept car called Type 00. If you know anything about concept cars, they are never what actually ships. By the time you add the required safety equipment, including side mirrors and bumpers, the final car a consumer will be able to purchase will look drastically different.
+
+Putting aside the aesthetics of the car, the [accompanying press release](https://media.jaguar.com/en-us/news/2024/12/jaguar-unveils-type-00-unmistakable-unexpected-dramatic) is full of pretension. Appropriate, I suppose, but feels very much like they’re pointing out how cool they are rather than letting the product speak for itself.
+
+![Two Jaguar Type 00 concept cars, one blue and one pink](/images/jaguar-type-00.png)
