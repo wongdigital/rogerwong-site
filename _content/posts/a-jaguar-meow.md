@@ -13,7 +13,7 @@ https://youtu.be/mG5j1-4nUV4
 
 _Jaguar's new brand film_
 
-Interestingly, [Brand New](https://www.underconsideration.com/brandnew), the preeminent brand design website, hasn’t weighed in yet. It has decided to wait until after December 2, when Jaguar will unveil the first “physical manifestation of its Exuberant Modernism creative philosophy, in a Design Vision Concept” at Miami Art Week.
+Interestingly, [Brand New](https://www.underconsideration.com/brandnew), the preeminent brand design website, hasn’t weighed in yet. It has decided to wait until after December 2, when Jaguar will unveil the first “physical manifestation of its Exuberant Modernism creative philosophy, in a Design Vision Concept” at Miami Art Week. _(Update: Brand New has weighed in with a [review of the rebrand](https://www.underconsideration.com/brandnew/archives/new_logo_and_campaign_for_jaguar_done_in_house.php). My commentary on it is [below](#update-2).)_
 
 There have been some contrarian views, too, decrying the outrage by brand experts. In Print Magazine, [Saul Colt writes](https://www.printmag.com/industry-perspectives/you-are-all-wrong-about-the-jaguar-rebrand/):
 
@@ -79,3 +79,13 @@ As expected, Jaguar unveiled their new car yesterday. Actually, it’s not a new
 Putting aside the aesthetics of the car, the [accompanying press release](https://media.jaguar.com/en-us/news/2024/12/jaguar-unveils-type-00-unmistakable-unexpected-dramatic) is full of pretension. Appropriate, I suppose, but feels very much like they’re pointing out how cool they are rather than letting the product speak for itself.
 
 ![Two Jaguar Type 00 concept cars, one blue and one pink](/images/jaguar-type-00.png)
+
+---
+
+## <a id="update-2"></a>Update 2
+
+_December 9, 2024_
+
+Brand New has weighed in with a [review of the rebrand](https://www.underconsideration.com/brandnew/archives/new_logo_and_campaign_for_jaguar_done_in_house.php). Armin Vit ends up liking the work overall because it did what it set out to do—create conversation. However, his readers disagree. As of this writing, the votes are overwhelmingly negative while the comments are more mixed.
+
+![Poll results from Brand New showing the overwhelming negative response to the Jaguar rebrand](/images/jaguar-brand-new-poll.png)
