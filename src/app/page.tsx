@@ -26,7 +26,7 @@ export default async function Home() {
                   key={post.id}
                   title={post.title}
                   date={post.date}
-                  readTime={calculateReadTime(post.content)}
+                  readTime={calculateReadTime(post)}
                   imageSrc={post.imageSrc}
                   imageAlt={post.imageAlt}
                   excerpt={post.excerpt}

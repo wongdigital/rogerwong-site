@@ -49,7 +49,7 @@ export default async function PostsIndex({
                 title={post.title}
                 date={post.date}
                 excerpt={post.excerpt}
-                readTime={calculateReadTime(post.content)}
+                readTime={calculateReadTime(post)}
                 slug={post.id}
                 imageSrc={post.imageSrc}
                 imageAlt={post.imageAlt}

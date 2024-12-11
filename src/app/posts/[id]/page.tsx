@@ -74,13 +74,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Post({ params }: Props) {
   const { id } = await params;
   const postData = await getPostData(id);
-  const allPosts = await getSortedPostsData();
+  const allPosts = getSortedPostsData();
   
   if (!postData) {
     notFound();
   }
 
-  const readTime = calculateReadTime(postData.contentHtml);
+  const readTime = calculateReadTime(postData);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -117,7 +117,7 @@ export default async function Post({ params }: Props) {
           </div>
         )}
         <div className="prose prose-slate dark:prose-dark">
-          <MDXContent content={postData.contentHtml} />
+          <MDXContent post={postData} />
         </div>
         {postData.categories && postData.categories.length > 0 && (
           <div className="mt-8 pt-8 w-2/4 border-t border-slate-200 dark:border-slate-800">

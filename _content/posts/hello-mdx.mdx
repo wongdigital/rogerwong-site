@@ -1,0 +1,87 @@
+---
+title: "Hello MDX: Testing the New Parser"
+date: "2024-03-19"
+excerpt: "A test post demonstrating MDX features including components, markdown syntax, and custom elements"
+imageSrc: "/images/hello-mdx.jpg"
+imageAlt: "Colorful code editor showing MDX syntax"
+categories: ["Development", "Testing"]
+---
+
+# Welcome to MDX!
+
+This is a test post to verify our MDX implementation. Let's try out different features:
+
+## 1. Basic Markdown
+
+Here's some **bold text** and *italic text*.
+
+> This is a blockquote that should be styled nicely.
+
+## 2. Lists and Code
+
+Here's a list:
+- First item
+- Second item
+- Third item with `inline code`
+
+```javascript
+// Code block with syntax highlighting
+const greeting = "Hello, MDX!";
+console.log(greeting);
+```
+
+## 3. Images
+
+Regular markdown image:
+![Next.js Logo](https://nextjs.org/static/blog/next-13/twitter-card.png)
+
+Using Next.js Image component in a container:
+<div className="relative w-full aspect-video">
+  <Image 
+    src="/images/sample-image.jpg"
+    alt="Sample image with aspect ratio container"
+    fill
+    className="object-cover"
+  />
+</div>
+
+## 4. Links
+
+- [Internal link to home page](/)
+- [External link to Next.js](https://nextjs.org)
+
+## 5. Video Embedding
+
+Here's an embedded YouTube video:
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+And a Vimeo video:
+https://vimeo.com/148751763
+
+## 6. GFM Features
+
+Here's a task list:
+- [x] Support MDX
+- [x] Handle images
+- [x] Process videos
+- [ ] More features to come
+
+Here's a table:
+| Feature | Status |
+|---------|--------|
+| MDX | ✅ |
+| Images | ✅ |
+| Videos | ✅ |
+
+## 7. Custom Components
+
+You can now use React components directly in your MDX files:
+
+<CustomBox>
+  <p className="text-lg font-bold">This is a custom styled box</p>
+  <p>With multiple paragraphs and styling!</p>
+</CustomBox>
+
+---
+
+That's it! If you see this post rendered correctly with all features working, our MDX implementation is successful! 🎉

@@ -51,37 +51,38 @@ function validateFile(filePath) {
   }
 }
 
-function validateDirectory(dir) {
-  const files = readdirSync(dir, { withFileTypes: true });
-  let hasErrors = false;
+// Process all markdown and MDX files
+const contentDirs = ['_content/posts', '_content/linklog'].map(dir => join(process.cwd(), dir));
+let hasErrors = false;
 
-  files.forEach(file => {
-    if (file.isFile() && file.name.endsWith('.md')) {
-      const filePath = join(dir, file.name);
-      if (!validateFile(filePath)) {
-        hasErrors = true;
-      }
+contentDirs.forEach(dir => {
+  try {
+    const files = readdirSync(dir);
+    const markdownFiles = files.filter(file => file.endsWith('.md') || file.endsWith('.mdx'));
+    
+    if (markdownFiles.length > 0) {
+      console.log(chalk.blue(`Validating files in ${dir}...`));
+      markdownFiles.forEach(file => {
+        const filePath = join(dir, file);
+        const isValid = validateFile(filePath);
+        if (!isValid) {
+          hasErrors = true;
+        } else {
+          console.log(chalk.green(`✓ ${file} is valid`));
+        }
+      });
     }
-  });
-
-  return !hasErrors;
-}
-
-// Validate both regular posts and linklog posts
-const directories = ['_posts', '_linklog'];
-let success = true;
-
-directories.forEach(dir => {
-  console.log(chalk.blue(`Validating ${dir}...`));
-  if (!validateDirectory(dir)) {
-    success = false;
+  } catch (error) {
+    if (error.code !== 'ENOENT') {  // Only log error if directory exists but has other issues
+      console.error(chalk.red(`Error reading directory ${dir}:`));
+      console.error(chalk.red(error.message));
+      hasErrors = true;
+    }
   }
 });
 
-if (success) {
-  console.log(chalk.green('✓ All files validated successfully'));
-  process.exit(0);
-} else {
-  console.error(chalk.red('✗ Validation failed'));
+if (hasErrors) {
   process.exit(1);
+} else {
+  console.log(chalk.green('\n✓ All files validated successfully'));
 }

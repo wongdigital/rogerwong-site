@@ -4,16 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils';
 import { calculateReadTime } from '@/lib/readTime';
-
-type Post = {
-  id: string;
-  title: string;
-  date: string;
-  imageSrc: string;
-  imageAlt: string;
-  content: string;
-  categories?: string[];
-};
+import { Post } from '@/lib/posts';
 
 type RelatedPostsProps = {
   currentPostId: string;
@@ -24,18 +15,15 @@ type RelatedPostsProps = {
 export default function RelatedPosts({ currentPostId, currentPostCategories, allPosts }: RelatedPostsProps) {
   // Filter out the current post and find related posts
   const relatedPosts = allPosts
-    .filter(post => post.id !== currentPostId) // Exclude current post
+    .filter(post => post.id !== currentPostId)
     .filter(post => {
-      // If no categories, show any post
       if (!currentPostCategories?.length) return true;
-      
-      // Check if post has any matching categories
       return post.categories?.some(category => 
         currentPostCategories.includes(category)
       );
     })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date
-    .slice(0, 2); // Get only 2 posts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 2);
 
   if (relatedPosts.length === 0) return null;
 
@@ -59,7 +47,7 @@ export default function RelatedPosts({ currentPostId, currentPostCategories, all
               {post.title}
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-200">
-              {formatDate(post.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{calculateReadTime(post.content)} read
+              {formatDate(post.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{calculateReadTime(post)} read
             </p>
           </div>
         </Link>
