@@ -4,16 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils';
 import { calculateReadTime } from '@/lib/readTime';
-import { categories } from '@/lib/categories';
+import { categories, type Category } from '@/lib/categories';
 
 interface RelatedPostsProps {
   currentPostId: string;
-  currentPostCategory: string;
+  currentPostCategory: Category;
   allPosts: {
     id: string;
     title: string;
     date: string;
-    category: string;
+    category: Category;
     imageSrc?: string;
     content?: string;
   }[];
@@ -23,13 +23,7 @@ export default function RelatedPosts({ currentPostId, currentPostCategory, allPo
   // Filter out the current post and find related posts
   const relatedPosts = allPosts
     .filter(post => post.id !== currentPostId) // Exclude current post
-    .filter(post => {
-      // If no categories, show any post
-      if (!currentPostCategory) return true;
-      
-      // Check if post has any matching categories
-      return post.category.includes(currentPostCategory);
-    })
+    .filter(post => post.category === currentPostCategory) // Match category exactly
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date
     .slice(0, 2); // Get only 2 posts
 
@@ -61,7 +55,10 @@ export default function RelatedPosts({ currentPostId, currentPostCategory, allPo
                 const CategoryIcon = categories[post.category].icon;
                 return <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />;
               })()}
-              <Link href={`/posts?category=${encodeURIComponent(post.category)}`}>
+              <Link 
+                href={`/posts?category=${encodeURIComponent(post.category)}`}
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 underline"
+              >
                 {post.category}
               </Link>
             </div>
