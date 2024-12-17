@@ -44,7 +44,7 @@ export default async function PostsIndex({
         <header className="mb-8">
           <h1 className="page-title">
             {params.category ? `Posts in ${params.category}` : 
-             params.tag ? `Posts tagged with "${params.tag}"` : 
+             params.tag ? `Posts tagged with “${params.tag}”` : 
              'Posts'}
           </h1>
         </header>
