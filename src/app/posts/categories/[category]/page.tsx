@@ -10,12 +10,14 @@ import { notFound } from 'next/navigation';
 
 const POSTS_PER_PAGE = 10;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { category: string }
-}): Promise<Metadata> {
-  const decodedCategory = decodeURIComponent(params.category);
+type Props = {
+  params: Promise<{ category: string }>;
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category } = await params;
+  const decodedCategory = decodeURIComponent(category);
   const title = `Posts in ${decodedCategory}`;
   
   return {
@@ -29,18 +31,13 @@ export async function generateMetadata({
   };
 }
 
-export default async function CategoryPage({
-  params,
-  searchParams,
-}: {
-  params: { category: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
+export default async function CategoryPage({ params, searchParams }: Props) {
+  const { category } = await params;
   const allPosts = await getSortedPostsData();
   const currentPage = Number(searchParams.page) || 1;
   
   // Decode the category parameter
-  const decodedCategory = decodeURIComponent(params.category) as Category;
+  const decodedCategory = decodeURIComponent(category) as Category;
   
   // Filter posts by category using decoded category
   const filteredPosts = allPosts.filter(post => 
@@ -83,7 +80,7 @@ export default async function CategoryPage({
           <Pagination 
             currentPage={currentPage} 
             totalPages={totalPages} 
-            basePath={`/posts/categories/${params.category}`}
+            basePath={`/posts/categories/${category}`}
           />
         </nav>
       </section>

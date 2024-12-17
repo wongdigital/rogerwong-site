@@ -9,12 +9,14 @@ import { notFound } from 'next/navigation';
 
 const POSTS_PER_PAGE = 10;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { tag: string }
-}): Promise<Metadata> {
-  const decodedTag = decodeURIComponent(params.tag);
+type Props = {
+  params: Promise<{ tag: string }>;
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { tag } = await params;
+  const decodedTag = decodeURIComponent(tag);
   const title = `Posts tagged with "${decodedTag}"`;
   
   return {
@@ -28,18 +30,13 @@ export async function generateMetadata({
   };
 }
 
-export default async function TagPage({
-  params,
-  searchParams,
-}: {
-  params: { tag: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
+export default async function TagPage({ params, searchParams }: Props) {
+  const { tag } = await params;
   const allPosts = await getSortedPostsData();
   const currentPage = Number(searchParams.page) || 1;
   
   // Decode the tag parameter
-  const decodedTag = decodeURIComponent(params.tag);
+  const decodedTag = decodeURIComponent(tag);
   
   // Filter posts by tag using decoded tag
   const filteredPosts = allPosts.filter(post => 
@@ -82,7 +79,7 @@ export default async function TagPage({
           <Pagination 
             currentPage={currentPage} 
             totalPages={totalPages} 
-            basePath={`/posts/tags/${params.tag}`}
+            basePath={`/posts/tags/${tag}`}
           />
         </nav>
       </section>
