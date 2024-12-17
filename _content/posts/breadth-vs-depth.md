@@ -1,8 +1,8 @@
 ---
 title: "Breadth vs. Depth: Lessons from Agencies and In-House Design"
 date: "2024-12-16"
-categories: 
-  - "Design"
+category: "Design"
+tags: 
   - "Career Advice"
   - "Industry Insights"
 imageSrc: "/images/breadth-v-depth-featured.jpg"

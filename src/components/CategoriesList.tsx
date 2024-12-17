@@ -1,53 +1,50 @@
 import { getSortedPostsData } from '@/lib/posts';
 import Link from 'next/link';
+import { categories, type Category } from '@/lib/categories';
 
 type CategoryCount = {
-  name: string;
+  name: Category;
   count: number;
 };
 
 async function getAllCategories(): Promise<CategoryCount[]> {
   const posts = await getSortedPostsData();
-  const categoryMap = new Map<string, number>();
+  const categoryMap = new Map<Category, number>();
 
   posts.forEach(post => {
-    if (post.categories) {
-      post.categories.forEach(category => {
-        const count = categoryMap.get(category) || 0;
-        categoryMap.set(category, count + 1);
-      });
-    }
+    const count = categoryMap.get(post.category as Category) || 0;
+    categoryMap.set(post.category as Category, count + 1);
   });
 
-  // Convert map to array and sort
   return Array.from(categoryMap.entries())
     .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => {
-      // Sort by count first (descending)
-      if (b.count !== a.count) {
-        return b.count - a.count;
-      }
-      // If counts are equal, sort alphabetically
-      return a.name.localeCompare(b.name);
-    });
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export default async function CategoriesList() {
-  const categories = await getAllCategories();
+  const categoryList = await getAllCategories();
 
   return (
     <div className="mb-8">
       <h3 className="section-heading">Categories</h3>
       <ul className="space-y-2">
-        {categories.map(({ name, count }) => (
+        {categoryList.map(({ name, count }) => (
           <li key={name}>
+            {(() => {
+              const CategoryIcon = categories[name].icon;
+              return (
+                <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+              );
+            })()}
             <Link 
               href={`/posts?category=${encodeURIComponent(name)}`}
-              className="text-blue-600 dark:text-blue-500 hover:underline hover:text-blue-500 dark:hover:text-blue-400"
+              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 underline"
             >
-              {name} 
+              {name}
             </Link>
-            <span className="ml-1 px-2 py-0.5 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-full text-xs/[0.6rem]">{count}</span>
+            <span className="ml-1 px-2 py-0.5 bg-slate-200 dark:bg-slate-800 rounded-full text-xs">
+              {count}
+            </span>
           </li>
         ))}
       </ul>

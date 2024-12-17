@@ -26,12 +26,13 @@ export default async function Home() {
                   key={post.id}
                   title={post.title}
                   date={post.date}
-                  readTime={calculateReadTime(post.content)}
+                  readTime={calculateReadTime(post.content || '')}
                   imageSrc={post.imageSrc}
                   imageAlt={post.imageAlt}
                   excerpt={post.excerpt}
                   slug={post.id}
-                  categories={post.categories}
+                  category={post.category}
+                  tags={post.tags}
                 />
               ))}
             </div>

@@ -4,35 +4,31 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils';
 import { calculateReadTime } from '@/lib/readTime';
+import { categories } from '@/lib/categories';
 
-type Post = {
-  id: string;
-  title: string;
-  date: string;
-  imageSrc: string;
-  imageAlt: string;
-  content: string;
-  categories?: string[];
-};
-
-type RelatedPostsProps = {
+interface RelatedPostsProps {
   currentPostId: string;
-  currentPostCategories?: string[];
-  allPosts: Post[];
-};
+  currentPostCategory: string;
+  allPosts: {
+    id: string;
+    title: string;
+    date: string;
+    category: string;
+    imageSrc?: string;
+    content?: string;
+  }[];
+}
 
-export default function RelatedPosts({ currentPostId, currentPostCategories, allPosts }: RelatedPostsProps) {
+export default function RelatedPosts({ currentPostId, currentPostCategory, allPosts }: RelatedPostsProps) {
   // Filter out the current post and find related posts
   const relatedPosts = allPosts
     .filter(post => post.id !== currentPostId) // Exclude current post
     .filter(post => {
       // If no categories, show any post
-      if (!currentPostCategories?.length) return true;
+      if (!currentPostCategory) return true;
       
       // Check if post has any matching categories
-      return post.categories?.some(category => 
-        currentPostCategories.includes(category)
-      );
+      return post.category.includes(currentPostCategory);
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date
     .slice(0, 2); // Get only 2 posts
@@ -47,19 +43,30 @@ export default function RelatedPosts({ currentPostId, currentPostCategories, all
           href={`/posts/${post.id}`}
           className="w-full sm:w-1/2 rounded-lg border border-slate-200 hover:border-blue-400 dark:border-slate-700 dark:hover:border-blue-400 overflow-hidden block group transition-colors"
         >
-          <Image
-            src={post.imageSrc}
-            alt={post.imageAlt}
-            width={2560}
-            height={962}
-            className="w-full h-auto"
-          />
+          {post.imageSrc && (
+            <Image
+              src={post.imageSrc}
+              alt={post.title}
+              width={2560}
+              height={962}
+              className="w-full h-auto"
+            />
+          )}
           <div className="p-4 space-y-1">
             <h2 className="link-primary text-xl font-bold">
               {post.title}
             </h2>
+            <div className="text-sm">
+              {(() => {
+                const CategoryIcon = categories[post.category].icon;
+                return <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />;
+              })()}
+              <Link href={`/posts?category=${encodeURIComponent(post.category)}`}>
+                {post.category}
+              </Link>
+            </div>
             <p className="text-sm text-slate-500 dark:text-slate-200">
-              {formatDate(post.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{calculateReadTime(post.content)} read
+              {formatDate(post.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{calculateReadTime(post.content || '')} read
             </p>
           </div>
         </Link>

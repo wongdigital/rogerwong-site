@@ -3,18 +3,20 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FolderOpenIcon } from '@heroicons/react/24/outline';
+import { FolderOpenIcon, HashtagIcon } from '@heroicons/react/24/outline';
 import { formatDate } from '@/lib/utils';
+import { categories, type Category } from '@/lib/categories';
 
 interface PostPreviewProps {
   title: string;
   date: string;
   readTime: string;
-  imageSrc?: string;  // Make optional
-  imageAlt?: string;  // Make optional
+  imageSrc?: string;
+  imageAlt?: string;
   excerpt: string;
   slug: string;
-  categories?: string[];  // Add this line
+  category: Category;
+  tags?: string[];
 }
 
 const PostPreview: React.FC<PostPreviewProps> = ({
@@ -25,10 +27,19 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   imageAlt,
   excerpt,
   slug,
-  categories,
+  category,
+  tags,
 }) => {
+  const CategoryIcon = categories[category].icon;
+
   return (
     <div className="mb-4 space-y-2">
+      <div className="text-sm">
+        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+        <Link href={`/posts?category=${encodeURIComponent(category)}`} className="link-primary">
+          {category}
+        </Link>
+      </div>
       <h2 className="md:text-3xl text-2xl font-bold">
         <Link href={`/posts/${slug}`} className="link-primary">
           {title}
@@ -53,14 +64,14 @@ const PostPreview: React.FC<PostPreviewProps> = ({
         </Link>
       )}
       <p className="text-slate-600 dark:text-slate-200">{excerpt}</p>
-      {categories && categories.length > 0 && (
+      {tags && tags.length > 0 && (
         <div className="text-sm text-slate-500 dark:text-slate-200">
-          <FolderOpenIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
-          {categories.map((category, index) => (
-            <React.Fragment key={category}>
+          <HashtagIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+          {tags.map((tag, index) => (
+            <React.Fragment key={tag}>
               {index > 0 && ", "}
-              <Link href={`/posts?category=${encodeURIComponent(category)}`} className="link-primary">
-                {category}
+              <Link href={`/posts?tag=${encodeURIComponent(tag)}`} className="link-primary">
+                {tag}
               </Link>
             </React.Fragment>
           ))}
