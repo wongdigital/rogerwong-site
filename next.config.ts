@@ -277,56 +277,16 @@ const nextConfig: NextConfig = {
         "destination": "/posts/tags/Design%20Ethics",
         "permanent": true
       },
-      // {
-      //   "source": "/posts?category=Design",
-      //   "destination": "/posts/categories/Design",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?tag=Design",
-      //   "destination": "/posts/tags/Design",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Projects",
-      //   "destination": "/posts?category=Case%20Studies",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Apple",
-      //   "destination": "/posts?tag=Apple",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Politics",
-      //   "destination": "/posts?tag=Politics",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=How-to",
-      //   "destination": "/posts?category=Guides",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Technology",
-      //   "destination": "/posts?tag=Technology%20Industry",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Life",
-      //   "destination": "/posts?tag=Personal%20Stories",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Announcements",
-      //   "destination": "/posts?category=Updates",
-      //   "permanent": true
-      // },
-      // {
-      //   "source": "/posts?category=Business",
-      //   "destination": "/posts?tag=Industry%20Insights",
-      //   "permanent": true
-      // },
+      {
+        "source": "/posts/categories",
+        "destination": "/posts",
+        "permanent": true
+      },
+      {
+        "source": "/posts/tags",
+        "destination": "/posts",
+        "permanent": true
+      },
       {
         source: "/posts/page/:page(\\d+)",
         destination: "/posts?page=:page",
