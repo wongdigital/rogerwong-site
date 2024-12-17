@@ -21,7 +21,7 @@ async function getAllTags(): Promise<TagCount[]> {
 
   return Array.from(tagMap.entries())
     .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => a.name.localeCompare(b.name)); // Sort alphabetically by name
+    .sort((a, b) => b.count - a.count); // Sort by count in descending order
 }
 
 export default async function TagsList() {
