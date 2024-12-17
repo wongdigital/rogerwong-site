@@ -13,7 +13,7 @@ export default async function Home() {
   const sortedLinks = getSortedLinklogData();
   
   return (
-    <>
+    <div className="max-w-full overflow-x-hidden">
       <HomeHero />
       <div className="h-[1px] bg-slate-300 dark:bg-slate-700 w-full"></div>
       <section className="my-8 py-8">
@@ -67,6 +67,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
