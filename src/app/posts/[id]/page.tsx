@@ -101,14 +101,9 @@ export default async function Post({ params }: Props) {
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 sm:px-8 md:px-12 lg:px-20">
       <article>
-      <div className="text-sm mb-2">
-        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5 text-slate-400 dark:text-slate-400" />
-        <Link 
-          href={`/posts?category=${encodeURIComponent(postData.category)}`}
-          className="link-primary"
-        >
-          {postData.category}
-        </Link>
+      <div className="text-sm mb-4 text-slate-500 dark:text-slate-200">
+        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+        {postData.category}
       </div>
       <h1 className="page-title">{postData.title}</h1>
       <div className="text-sm text-slate-500 dark:text-slate-200 mb-8">
