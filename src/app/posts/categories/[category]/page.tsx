@@ -12,7 +12,7 @@ const POSTS_PER_PAGE = 10;
 
 type Props = {
   params: Promise<{ category: string }>;
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -33,13 +33,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CategoryPage({ params, searchParams }: Props) {
   const { category } = await params;
-  const allPosts = await getSortedPostsData();
-  const currentPage = Number(searchParams.page) || 1;
+  const { page } = await searchParams;
+  const currentPage = Number(page) || 1;
   
   // Decode the category parameter
   const decodedCategory = decodeURIComponent(category) as Category;
   
   // Filter posts by category using decoded category
+  const allPosts = await getSortedPostsData();
   const filteredPosts = allPosts.filter(post => 
     post.category.toLowerCase() === decodedCategory.toLowerCase()
   );

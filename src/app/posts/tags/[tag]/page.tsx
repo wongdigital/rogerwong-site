@@ -11,7 +11,7 @@ const POSTS_PER_PAGE = 10;
 
 type Props = {
   params: Promise<{ tag: string }>;
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -32,13 +32,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TagPage({ params, searchParams }: Props) {
   const { tag } = await params;
-  const allPosts = await getSortedPostsData();
-  const currentPage = Number(searchParams.page) || 1;
+  const { page } = await searchParams;
+  const currentPage = Number(page) || 1;
   
   // Decode the tag parameter
   const decodedTag = decodeURIComponent(tag);
   
   // Filter posts by tag using decoded tag
+  const allPosts = await getSortedPostsData();
   const filteredPosts = allPosts.filter(post => 
     post.tags?.some(tag => tag.toLowerCase() === decodedTag.toLowerCase())
   );
