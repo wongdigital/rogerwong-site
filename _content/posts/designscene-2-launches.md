@@ -5,9 +5,6 @@ category: "Side Projects"
 tags:
   - "App Development"
   - "Design"
-imageSrc: "/images/DesignScene-2-0-Launch.jpg"
-imageAlt: "DesignScene 2.0 Launch"
-excerpt: "After months of work, Lunar/Theory launched version 2.0 of our iPad app DesignScene. Here's a look at the trailer and a post about the launch."
 ---
 
 Yesterday Lunar/Theory (my partner David and I) launched version 2.0 of our iPad app DesignScene. Take a look at the trailer:

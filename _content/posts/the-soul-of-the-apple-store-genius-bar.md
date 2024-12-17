@@ -4,8 +4,6 @@ date: "2005-01-27"
 category: "Case Studies"
 tags:
   - "Apple"
-imageSrc: "/images/The-Soul-of-the-Apple-Store-Genius-Bar-Hero.jpg"
-imageAlt: "Photo of the Apple Store Genius Bar"
 ---
 The <em>New York Times</em> published a [story today about the Genius Bars](http://www.nytimes.com/2005/01/27/technology/circuits/27appl.html) in the Apple Stores, and how they are the &ldquo;souls of the stores.&rdquo; Mentioned within the article is the video loop that plays behind the Bar, which I had the pleasure and privilege of designing!
 

@@ -6,9 +6,6 @@ tags:
   - "Advertising"
   - "Design"
   - "Industry Insights"
-imageSrc: "/images/client-campaign-anatomy-now.png"
-imageAlt: "Client Campaign Anatomy: The Way It Is Now"
-excerpt: "Why do clients split their campaign work between multiple agencies based on tactics? As someone working in the industry, I've seen how this fragmented approach leads to inefficiency and weaker campaigns. Instead, clients should entrust one agency to create and execute a unified vision across all mediums."
 ---
 
 There's been a lot of [chatter](http://twitter.com/bmorrissey/status/5661756184) in recent weeks about how so-called "digital" agencies [are](http://adage.com/digitalnext/post?article_id=140498 "Why Digital Agencies Are Indeed Ready to Lead - Advertising Age - DigitalNext") or [are not](http://adage.com/digitalnext/post?article_id=140166 "Why Digital Agencies Aren't Ready to Lead - Advertising Age - DigitalNext") ready to be the lead for a campaign. But I think the question is a little off.

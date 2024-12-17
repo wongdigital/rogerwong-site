@@ -5,9 +5,6 @@ category: "Side Projects"
 tags:
   - "Design"
   - "Personal Projects"
-imageSrc: "/images/ep-iv_crawl.jpg"
-imageAlt: "Star Wars: Episode IV Opening Crawl"
-excerpt: "After seeing an HTML5/CSS3 experiment recreating the Star Wars opening crawl, I couldn't help but notice the typographic inconsistencies across all the films. From awkward letter-spacing to poor justification, even ILM struggled to maintain quality typography in the later films. Here's my attempt at redesigning the iconic crawl with better typographic principles."
 ---
 
 Recently [Guillermo Esteves](http://www.gesteves.com/ "Guillermo Esteves – Web design & stuff.") did a [fantastic experiment](http://www.gesteves.com/experiments/starwars.html "Star Wars Episode IV: A NEW HOPE") with [HTML5](http://dev.w3.org/html5/spec/Overview.html "HTML5") and [CSS3](http://www.w3.org/TR/css3-roadmap/ "Introduction to CSS3") by recreating the [opening crawl to _Star Wars_](http://en.wikipedia.org/wiki/Star_Wars_opening_crawl "Star Wars opening crawl - Wikipedia, the free encyclopedia"). Although it only currently works in Safari 4, it's a good preview of how to create something dynamic using [web standards](http://www.webstandards.org/ "The Web Standards Project") and [web fonts](http://www.alistapart.com/issues/296 "A List Apart: Issue 296") once the other browsers come along.

@@ -4,7 +4,7 @@ date: "2019-05-05"
 category: "Essays"
 tags:
   - "Apple"
-  - "Business"
+  - "Industry Insights"
   - "Media Analysis"
   - "Technology Industry"
 imageSrc: "/images/NYTvsApple.jpg"
