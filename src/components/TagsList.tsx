@@ -36,7 +36,7 @@ export default async function TagsList() {
         {tags.map(({ name, count }) => (
           <li key={name}>
             <Link 
-              href={`/posts/tags/${encodeURIComponent(name)}`}
+              href={`/posts/tags/${encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'))}`}
               className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 underline"
             >
               {name}

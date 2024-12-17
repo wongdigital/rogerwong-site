@@ -36,10 +36,13 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   const { page } = await searchParams;
   const currentPage = Number(page) || 1;
   
-  // Decode the category parameter
-  const decodedCategory = decodeURIComponent(category) as Category;
+  // Decode and denormalize the category parameter for display
+  const decodedCategory = decodeURIComponent(category)
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ') as Category;
   
-  // Filter posts by category using decoded category
+  // Filter posts by category using case-insensitive comparison
   const allPosts = await getSortedPostsData();
   const filteredPosts = allPosts.filter(post => 
     post.category.toLowerCase() === decodedCategory.toLowerCase()

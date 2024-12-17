@@ -21,13 +21,15 @@ export default async function PostsIndex({
 }>) {
   const params = await searchParams;
   
-  // Redirect old query string URLs to new format
+  // Redirect old query string URLs to new format with normalized paths
   if (params.category) {
-    redirect(`/posts/categories/${params.category}`);
+    const normalizedCategory = params.category.toLowerCase().replace(/\s+/g, '-');
+    redirect(`/posts/categories/${normalizedCategory}`);
   }
   
   if (params.tag) {
-    redirect(`/posts/tags/${params.tag}`);
+    const normalizedTag = params.tag.toLowerCase().replace(/\s+/g, '-');
+    redirect(`/posts/tags/${normalizedTag}`);
   }
 
   const allPosts = await getSortedPostsData();

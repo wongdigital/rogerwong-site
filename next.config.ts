@@ -229,52 +229,52 @@ const nextConfig: NextConfig = {
       },
       {
         "source": "/design",
-        "destination": "/posts/categories/Design",
+        "destination": "/posts/categories/design",
         "permanent": true
       },
       {
         "source": "/apple",
-        "destination": "/posts/tags/Apple",
+        "destination": "/posts/tags/apple",
         "permanent": true
       },
       {
         "source": "/projects",
-        "destination": "/posts/categories/Case%20Studies",
+        "destination": "/posts/categories/case-studies",
         "permanent": true
       },
       {
         "source": "/politics",
-        "destination": "/posts/tags/Politics",
+        "destination": "/posts/tags/politics",
         "permanent": true
       },
       {
         "source": "/technology",
-        "destination": "/posts/tags/Technology%20Industry",
+        "destination": "/posts/tags/technology-industry",
         "permanent": true
       },
       {
         "source": "/how-to",
-        "destination": "/posts/categories/Guides",
+        "destination": "/posts/categories/guides",
         "permanent": true
       },
       {
         "source": "/life",
-        "destination": "/posts/tags/Personal%20Stories",
+        "destination": "/posts/tags/personal-stories",
         "permanent": true
       },
       {
         "source": "/announcements",
-        "destination": "/posts/categories/Updates",
+        "destination": "/posts/categories/updates",
         "permanent": true
       },
       {
         "source": "/business",
-        "destination": "/posts/tags/Industry%20Insights",
+        "destination": "/posts/tags/industry-insights",
         "permanent": true
       },
       {
         "source": "/design-ethics",
-        "destination": "/posts/tags/Design%20Ethics",
+        "destination": "/posts/tags/design-ethics",
         "permanent": true
       },
       {

@@ -35,13 +35,16 @@ export default async function TagPage({ params, searchParams }: Props) {
   const { page } = await searchParams;
   const currentPage = Number(page) || 1;
   
-  // Decode the tag parameter
-  const decodedTag = decodeURIComponent(tag);
+  // Decode and denormalize the tag parameter for display
+  const decodedTag = decodeURIComponent(tag)
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
   
-  // Filter posts by tag using decoded tag
+  // Filter posts by tag using case-insensitive comparison
   const allPosts = await getSortedPostsData();
   const filteredPosts = allPosts.filter(post => 
-    post.tags?.some(tag => tag.toLowerCase() === decodedTag.toLowerCase())
+    post.tags?.some(t => t.toLowerCase() === decodedTag.toLowerCase())
   );
   
   // If no posts found with this tag, return 404
