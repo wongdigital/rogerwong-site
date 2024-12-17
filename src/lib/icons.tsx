@@ -189,3 +189,61 @@ export function FolderIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
       </svg>
   );
 }
+
+export function ArrowLeftIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Line-Arrow-Left-1--Streamline-Core" >
+        <desc>{"Line Arrow Left 1 Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="line-arrow-left-1--arrow-keyboard-left">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 7H0.5" strokeWidth={1} />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m4.5 3 -4 4 4 4" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}
+
+export function ArrowRightIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Line-Arrow-Right-1--Streamline-Core" >
+        <desc>{"Line Arrow Right 1 Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="line-arrow-right-1--arrow-right-keyboard">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M0.5 7h13" strokeWidth={1} />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m9.5 11 4 -4 -4 -4" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}
+
+export function RssIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Rss-Symbol--Streamline-Core" >
+        <desc>{"Rss Symbol Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="rss-symbol--wireless-feed-rss-transmit-broadcast">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.41607 13c0.77938 0 1.41119 -0.6316 1.41119 -1.4106 0 -0.7791 -0.63181 -1.4106 -1.41119 -1.4106s-1.41119 0.6315 -1.41119 1.4106c0 0.779 0.63181 1.4106 1.41119 1.4106Z" strokeWidth={1} />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13 11.8148c0 -1.4202 -0.2798 -2.82655 -0.8235 -4.13866 -0.5437 -1.31211 -1.3407 -2.50432 -2.34532 -3.50857 -1.00465 -1.00424 -2.19734 -1.80085 -3.50997 -2.34434C5.00857 1.27973 3.6017 1 2.18091 1" strokeWidth={1} />
+          <path id="Vector_3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.40662 5.47668c0.80305 0 1.59824 0.15811 2.34016 0.4653 0.74193 0.30719 1.41606 0.75745 1.9839 1.32506 0.56785 0.56762 1.01829 1.24148 1.3256 1.98311 0.30732 0.74162 0.46549 1.53645 0.46549 2.33925" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}
