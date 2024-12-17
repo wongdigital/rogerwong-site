@@ -9,12 +9,12 @@ import { notFound } from 'next/navigation';
 
 const POSTS_PER_PAGE = 10;
 
-type Props = {
+type PageProps = {
   params: { tag: string };
-  searchParams: { page?: string }
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const decodedTag = decodeURIComponent(params.tag);
   const title = `Posts tagged with "${decodedTag}"`;
   
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function TagPage({ params, searchParams }: Props) {
+export default async function TagPage({ params, searchParams }: PageProps) {
   const allPosts = await getSortedPostsData();
   const currentPage = Number(searchParams.page) || 1;
   

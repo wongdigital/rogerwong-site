@@ -10,12 +10,12 @@ import { notFound } from 'next/navigation';
 
 const POSTS_PER_PAGE = 10;
 
-type Props = {
-  params: { category: Category };
-  searchParams: { page?: string }
+type PageProps = {
+  params: { category: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const decodedCategory = decodeURIComponent(params.category);
   const title = `Posts in ${decodedCategory}`;
   
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function CategoryPage({ params, searchParams }: Props) {
+export default async function CategoryPage({ params, searchParams }: PageProps) {
   const allPosts = await getSortedPostsData();
   const currentPage = Number(searchParams.page) || 1;
   
