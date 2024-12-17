@@ -22,23 +22,23 @@ interface RelatedPostsProps {
 }
 
 export default function RelatedPosts({ currentPostId, currentPostCategory, currentPostTags = [], allPosts }: RelatedPostsProps) {
-  // First try to find posts in the same category
+  // First try to find posts with matching tags
   let relatedPosts = allPosts
     .filter(post => post.id !== currentPostId)
-    .filter(post => post.category === currentPostCategory)
+    .filter(post => post.tags?.some(tag => currentPostTags.includes(tag)))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // If we don't have enough posts from the same category, find posts with matching tags
-  if (relatedPosts.length < 2 && currentPostTags.length > 0) {
+  // If we don't have enough posts with matching tags, find posts from the same category
+  if (relatedPosts.length < 2) {
     const remainingCount = 2 - relatedPosts.length;
-    const postsWithMatchingTags = allPosts
+    const postsFromSameCategory = allPosts
       .filter(post => post.id !== currentPostId)
-      .filter(post => post.category !== currentPostCategory) // Exclude posts we already have
-      .filter(post => post.tags?.some(tag => currentPostTags.includes(tag)))
+      .filter(post => !post.tags?.some(tag => currentPostTags.includes(tag))) // Exclude posts we already have
+      .filter(post => post.category === currentPostCategory)
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       .slice(0, remainingCount);
 
-    relatedPosts = [...relatedPosts, ...postsWithMatchingTags];
+    relatedPosts = [...relatedPosts, ...postsFromSameCategory];
   }
 
   // Limit to 2 posts total
