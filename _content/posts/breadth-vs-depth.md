@@ -1,10 +1,12 @@
 ---
 title: "Breadth vs. Depth: Lessons from Agencies and In-House Design"
-date: "2024-12-16"
-category: "Design"
+date: "2024-12-17"
+category: "Essays"
 tags: 
   - "Career Advice"
+  - "Design"
   - "Industry Insights"
+  - "Personal Stories"
 imageSrc: "/images/breadth-v-depth-featured.jpg"
 imageAlt: "A close-up photograph of a newspaper's personal advertisements section, with one listing circled in red ink. The circled ad is titled \"DESIGN NOMAD\" and cleverly frames a designer's job search as a personal ad, comparing agency work to casual dating and seeking an in-house position as a long-term relationship. The surrounding text shows other personal ads in small, dense print arranged in multiple columns."
 excerpt: "Just as casual dating helps you figure out what you want in a relationship, working at agencies early in your design career lets you explore different styles, clients, and problems before settling down in-house. Drawing from my nearly three decades of experience on both sides, I've learned there's real value in starting broad before going deep."

@@ -1,9 +1,10 @@
 ---
 title: "The Greatest Story Ever Told"
 date: "2024-08-24"
-categories: 
+category: "Essays"
+tags:
+  - "Personal Stories"
   - "Politics"
-  - "Life"
 imageSrc: "/images/the-greatest-story-ever-told-hero.jpg"
 imageAlt: "Photo of Kamala Harris"
 excerpt: "Under immense pressure, under the highest of expectations, Kamala Harris outperformed in her acceptance speech at the DNC, delivering way beyond what anyone anticipated. Her biography is what makes her relatable. It illustrates her values. And her story is the American story."

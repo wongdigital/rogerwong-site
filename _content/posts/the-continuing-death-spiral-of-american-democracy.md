@@ -1,8 +1,10 @@
 ---
 title: "The Continuing Death Spiral of American Democracy"
 date: "2022-01-06"
-categories: 
+category: "Essays"
+tags:
   - "Politics"
+  - "Social Issues"
 imageSrc: "/images/the-continuing-death-spiral-of-american-democracy-hero.jpg"
 imageAlt: "Photo of insurrectionists at the Capitol"
 excerpt: "I was feeling emotionally off today and I wasn’t quite sure until I realized that the events of January 6, 2021 deeply affected me as a patriotic American. At the time, I thought it was the culmination—the last act of a power-hungry, extremist wing of our country. Donald Trump and his deliberate peddlers of lies and misinformation had incubated and unleashed this insurrectionist mob against the Capitol, against the United States. But I was wrong."

@@ -1,8 +1,13 @@
 ---
 title: "The Benefits of Having One Agency"
 date: "2009-11-11"
-categories: 
-  - "design"
+category: "Essays"
+tags:
+  - "Advertising"
+  - "Design"
+  - "Industry Insights"
+imageSrc: "/images/client-campaign-anatomy-now.png"
+imageAlt: "Client Campaign Anatomy: The Way It Is Now"
 excerpt: "Why do clients split their campaign work between multiple agencies based on tactics? As someone working in the industry, I've seen how this fragmented approach leads to inefficiency and weaker campaigns. Instead, clients should entrust one agency to create and execute a unified vision across all mediums."
 ---
 

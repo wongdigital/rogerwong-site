@@ -1,9 +1,10 @@
 ---
 title: "Putting a Dent in the Universe"
 date: "2011-10-06"
-categories: 
-  - "apple"
-  - "life"
+category: "Notes"
+tags:
+  - "Apple"
+  - "Personal Stories"
 imageSrc: "/images/steve-jobs-hero.jpg"
 imageAlt: "Steve Jobs"
 excerpt: "From playing with MacPaint as a seventh grader to working directly with Steve Jobs at Pixar, my journey with Apple spans decades. While Jobs was demanding and direct, his push for perfection helped shape not just my career, but the entire tech landscape."

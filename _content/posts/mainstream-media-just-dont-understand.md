@@ -1,9 +1,12 @@
 ---
 title: "Mainstream Media Just Don’t Understand"
 date: "2019-05-05"
-categories: 
-  - "apple"
-  - "business"
+category: "Essays"
+tags:
+  - "Apple"
+  - "Business"
+  - "Media Analysis"
+  - "Technology Industry"
 imageSrc: "/images/NYTvsApple.jpg"
 imageAlt: "New York Times vs Apple"
 excerpt: "As a tech industry observer, I've long been frustrated by mainstream media's misrepresentation of technology issues. The New York Times' recent coverage of Apple's App Store policies demonstrates this problem perfectly - from misunderstanding MDM technology to making flawed monopoly arguments, their reporting shows a fundamental lack of technical understanding while sending mixed messages about platform responsibility."

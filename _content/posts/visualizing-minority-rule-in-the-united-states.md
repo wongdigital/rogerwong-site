@@ -1,10 +1,12 @@
 ---
 title: "Visualizing Minority Rule in the United States"
 date: "2022-05-07"
-categories: 
-  - "design"
-  - "politics"
-  - "projects"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Political Art"
+  - "Politics"
+  - "Social Issues"
 imageSrc: "/images/Minority-Rule-Featured.jpg"
 imageAlt: "Chart showing the nine current Supreme Court justices, with column graphs displaying the popular vote for each nominating president and the population represented by their senate confirmation votes"
 excerpt: "After NPR's Mara Liasson commented on minority rule in the United States, I wanted to investigate the numbers behind Supreme Court appointments. What I found about presidential popular votes and Senate confirmations was striking enough that I needed to visualize it."

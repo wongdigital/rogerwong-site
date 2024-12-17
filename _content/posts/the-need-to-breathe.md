@@ -1,8 +1,12 @@
 ---
 title: "The Need to Breathe"
 date: "2010-04-03"
-categories: 
-  - "design"
+category: "Essays"
+tags:
+  - "Design"
+  - "Industry Insights"
+imageSrc: "/images/The-Need-to-Breathe-Hero.jpg"
+imageAlt: "Photo of a person breathing"
 excerpt: "As creatives, we can't produce our best work when we're constantly running at full speed. Here's why we need to make time for inspiration—and why companies should encourage it."
 ---
 

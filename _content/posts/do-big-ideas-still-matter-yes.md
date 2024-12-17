@@ -1,8 +1,11 @@
 ---
 title: "Do Big Ideas Still Matter? Yes."
 date: "2009-07-21"
-categories: 
-  - "design"
+category: "Essays"
+tags:
+  - "Advertising"
+  - "Design"
+  - "Industry Insights"
 imageSrc: "/images/Big-Idea-Hero.jpg"
 imageAlt: "Illustration of a lightbulb with a crown"
 excerpt: "In the age of digital and social media, and in the age of realtime marketing, what matters more? The big idea or the smaller idea and execution?"

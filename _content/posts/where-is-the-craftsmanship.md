@@ -1,8 +1,11 @@
 ---
 title: "Where Is the Craftsmanship?"
 date: "2009-03-19"
-categories: 
-  - "design"
+category: "Guides"
+tags:
+  - "Best Practices"
+  - "Design"
+  - "Process"
 excerpt: "As a designer, I can't help but notice typography everywhere I go—from fancy restaurant menus to local café signage. One particular typographical detail drives me especially crazy, and it's a perfect example of how modern technology has both democratized and potentially diminished the craft of professional design."
 ---
 

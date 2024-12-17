@@ -1,8 +1,11 @@
 ---
 title: "Creation with a Crowd"
 date: "2009-04-18"
-categories: 
-  - "design"
+category: "Essays"
+tags:
+  - "Advertising"
+  - "Design"
+  - "Industry Insights"
 excerpt: "While sites like crowdSPRING represent the problematic side of creative crowdsourcing—asking designers to work for free—there are ethical ways to harness collective creativity. Through examples like Weezer's collaborative songwriting and Intel's Mass Animation project, I explore how voluntary participation and fair compensation can make crowdsourced creativity work."
 ---
 

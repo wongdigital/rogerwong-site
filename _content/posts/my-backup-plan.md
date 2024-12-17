@@ -1,8 +1,11 @@
 ---
 title: "My Backup Plan"
 date: "2017-04-03"
-categories: 
-  - "technology"
+category: "Guides"
+tags:
+  - "Best Practices"
+  - "Technology"
+  - "Technical Workflows"
 imageSrc: "/images/backup1-hero.jpg"
 imageAlt: "Photo of assorted media"
 excerpt: "After losing years of work to a catastrophic hard drive failure, I developed a comprehensive backup strategy using both local and cloud solutions. Here's my battle-tested approach to keeping data safe using RAID, NAS, Dropbox, and automated cloud backups."

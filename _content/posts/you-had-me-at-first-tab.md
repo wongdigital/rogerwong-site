@@ -1,8 +1,12 @@
 ---
 title: "You Had Me at First Tab"
 date: "2009-05-16"
-categories: 
-  - "apple"
+category: "Reviews"
+tags:
+  - "Apple"
+  - "Design"
+imageSrc: "/images/mini-1.jpg"
+imageAlt: "Mac mini Package"
 excerpt: "As a former Apple employee, I've seen firsthand the obsessive attention that goes into package design. But my recent Mac mini purchase revealed something beyond mere aesthetics - it's an experience that seems to read your mind at every step of the unboxing process."
 ---
 

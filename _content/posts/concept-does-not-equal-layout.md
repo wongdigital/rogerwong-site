@@ -1,8 +1,11 @@
 ---
 title: "Concept != Layout"
 date: "2009-07-13"
-categories: 
-  - "design"
+category: "Notes"
+tags:
+  - "Advertising"
+  - "Design"
+  - "Industry Insights"
 excerpt: "In the design world, we often confuse layouts with concepts. But a true concept is your point of view on the message, not just its visual execution."
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: "Transported into Spatial Computing"
 date: "2023-06-06"
-categories: 
-  - "apple"
-  - "technology"
+category: "Essays"
+tags:
+  - "Apple"
+  - "Technology"
 imageSrc: "/images/Transported-into-Spatial-Computing-Feature.jpg"
 imageAlt: "Apple Vision Pro"
 excerpt: "As a former VR startup founder who tried to revolutionize real estate tours in the mid-2010s, I've seen the challenges of virtual reality firsthand. When Apple unveiled their Vision Pro headset, it felt like a pivotal moment for the technology I once bet my career on. Here's my perspective on how Apple is tackling VR's biggest hurdles."

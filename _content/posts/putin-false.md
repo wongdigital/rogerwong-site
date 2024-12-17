@@ -1,9 +1,12 @@
 ---
 title: "Putin: False"
 date: "2022-06-12"
-categories: 
-  - "politics"
-  - "projects"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Political Art"
+  - "Politics"
+  - "Social Issues"
 imageSrc: "/images/Putin-Featured.jpg"
 imageAlt: "Poster of Putin as a false idol with the word FALSE"
 excerpt: "My poster depicting Vladimir Putin as a false idol won a Gold Award in the Graphis Poster 2024 Awards. Created in response to Russia's invasion of Ukraine, the design features a golden bust of Putin against a red backdrop with \"FALSE\" written in both Russian and English. The poster was printed and displayed in Kyiv, and a limited-edition screen print raised funds for Ukrainian humanitarian aid."

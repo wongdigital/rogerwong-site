@@ -1,8 +1,13 @@
 ---
 title: "Sell the Horseshit"
 date: "2009-02-12"
-categories: 
-  - "design"
+category: "Notes"
+tags:
+  - "Advertising"
+  - "Design"
+  - "Industry Insights"
+imageSrc: "/images/pepsi.gif"
+imageAlt: "Pepsi Logo"
 excerpt: "When a leaked presentation for Pepsi's million-dollar logo redesign surfaced, it was pure horseshit—but it reminded me how we all have to sell our creative work. Sometimes the strategy follows the design, and that's when you need to get creative with your justification."
 ---
 

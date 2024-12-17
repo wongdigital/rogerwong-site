@@ -1,9 +1,13 @@
 ---
 title: "Re-Platforming with a Lot of Help From AI"
 date: "2024-11-03"
-categories: 
-  - "projects"
-  - "technology"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Product Reviews"
+  - "Process"
+  - "Technical Workflows"
+  - "Tools"
 imageSrc: "/images/Replatform-AI-Featured.jpg"
 imageAlt: "Closeup of MU/TH/UR 9000 computer screen from the movie Alien:Romulus"
 excerpt: "Re-platforming my website from WordPress to React seemed daunting for a non-developer like me. Yet, with AI tools like Cursor, I managed to navigate the complexities of modern web development. This article shares my journey and insights for others venturing into AI-assisted coding."

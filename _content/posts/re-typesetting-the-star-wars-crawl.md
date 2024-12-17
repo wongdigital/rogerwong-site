@@ -1,8 +1,12 @@
 ---
 title: "Re-Typesetting the Star Wars Crawl"
 date: "2009-12-11"
-categories: 
-  - "design"
+category: "Side Projects"
+tags:
+  - "Design"
+  - "Personal Projects"
+imageSrc: "/images/ep-iv_crawl.jpg"
+imageAlt: "Star Wars: Episode IV Opening Crawl"
 excerpt: "After seeing an HTML5/CSS3 experiment recreating the Star Wars opening crawl, I couldn't help but notice the typographic inconsistencies across all the films. From awkward letter-spacing to poor justification, even ILM struggled to maintain quality typography in the later films. Here's my attempt at redesigning the iconic crawl with better typographic principles."
 ---
 

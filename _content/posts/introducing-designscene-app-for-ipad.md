@@ -1,8 +1,12 @@
 ---
 title: "Introducing DesignScene App for iPad"
 date: "2011-01-19"
-categories: 
-  - "projects"
+category: "Side Projects"
+tags:
+  - "App Development"
+  - "Design"
+imageSrc: "/images/DesignScene-iPad-App.jpg"
+imageAlt: "DesignScene iPad App"
 excerpt: "After a year of development, I'm excited to announce DesignScene for iPad - a visual inspiration browser I created to solve my own challenge of keeping up with design trends. What started as a personal project to better consume design feeds turned into a full-fledged iPad app, thanks to a great development partnership and countless hours of work."
 ---
 

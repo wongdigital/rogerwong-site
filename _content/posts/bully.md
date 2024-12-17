@@ -1,9 +1,13 @@
 ---
 title: "Bully"
 date: "2016-08-19"
-categories: 
-  - "politics"
-  - "projects"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Political Art"
+  - "Social Issues"
+imageSrc: "/images/XrayOfTrumpsBrain.png"
+imageAlt: "Xray Of Trumps Brain"
 excerpt: "Here's my latest personal project…"
 ---
 

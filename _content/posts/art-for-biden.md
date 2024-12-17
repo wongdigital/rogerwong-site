@@ -1,10 +1,11 @@
 ---
 title: "Art for Biden"
 date: "2020-11-16"
-categories: 
-  - "design"
-  - "politics"
-  - "projects"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Political Art"
+  - "Social Issues"
 imageSrc: "/images/VoteForJoe-scaled-1.jpg"
 imageAlt: "Vote for Joe"
 excerpt: "When Christopher Simmons called for artwork supporting the Biden-Harris campaign, what started as a single contribution evolved into an obsessive creative series. Through 3D typography and animated loops, I channeled my hopes for democracy into Instagram-ready animations designed to catch eyes and change minds."

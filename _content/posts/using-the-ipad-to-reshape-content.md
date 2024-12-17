@@ -1,9 +1,14 @@
 ---
 title: "Using the iPad to Reshape Content"
 date: "2011-03-01"
-categories: 
-  - "apple"
-  - "design"
+category: "Essays"
+tags:
+  - "Apple"
+  - "Design"
+  - "Industry Insights"
+  - "Technology Industry"
+imageSrc: "/images/Using-the-iPad-to-Reshape-Content-Hero.jpg"
+imageAlt: "Photo of a person using an iPad"
 excerpt: "When Apple introduced the iPad in 2010, print publishers rushed to create digital editions of their magazines, hoping to recapture lost readership. But simply replicating print magazines in digital form missed the point - tablets offered new possibilities for how we consume and interact with content. As both a designer and iPad user, I saw an opportunity to rethink how we could better serve specific audiences with their content needs."
 ---
 

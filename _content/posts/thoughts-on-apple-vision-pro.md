@@ -1,9 +1,11 @@
 ---
 title: "Thoughts on Apple Vision Pro"
 date: "2024-03-18"
-categories: 
-  - "apple"
-  - "technology"
+category: "Reviews"
+tags:
+  - "Apple"
+  - "Product Reviews"
+  - "Technology"
 imageSrc: "/images/AVP_hero.jpg"
 imageAlt: "Apple VR headset on a table"
 excerpt: "After resisting the initial urge to buy an Apple Vision Pro, I finally gave in to curiosity and purchased one. As someone who has designed VR experiences, I was impressed by the device's technological achievements."
