@@ -162,8 +162,9 @@ export default async function Post({ params }: Props) {
     </article>
     <RandomDingbats />
     <RelatedPosts 
-      currentPostId={id}
+      currentPostId={postData.id}
       currentPostCategory={postData.category}
+      currentPostTags={postData.tags}
       allPosts={allPosts}
     />
     <script

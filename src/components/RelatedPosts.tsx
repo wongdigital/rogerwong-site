@@ -9,23 +9,40 @@ import { categories, type Category } from '@/lib/categories';
 interface RelatedPostsProps {
   currentPostId: string;
   currentPostCategory: Category;
+  currentPostTags?: string[];
   allPosts: {
     id: string;
     title: string;
     date: string;
     category: Category;
+    tags?: string[];
     imageSrc?: string;
     content?: string;
   }[];
 }
 
-export default function RelatedPosts({ currentPostId, currentPostCategory, allPosts }: RelatedPostsProps) {
-  // Filter out the current post and find related posts
-  const relatedPosts = allPosts
-    .filter(post => post.id !== currentPostId) // Exclude current post
-    .filter(post => post.category === currentPostCategory) // Match category exactly
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date
-    .slice(0, 2); // Get only 2 posts
+export default function RelatedPosts({ currentPostId, currentPostCategory, currentPostTags = [], allPosts }: RelatedPostsProps) {
+  // First try to find posts in the same category
+  let relatedPosts = allPosts
+    .filter(post => post.id !== currentPostId)
+    .filter(post => post.category === currentPostCategory)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // If we don't have enough posts from the same category, find posts with matching tags
+  if (relatedPosts.length < 2 && currentPostTags.length > 0) {
+    const remainingCount = 2 - relatedPosts.length;
+    const postsWithMatchingTags = allPosts
+      .filter(post => post.id !== currentPostId)
+      .filter(post => post.category !== currentPostCategory) // Exclude posts we already have
+      .filter(post => post.tags?.some(tag => currentPostTags.includes(tag)))
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, remainingCount);
+
+    relatedPosts = [...relatedPosts, ...postsWithMatchingTags];
+  }
+
+  // Limit to 2 posts total
+  relatedPosts = relatedPosts.slice(0, 2);
 
   if (relatedPosts.length === 0) return null;
 
@@ -50,18 +67,6 @@ export default function RelatedPosts({ currentPostId, currentPostCategory, allPo
             <h2 className="link-primary text-xl font-bold">
               {post.title}
             </h2>
-            <div className="text-sm">
-              {(() => {
-                const CategoryIcon = categories[post.category].icon;
-                return <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />;
-              })()}
-              <Link 
-                href={`/posts?category=${encodeURIComponent(post.category)}`}
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 underline"
-              >
-                {post.category}
-              </Link>
-            </div>
             <p className="text-sm text-slate-500 dark:text-slate-200">
               {formatDate(post.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{calculateReadTime(post.content || '')} read
             </p>
