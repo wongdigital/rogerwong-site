@@ -1,40 +1,45 @@
 import type { ComponentType } from 'react';
 import type { SVGProps } from 'react';
 import { 
-    PaintBrushIcon, // Design
-    ComputerDesktopIcon, // Technology
-    RocketLaunchIcon, // Projects
-    ChatBubbleLeftEllipsisIcon, // Commentary
-    BookOpenIcon, // Guides
-    DocumentTextIcon, // Uncategorized
-  } from '@heroicons/react/24/outline';
-
-type HeroIcon = ComponentType<SVGProps<SVGSVGElement>>;
+    CaseStudiesIcon,
+    GuidesIcon,
+    EssaysIcon,
+    NotesIcon,
+    ReviewsIcon,
+    SideProjectsIcon,
+    UpdatesIcon
+} from './icons';
+    
+type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
   
-export const categories: Record<string, { icon: HeroIcon; description: string }> = {
-    'Design': {
-      icon: PaintBrushIcon,
-      description: 'Design processes, methods, and case studies'
-    },
-    'Technology': {
-      icon: ComputerDesktopIcon,
-      description: 'Tools, platforms, and industry news'
-    },
-    'Projects': {
-      icon: RocketLaunchIcon,
-      description: 'Personal and professional work'
-    },
-    'Commentary': {
-      icon: ChatBubbleLeftEllipsisIcon,
-      description: 'Analysis and opinion pieces'
+export const categories: Record<string, { icon: IconComponent; description: string }> = {
+    'Case Studies': {
+      icon: CaseStudiesIcon,
+      description: 'Behind-the-scenes of real-world projects'
     },
     'Guides': {
-      icon: BookOpenIcon,
-      description: 'How-tos and best practices'
+      icon: GuidesIcon,
+      description: 'Tutorials and how-to content'
     },
-    'Uncategorized': {
-      icon: DocumentTextIcon,
-      description: 'Other posts'
+    'Essays': {
+      icon: EssaysIcon,
+      description: 'Long-form thoughts and opinions on specific topics'
+    },
+    'Notes': {
+      icon: NotesIcon,
+      description: 'Quick observations and brief thoughts'
+    },
+    'Reviews': {
+      icon: ReviewsIcon,
+      description: 'Commentary and analysis'
+    },
+    'Side Projects': {
+      icon: SideProjectsIcon,
+      description: 'Personal projects and experiments'
+    },
+    'Updates': {
+      icon: UpdatesIcon,
+      description: 'News and status reports about ongoing work'
     }
   } as const;
   

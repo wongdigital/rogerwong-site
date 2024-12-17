@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { calculateReadTime } from '@/lib/readTime';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { FolderOpenIcon, HashtagIcon } from '@heroicons/react/24/outline';
+import { FolderIcon, HashtagIcon } from '@/lib/icons';
 import Image from 'next/image'
 import RandomDingbats from '@/components/RandomDingbats';
 import RelatedPosts from '@/components/RelatedPosts';
@@ -102,7 +102,7 @@ export default async function Post({ params }: Props) {
     <div className="max-w-4xl mx-auto py-8 px-4 sm:px-8 md:px-12 lg:px-20">
       <article>
       <div className="text-sm mb-2">
-        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5 text-slate-400 dark:text-slate-400" />
         <Link 
           href={`/posts?category=${encodeURIComponent(postData.category)}`}
           className="link-primary"
@@ -132,8 +132,18 @@ export default async function Post({ params }: Props) {
         {postData.contentHtml && <MDXContent content={postData.contentHtml} />}
       </div>
       {postData.tags && postData.tags.length > 0 && (
-        <div className="mt-8 pt-8 w-2/4 border-t border-slate-200 dark:border-slate-800">
+        <div className="mt-8 pt-8 border-t border-slate-300 dark:border-slate-700">
           <div className="text-sm text-slate-500 dark:text-slate-200">
+            <FolderIcon className="w-4 h-4 inline-block mr-2 -mt-1" />
+            Filed under{' '}
+            <Link 
+              href={`/posts?category=${encodeURIComponent(postData.category)}`}
+              className="link-primary"
+            >
+              {postData.category}
+            </Link>
+          </div>
+          <div className="text-sm text-slate-500 dark:text-slate-200 mt-2">
             <HashtagIcon className="w-4 h-4 inline-block mr-2 -mt-1" />
             Tagged with {postData.tags?.map((tag, index) => (
               <span key={tag}>

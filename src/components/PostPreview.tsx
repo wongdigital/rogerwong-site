@@ -3,10 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FolderOpenIcon, HashtagIcon } from '@heroicons/react/24/outline';
 import { formatDate } from '@/lib/utils';
 import { categories, type Category } from '@/lib/categories';
-
 interface PostPreviewProps {
   title: string;
   date: string;
@@ -35,7 +33,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   return (
     <div className="mb-4 space-y-2">
       <div className="text-sm">
-        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+        <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5 text-slate-400 dark:text-slate-400" />
         <Link href={`/posts?category=${encodeURIComponent(category)}`} className="link-primary">
           {category}
         </Link>
@@ -64,19 +62,6 @@ const PostPreview: React.FC<PostPreviewProps> = ({
         </Link>
       )}
       <p className="text-slate-600 dark:text-slate-200">{excerpt}</p>
-      {tags && tags.length > 0 && (
-        <div className="text-sm text-slate-500 dark:text-slate-200">
-          <HashtagIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
-          {tags.map((tag, index) => (
-            <React.Fragment key={tag}>
-              {index > 0 && ", "}
-              <Link href={`/posts?tag=${encodeURIComponent(tag)}`} className="link-primary">
-                {tag}
-              </Link>
-            </React.Fragment>
-          ))}
-        </div>
-      )}
     </div>
   );
 };
