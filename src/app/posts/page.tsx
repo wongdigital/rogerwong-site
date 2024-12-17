@@ -19,27 +19,29 @@ export default async function PostsIndex({
   category?: string;
   tag?: string;
 }>) {
+  const params = await searchParams;
+  
   // Redirect old query string URLs to new format
-  if (searchParams.category) {
-    redirect(`/posts/categories/${searchParams.category}`);
+  if (params.category) {
+    redirect(`/posts/categories/${params.category}`);
   }
   
-  if (searchParams.tag) {
-    redirect(`/posts/tags/${searchParams.tag}`);
+  if (params.tag) {
+    redirect(`/posts/tags/${params.tag}`);
   }
 
   const allPosts = await getSortedPostsData();
-  const currentPage = Number(searchParams.page) || 1;
+  const currentPage = Number(params.page) || 1;
 
   // Filter posts by category if one is specified
   let filteredPosts = allPosts;
   
-  if (searchParams.category) {
-    filteredPosts = filteredPosts.filter(post => post.category === searchParams.category);
+  if (params.category) {
+    filteredPosts = filteredPosts.filter(post => post.category === params.category);
   }
   
-  if (searchParams.tag) {
-    filteredPosts = filteredPosts.filter(post => post.tags?.includes(searchParams.tag!));
+  if (params.tag) {
+    filteredPosts = filteredPosts.filter(post => post.tags?.includes(params.tag!));
   }
 
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
@@ -53,8 +55,8 @@ export default async function PostsIndex({
       <section className="lg:w-7/12 py-8 lg:py-20 md:py-10">
         <header className="mb-8">
           <h1 className="page-title">
-            {searchParams.category ? `Posts in ${searchParams.category}` : 
-             searchParams.tag ? `Posts tagged with “${searchParams.tag}”` : 
+            {params.category ? `Posts in ${params.category}` : 
+             params.tag ? `Posts tagged with “${params.tag}”` : 
              'Posts'}
           </h1>
         </header>
@@ -79,8 +81,8 @@ export default async function PostsIndex({
             currentPage={currentPage} 
             totalPages={totalPages} 
             basePath="/posts" 
-            queryParams={searchParams.category ? { category: searchParams.category } : 
-                        searchParams.tag ? { tag: searchParams.tag } : 
+            queryParams={params.category ? { category: params.category } : 
+                        params.tag ? { tag: params.tag } : 
                         undefined}
           />
         </nav>
@@ -99,8 +101,9 @@ export async function generateMetadata({
   category?: string;
   tag?: string;
 }>): Promise<Metadata> {
-  const title = searchParams.category ? `${searchParams.category} Posts` :
-               searchParams.tag ? `Posts tagged with "${searchParams.tag}"` :
+  const params = await searchParams;
+  const title = params.category ? `${params.category} Posts` :
+               params.tag ? `Posts tagged with "${params.tag}"` :
                'Posts';
 
   return {
