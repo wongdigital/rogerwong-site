@@ -1,9 +1,10 @@
 ---
 title: "Smart Data Needs Smart Design"
 date: "2015-12-11"
-categories: 
-  - "design"
-  - "projects"
+category: "Case Studies"
+tags:
+  - "Design"
+  - "Process"
 imageSrc: "/images/TC-Smartest-Time-To-Buy-Hero.jpg"
 imageAlt: "Smartest Time to Buy Infographic"
 excerpt: "How I transformed raw data about car-buying patterns into an elegant, circular infographic that tells a compelling story. Starting with a simple Excel chart, I created a sophisticated visualization that reveals the best times to buy a car—by day, month, and vehicle type."

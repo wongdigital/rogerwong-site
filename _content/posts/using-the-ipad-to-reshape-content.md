@@ -1,10 +1,12 @@
 ---
 title: "Using the iPad to Reshape Content"
 date: "2011-03-01"
-categories: 
-  - "apple"
-  - "design"
-excerpt: "When Apple introduced the iPad in 2010, print publishers rushed to create digital editions of their magazines, hoping to recapture lost readership. But simply replicating print magazines in digital form missed the point - tablets offered new possibilities for how we consume and interact with content. As both a designer and iPad user, I saw an opportunity to rethink how we could better serve specific audiences with their content needs."
+category: "Essays"
+tags:
+  - "Apple"
+  - "Design"
+  - "Industry Insights"
+  - "Technology Industry"
 ---
 
 _**This post was [originally published](http://blog.agencypja.com/2011/02/03/interactive/using-the-ipad-to-reshape-content/ "Using the iPad to Reshape Content | PJA: Bow & Arrow") on [Bow & Arrow from PJA](http://blog.agencypja.com/ "PJA: Bow & Arrow") (my employer) on February 3, 2011.**_

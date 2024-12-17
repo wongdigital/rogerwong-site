@@ -1,9 +1,10 @@
 ---
 title: "You Had Me at First Tab"
 date: "2009-05-16"
-categories: 
-  - "apple"
-excerpt: "As a former Apple employee, I've seen firsthand the obsessive attention that goes into package design. But my recent Mac mini purchase revealed something beyond mere aesthetics - it's an experience that seems to read your mind at every step of the unboxing process."
+category: "Reviews"
+tags:
+  - "Apple"
+  - "Design"
 ---
 
 Customer and user experience is not always about the website, the phone call, or person-to-person interaction in a store. It can also come through the form of packaging.

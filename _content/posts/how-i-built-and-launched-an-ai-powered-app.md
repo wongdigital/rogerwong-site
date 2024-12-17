@@ -1,8 +1,10 @@
 ---
 title: "How I Built and Launched an AI-Powered App"
 date: "2024-11-11"
-categories: 
-  - "Projects"
+category: "Case Studies"
+tags:
+  - "App Development"
+  - "Design"
 imageSrc: "/images/Griffin-Hero.jpg"
 imageAlt: "Griffin AI logo"
 excerpt: "Building an AI-powered brand strategy app taught me valuable lessons about product development, market validation, and the challenges of launching a product. Here's what I learned from my journey with Griffin AI—from ideation to eventual shutdown."

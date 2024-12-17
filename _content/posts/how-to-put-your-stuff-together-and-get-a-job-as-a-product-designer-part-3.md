@@ -1,9 +1,10 @@
 ---
 title: "How to Put Your Stuff Together and Get a Job as a Product Designer: Part 3"
 date: "2021-12-08"
-categories: 
-  - "design"
-  - "how-to"
+category: "Guides"
+tags:
+  - "Career Advice"
+  - "Design"
 imageSrc: "/images/Interview-12_1920x722.jpg"
 imageAlt: "Illustration of an interview"
 excerpt: "As a design hiring manager, I've seen what works and what doesn't in product design interviews. From nailing the screening call to acing design challenges, here's my insider perspective on how to present yourself effectively throughout the interview process."

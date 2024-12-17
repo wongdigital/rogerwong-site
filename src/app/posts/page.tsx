@@ -4,6 +4,8 @@ import { getSortedPostsData } from '@/lib/posts';
 import { calculateReadTime } from '@/lib/readTime';
 import Pagination from '@/components/Pagination';
 import CategoriesList from '@/components/CategoriesList';
+import TagsList from '@/components/TagsList';
+import { type Category } from '@/lib/categories';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,7 +14,7 @@ const POSTS_PER_PAGE = 10;
 export default async function PostsIndex({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; category?: string }>
+  searchParams: Promise<{ page?: string; category?: Category; tag?: string }>
 }) {
   const allPosts = await getSortedPostsData();
   
@@ -20,13 +22,15 @@ export default async function PostsIndex({
   const currentPage = Number(params.page) || 1;
 
   // Filter posts by category if one is specified
-  const filteredPosts = params.category 
-    ? allPosts.filter(post => 
-        post.categories?.some(category => 
-          category.toLowerCase() === params.category?.toLowerCase()
-        )
-      )
-    : allPosts;
+  let filteredPosts = allPosts;
+  
+  if (params.category) {
+    filteredPosts = filteredPosts.filter(post => post.category === params.category);
+  }
+  
+  if (params.tag) {
+    filteredPosts = filteredPosts.filter(post => post.tags?.includes(params.tag!));
+  }
 
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
   
@@ -39,7 +43,9 @@ export default async function PostsIndex({
       <section className="lg:w-7/12 py-8 lg:py-20 md:py-10">
         <header className="mb-8">
           <h1 className="page-title">
-            {params.category ? `Posts in ${params.category}` : 'Posts'}
+            {params.category ? `Posts in ${params.category}` : 
+             params.tag ? `Posts tagged with “${params.tag}”` : 
+             'Posts'}
           </h1>
         </header>
         <section className="space-y-8">
@@ -49,11 +55,11 @@ export default async function PostsIndex({
                 title={post.title}
                 date={post.date}
                 excerpt={post.excerpt}
-                readTime={calculateReadTime(post.content)}
+                readTime={calculateReadTime(post.content || '')}
                 slug={post.id}
                 imageSrc={post.imageSrc}
                 imageAlt={post.imageAlt}
-                categories={post.categories}
+                category={post.category}
               />
             </article>
           ))}
@@ -63,12 +69,15 @@ export default async function PostsIndex({
             currentPage={currentPage} 
             totalPages={totalPages} 
             basePath="/posts" 
-            queryParams={params.category ? { category: params.category } : undefined}
+            queryParams={params.category ? { category: params.category } : 
+                        params.tag ? { tag: params.tag } : 
+                        undefined}
           />
         </nav>
       </section>
       <aside className="lg:w-5/12 py-8 lg:py-20 md:py-10">
         <CategoriesList />
+        <TagsList />
       </aside>
     </div>
   );
@@ -77,12 +86,12 @@ export default async function PostsIndex({
 export async function generateMetadata({ 
   searchParams 
 }: { 
-  searchParams: Promise<{ category?: string }> 
+  searchParams: Promise<{ category?: Category; tag?: string }> 
 }): Promise<Metadata> {
   const params = await searchParams;
-  const title = params.category 
-    ? `${params.category} Posts`
-    : 'Posts';
+  const title = params.category ? `${params.category} Posts` :
+               params.tag ? `Posts tagged with "${params.tag}"` :
+               'Posts';
 
   return {
     title,

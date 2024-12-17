@@ -1,10 +1,11 @@
 ---
 title: "Bully"
 date: "2016-08-19"
-categories: 
-  - "politics"
-  - "projects"
-excerpt: "Here's my latest personal project…"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Political Art"
+  - "Social Issues"
 ---
 
 Here's my latest personal project…

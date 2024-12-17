@@ -1,7 +1,9 @@
 ---
 title: "The Mainstream Fox News"
 date: "2017-03-27"
-categories: 
+category: "Essays"
+tags:
+  - "Media Analysis"
   - "Politics"
 imageSrc: "/images/the-mainstream-fox-news-hero.jpg"
 imageAlt: "Glitched image of a Fox News broadcast featuring Bill O’Reilly with bold text overlays, including phrases like ‘Insanity Over Illegal Immigration’ and commentary on media coverage."

@@ -1,9 +1,12 @@
 ---
 title: "Why Is Brand Strategy Important"
 date: "2024-01-15"
-categories: 
+category: "Guides"
+tags:
+  - "Best Practices"
+  - "Brand Design"
   - "Design"
-  - "How-to"
+  - "Process"
 imageSrc: "/images/why-brand-strategy-featured-image-scaled.jpg"
 imageAlt: "Why is brand strategy important"
 excerpt: "Brand strategy isn't just another buzzword—it's the foundation that separates lasting design from fleeting trends. In my experience, I've learned that pretty visuals are easy, but creating meaningful work that stands the test of time requires something deeper. Here's why brand strategy matters, and how it can transform your approach to design."

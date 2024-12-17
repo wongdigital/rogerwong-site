@@ -1,8 +1,10 @@
 ---
 title: "Why Bulletproof Backpacks Are a Good Idea"
 date: "2017-11-09"
-categories: 
+category: "Essays"
+tags:
   - "Politics"
+  - "Social Issues"
 imageSrc: "/images/bulletproof-backpacks-hero.jpg"
 imageAlt: "A powerful black-and-white image depicts a young boy looking upwards with a solemn, contemplative expression. On the left, the barrel of an assault rifle held by a gloved hand is pointed, symbolizing the grim reality of gun violence and its impact on children. The dark background heightens the emotional tension, underscoring the unsettling juxtaposition of innocence and the threat of violence in modern society."
 excerpt: "We’ve reached the point where schools are selling bulletproof backpack panels to protect kids from mass shootings. This is the NRA’s endgame: guns everywhere, from classrooms to churches to bars, with no meaningful gun control. Meanwhile, gun ownership is declining, but 69% of us live in fear of gun violence, thanks to a vocal minority holding our politics hostage. Bulletproof gear shouldn’t be a back-to-school essential, yet here we are."

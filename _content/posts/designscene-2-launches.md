@@ -1,9 +1,10 @@
 ---
 title: "DesignScene 2.0 Launches"
 date: "2013-01-16"
-categories: 
-  - "projects"
-excerpt: "After months of work, Lunar/Theory launched version 2.0 of our iPad app DesignScene. Here's a look at the trailer and a post about the launch."
+category: "Side Projects"
+tags:
+  - "App Development"
+  - "Design"
 ---
 
 Yesterday Lunar/Theory (my partner David and I) launched version 2.0 of our iPad app DesignScene. Take a look at the trailer:

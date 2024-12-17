@@ -1,8 +1,10 @@
 ---
 title: "Representation Is Powerful"
 date: "2020-06-13"
-categories: 
-  - "design"
+category: "Essays"
+tags:
+  - "Design"
+  - "Social Issues"
 imageSrc: "/images/WhereAreTheBlackDesigners.jpg"
 imageAlt: "Where are the Black Designers"
 excerpt: "As a design student in the 1990s, I never questioned why all our celebrated design heroes were white men. Today, with Black designers making up only 3% of the industry, it's time to examine how we teach design history and create meaningful representation in our field."

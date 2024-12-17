@@ -1,9 +1,9 @@
 ---
 title: "Walking Over The Same Ground"
 date: "2013-04-13"
-categories: 
-  - "design"
-excerpt: "In a memorable scene from Mad Men, Peggy Olson delivers a masterclass in creative direction that resonates deeply with my own views on design and ideation."
+category: "Notes"
+tags:
+  - "Advertising"
 ---
 
 ![Peggy Idea](/images/peggy_idea.jpg)

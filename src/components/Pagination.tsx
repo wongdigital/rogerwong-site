@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, ArrowRightIcon } from '@/lib/icons';
 
 type PaginationProps = {
   currentPage: number;

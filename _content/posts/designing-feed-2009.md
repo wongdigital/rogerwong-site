@@ -1,13 +1,13 @@
 ---
 title: "Designing FEED 2009"
 date: "2009-11-10"
-categories: 
-  - "design"
-  - "projects"
-excerpt: "A behind-the-scenes look at designing Razorfish's FEED 2009 report, where we paired David Fullarton's organic illustrations with clean data visualization to tell the story of customer engagement. From reimagining the FEED logo to choosing the perfect paper stock, here's how we brought the digital insights into physical form."
+category: "Case Studies"
+tags:
+  - "Design"
+  - "Process"
 ---
 
-![F E E D09  Book](/images/FEED09_Book.jpg)
+![FEED 2009 Book](/images/FEED09_Book.jpg)
 
 [FEED 2009](http://feed.razorfish.com/feed09 "FEED 2009") has now been released and I feel privileged to have been a part of this one. If you haven't already checked it out, please do so. The report and findings are very compelling and eye-opening. \[[Download PDF](http://feed.razorfish.com/downloads/Razorfish_FEED09.pdf "Download PDF")\]
 

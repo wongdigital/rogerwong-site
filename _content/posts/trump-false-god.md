@@ -1,9 +1,12 @@
 ---
 title: "Trump: False God"
 date: "2022-08-08"
-categories: 
-  - "politics"
-  - "projects"
+category: "Side Projects"
+tags:
+  - "Personal Projects"
+  - "Political Art"
+  - "Politics"
+  - "Social Issues"
 imageSrc: "/images/Trump_Featured.jpg"
 imageAlt: "Poster of Donald Trump as a false god with the phrase FALSE GOD"
 excerpt: "Donald Trump's rallies draw thousands of devoted followers who wait hours to see him speak, creating an almost religious fervor among his base. This cult-like devotion inspired me to design a poster depicting him as a false idol."

@@ -1,8 +1,9 @@
 ---
 title: "How to Buy a Tesla"
 date: "2021-08-22"
-categories: 
-  - "technology"
+category: "Guides"
+tags:
+  - "Technology"
 imageSrc: "/images/Tesla-Model-Y.jpg"
 imageAlt: "Tesla Model Y electric car"
 excerpt: "After dealing with frustrating CarPlay issues in my Honda CR-V, I decided to make the switch to Tesla. The buying process was unlike any car purchase I'd experienced before—both easier in some ways and more confusing in others. Here's my complete guide to help you navigate buying a Tesla, from test drive to delivery."

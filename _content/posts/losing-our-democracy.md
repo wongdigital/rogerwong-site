@@ -1,8 +1,10 @@
 ---
 title: "Losing Our Democracy"
 date: "2017-09-27"
-categories: 
+category: "Essays"
+tags:
   - "Politics"
+  - "Social Issues"
 imageSrc: "/images/losing-our-democracy-hero.jpg"
 imageAlt: "Senator John McCain standing in the center of the U.S. Senate floor, surrounded by colleagues, casting his decisive vote against the Obamacare repeal, while others observe and react."
 excerpt: "We are losing something precious: the ability to compromise. With every election of an ideologue and every retirement of a statesman like John McCain, we edge closer to the collapse of a democratic system that depends on listening and collaboration. Democracy isn’t about winning every fight; it’s about finding common ground. When we lose sight of that, we lose ourselves."

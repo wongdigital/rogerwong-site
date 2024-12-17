@@ -1,9 +1,10 @@
 ---
 title: "The Need to Breathe"
 date: "2010-04-03"
-categories: 
-  - "design"
-excerpt: "As creatives, we can't produce our best work when we're constantly running at full speed. Here's why we need to make time for inspiration—and why companies should encourage it."
+category: "Essays"
+tags:
+  - "Design"
+  - "Industry Insights"
 ---
 
 "1000+" should be a familiar number for Google Reader users. My RSS feeds have been neglected in past months. Emails from AdAge.com, Creativity-Online, and links from friends go unread and unclicked. I've just been running 100 miles per hour at work. This is not to slam my [current employer](http://www.agencypja.com/ "PJA Advertising and Marketing") (because I truly like working here), but more of an observation.

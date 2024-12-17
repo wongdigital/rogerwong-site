@@ -1,8 +1,10 @@
 ---
 title: "I Read the Newspaper Today, Oh Boy!"
 date: "2022-02-18"
-categories: 
-  - "design"
+category: "Essays"
+tags:
+  - "Design"
+  - "Industry Insights"
 imageSrc: "/images/Newspapers-Featured.jpg"
 imageAlt: "Newspaper"
 excerpt: "After decades away from print newspapers, I rediscovered the tactile joy of reading the San Francisco Chronicle over breakfast. The crisp pages, inky scent, and familiar sections brought back memories of Sunday mornings in North Beach cafes—reminding me that sometimes the medium truly is part of the message."

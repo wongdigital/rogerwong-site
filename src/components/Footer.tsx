@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { RssIcon } from '@heroicons/react/24/outline';
+import { RssIcon } from '@/lib/icons';
 
 export default function Footer() {
   return (

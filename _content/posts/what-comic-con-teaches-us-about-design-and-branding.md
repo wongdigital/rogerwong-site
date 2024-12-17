@@ -1,8 +1,11 @@
 ---
 title: "What Comic-Con Teaches Us about Design and Branding"
 date: "2019-07-26"
-categories: 
-  - "design"
+category: "Guides"
+tags:
+  - "Best Practices"
+  - "Brand Design"
+  - "Design"
 imageSrc: "/images/Comic-Con.jpg"
 imageAlt: "Photo of the Hall H stage at Comic-Con"
 excerpt: "As a designer, I've always been fascinated by how Comic-Con creates such passionate brand loyalty. By examining the core elements of storytelling - from worldbuilding to character development - we can apply these same principles to create more compelling brands and products. Here's what I learned from studying one of pop culture's biggest phenomena."

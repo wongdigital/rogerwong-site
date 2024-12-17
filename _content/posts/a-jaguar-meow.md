@@ -1,8 +1,11 @@
 ---
 title: "A Jaguar Meow"
 date: "2024-11-24"
-categories: 
+category: "Reviews"
+tags:
+  - "Brand Design"
   - "Design"
+  - "Industry Insights"
 imageSrc: "/images/jaguar-featured.jpg"
 imageAlt: "Vibrant artistic composition featuring diverse models in striking, colorful fashion. The central figure is dressed in an elaborate orange-red gown, surrounded by models in bold outfits of pink, red, yellow, and orange tones. The background transitions between shades of orange and pink, with the word ‘JAGUAR’ displayed prominently in the center."
 excerpt: "Jaguar’s rebrand is bold but polarizing, trading heritage for hype. In the race for EV dominance, a flashy logo and film won’t cut it—it’s the product that defines the brand. Let’s break down what this redesign gets right, and what it misses."
