@@ -32,7 +32,6 @@ export default async function Home() {
                   excerpt={post.excerpt}
                   slug={post.id}
                   category={post.category}
-                  tags={post.tags}
                 />
               ))}
             </div>

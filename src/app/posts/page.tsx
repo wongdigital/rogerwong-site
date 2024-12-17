@@ -60,7 +60,6 @@ export default async function PostsIndex({
                 imageSrc={post.imageSrc}
                 imageAlt={post.imageAlt}
                 category={post.category}
-                tags={post.tags}
               />
             </article>
           ))}

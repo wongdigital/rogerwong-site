@@ -14,7 +14,6 @@ interface PostPreviewProps {
   excerpt: string;
   slug: string;
   category: Category;
-  tags?: string[];
 }
 
 const PostPreview: React.FC<PostPreviewProps> = ({
@@ -26,7 +25,6 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   excerpt,
   slug,
   category,
-  tags,
 }) => {
   const CategoryIcon = categories[category].icon;
 

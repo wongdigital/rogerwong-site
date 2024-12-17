@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils';
 import { calculateReadTime } from '@/lib/readTime';
-import { categories, type Category } from '@/lib/categories';
+import { type Category } from '@/lib/categories';
 
 interface RelatedPostsProps {
   currentPostId: string;
