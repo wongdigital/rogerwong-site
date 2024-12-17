@@ -6,6 +6,7 @@ import Pagination from '@/components/Pagination';
 import CategoriesList from '@/components/CategoriesList';
 import TagsList from '@/components/TagsList';
 import { type Category } from '@/lib/categories';
+import { redirect } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 
@@ -14,8 +15,17 @@ const POSTS_PER_PAGE = 10;
 export default async function PostsIndex({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; category?: Category; tag?: string }>
+  searchParams: { page?: string; category?: string; tag?: string }
 }) {
+  // Redirect old query string URLs to new format
+  if (searchParams.category) {
+    redirect(`/posts/categories/${searchParams.category}`);
+  }
+  
+  if (searchParams.tag) {
+    redirect(`/posts/tags/${searchParams.tag}`);
+  }
+
   const allPosts = await getSortedPostsData();
   
   const params = await searchParams;

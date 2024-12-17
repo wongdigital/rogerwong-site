@@ -132,7 +132,7 @@ export default async function Post({ params }: Props) {
             <FolderIcon className="w-4 h-4 inline-block mr-2 -mt-1" />
             Filed under{' '}
             <Link 
-              href={`/posts?category=${encodeURIComponent(postData.category)}`}
+              href={`/posts/categories/${encodeURIComponent(postData.category)}`}
               className="link-primary"
             >
               {postData.category}
@@ -143,7 +143,7 @@ export default async function Post({ params }: Props) {
             Tagged with {postData.tags?.map((tag, index) => (
               <span key={tag}>
                 <Link 
-                  href={`/posts?tag=${encodeURIComponent(tag)}`}
+                  href={`/posts/tags/${encodeURIComponent(tag)}`}
                   className="link-primary"
                 >
                   {tag}

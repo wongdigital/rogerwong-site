@@ -229,54 +229,104 @@ const nextConfig: NextConfig = {
       },
       {
         "source": "/design",
-        "destination": "/posts?category=Design",
-        "permanent": true
-    },
-    {
-        "source": "/apple",
-        "destination": "/posts?category=Apple",
-        "permanent": true
-    },
-    {
-        "source": "/projects",
-        "destination": "/posts?category=Projects",
-        "permanent": true
-    },
-    {
-        "source": "/politics",
-        "destination": "/posts?category=Politics",
-        "permanent": true
-    },
-    {
-        "source": "/technology",
-        "destination": "/posts?category=Technology",
-        "permanent": true
-    },
-    {
-        "source": "/how-to",
-        "destination": "/posts?category=How-to",
-        "permanent": true
-    },
-    {
-        "source": "/life",
-        "destination": "/posts?category=Life",
-        "permanent": true
-    },
-    {
-        "source": "/announcements",
-        "destination": "/posts?category=Announcements",
-        "permanent": true
-    },
-    {
-        "source": "/business",
-        "destination": "/posts?category=Business",
-        "permanent": true
-    },
-    {
-        "source": "/design-ethics",
-        "destination": "/posts?category=Design-Ethics",
+        "destination": "/posts/categories/Design",
         "permanent": true
       },
+      {
+        "source": "/apple",
+        "destination": "/posts/tags/Apple",
+        "permanent": true
+      },
+      {
+        "source": "/projects",
+        "destination": "/posts/categories/Case%20Studies",
+        "permanent": true
+      },
+      {
+        "source": "/politics",
+        "destination": "/posts/tags/Politics",
+        "permanent": true
+      },
+      {
+        "source": "/technology",
+        "destination": "/posts/tags/Technology%20Industry",
+        "permanent": true
+      },
+      {
+        "source": "/how-to",
+        "destination": "/posts/categories/Guides",
+        "permanent": true
+      },
+      {
+        "source": "/life",
+        "destination": "/posts/tags/Personal%20Stories",
+        "permanent": true
+      },
+      {
+        "source": "/announcements",
+        "destination": "/posts/categories/Updates",
+        "permanent": true
+      },
+      {
+        "source": "/business",
+        "destination": "/posts/tags/Industry%20Insights",
+        "permanent": true
+      },
+      {
+        "source": "/design-ethics",
+        "destination": "/posts/tags/Design%20Ethics",
+        "permanent": true
+      },
+      // {
+      //   "source": "/posts?category=Design",
+      //   "destination": "/posts/categories/Design",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?tag=Design",
+      //   "destination": "/posts/tags/Design",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Projects",
+      //   "destination": "/posts?category=Case%20Studies",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Apple",
+      //   "destination": "/posts?tag=Apple",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Politics",
+      //   "destination": "/posts?tag=Politics",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=How-to",
+      //   "destination": "/posts?category=Guides",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Technology",
+      //   "destination": "/posts?tag=Technology%20Industry",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Life",
+      //   "destination": "/posts?tag=Personal%20Stories",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Announcements",
+      //   "destination": "/posts?category=Updates",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/posts?category=Business",
+      //   "destination": "/posts?tag=Industry%20Insights",
+      //   "permanent": true
+      // },
       {
         source: "/posts/page/:page(\\d+)",
         destination: "/posts?page=:page",

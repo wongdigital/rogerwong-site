@@ -32,7 +32,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
     <div className="mb-4 space-y-2">
       <div className="text-sm">
         <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5 text-slate-400 dark:text-slate-400" />
-        <Link href={`/posts?category=${encodeURIComponent(category)}`} className="link-primary">
+        <Link href={`/posts/categories/${encodeURIComponent(category)}`} className="link-primary">
           {category}
         </Link>
       </div>
