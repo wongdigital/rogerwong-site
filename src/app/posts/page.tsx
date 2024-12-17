@@ -5,7 +5,6 @@ import { calculateReadTime } from '@/lib/readTime';
 import Pagination from '@/components/Pagination';
 import CategoriesList from '@/components/CategoriesList';
 import TagsList from '@/components/TagsList';
-import { type Category } from '@/lib/categories';
 import { redirect } from 'next/navigation';
 import { PageProps } from '@/types/next';
 
@@ -15,7 +14,7 @@ const POSTS_PER_PAGE = 10;
 
 export default async function PostsIndex({
   searchParams,
-}: PageProps<{}, {
+}: PageProps<Record<string, never>, {
   page?: string;
   category?: string;
   tag?: string;
@@ -96,7 +95,7 @@ export default async function PostsIndex({
 
 export async function generateMetadata({ 
   searchParams 
-}: PageProps<{}, {
+}: PageProps<Record<string, never>, {
   category?: string;
   tag?: string;
 }>): Promise<Metadata> {
