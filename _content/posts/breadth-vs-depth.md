@@ -4,7 +4,6 @@ date: "2024-12-17"
 category: "Essays"
 tags: 
   - "Career Advice"
-  - "Design"
   - "Industry Insights"
   - "Personal Stories"
 imageSrc: "/images/breadth-v-depth-featured.jpg"
