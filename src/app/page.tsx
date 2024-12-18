@@ -5,7 +5,7 @@ import { calculateReadTime } from '../lib/readTime';
 import { getSortedLinklogData } from '../lib/linklog';
 import HomeHero from '../components/HomeHero';
 import Link from 'next/link'
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
+import { ArrowRightIcon } from '@/lib/icons'
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
