@@ -9,14 +9,14 @@ export function CaseStudiesIcon({ className, ...props }: SVGProps<SVGSVGElement>
       className={className}
       {...props}
       strokeWidth="1"
-      id="Documentation-Newsletter--Streamline-Core" >
-        <desc>{"Documentation Newsletter Streamline Icon: https://streamlinehq.com"}</desc>
-        <g id="documentation-newsletter--documentation-newsletter-newspaper-infomation-publication">
-          <path id="Rectangle 2289" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M3.5 4h-2c-0.27614 0 -0.5 0.22386 -0.5 0.5v7c0 0.8284 0.67157 1.5 1.5 1.5S4 12.3284 4 11.5v-7c0 -0.27614 -0.22386 -0.5 -0.5 -0.5Z" />
-          <path id="Rectangle 2290" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M4 11V1.5c0 -0.27614 0.22386 -0.5 0.5 -0.5h8c0.2761 0 0.5 0.22386 0.5 0.5v10c0 0.8284 -0.6716 1.5 -1.5 1.5h-9" />
-          <path id="Vector 5249" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M6 3.5h5" />
-          <path id="Vector 5250" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M6 6h5" />
-          <path id="Vector 5251" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M6 8.5h5" />
+      id="Image-Photo-Search-Scan-Detection--Streamline-Core" >
+        <desc>{"Image Photo Search Scan Detection Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="image-photo-search-scan-detection">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5h-3c-0.26522 0 -0.51957 -0.1054 -0.707107 -0.2929C0.605357 10.0196 0.5 9.76522 0.5 9.5v-8c0 -0.26522 0.105357 -0.51957 0.292893 -0.707107C0.98043 0.605357 1.23478 0.5 1.5 0.5h8c0.26522 0 0.5196 0.105357 0.7071 0.292893 0.1875 0.187537 0.2929 0.441887 0.2929 0.707107v3" />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M7.125 4.875c-0.69036 0 -1.25 -0.55964 -1.25 -1.25s0.55964 -1.25 1.25 -1.25 1.25 0.55964 1.25 1.25 -0.55964 1.25 -1.25 1.25Z" />
+          <path id="Vector 3951" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m0.5 7.07343 2.60468 -2.60468L5.13593 6.5" />
+          <path id="vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M9.5 12.5c1.6569 0 3 -1.3431 3 -3 0 -1.65685 -1.3431 -3 -3 -3 -1.65685 0 -3 1.34315 -3 3 0 1.6569 1.34315 3 3 3Z" />
+          <path id="vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m13.5 13.5 -1.8787 -1.8787" />
         </g>
       </svg>
   );
@@ -45,23 +45,20 @@ export function GuidesIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
 export function EssaysIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg" 
-      fill="none" 
-      viewBox="0 0 14 14" 
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 14 14"
       className={className}
       {...props}
       strokeWidth="1"
-      id="Typewriter--Streamline-Core" >
-        <desc>{"Typewriter Streamline Icon: https://streamlinehq.com"}</desc>
-        <g id="typewriter--typewriter-company-office-supplies-work">
-          <path id="Vector 3966" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M3 5V1.5c0 -0.552285 0.44772 -1 1 -1h6c0.5523 0 1 0.447715 1 1V5" />
-          <path id="Vector 3965" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M0.5 10v1.5c0 0.5523 0.447715 1 1 1h11c0.5523 0 1 -0.4477 1 -1V10l-1 -2V6c0 -0.55228 -0.4477 -1 -1 -1h-3c0 0.82843 -0.67157 1.5 -1.5 1.5S5.5 5.82843 5.5 5h-3c-0.55228 0 -1 0.44772 -1 1v2l-1 2Z" />
-          <path id="Vector 3967" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M1.5 6.5h-1" />
-          <path id="Vector 3968" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M12.5 6.5h1" />
-          <path id="Vector 3969" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M3.5 10.5h7" />
-          <path id="Vector 3970" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M3.5 8.5h1" />
-          <path id="Vector 3971" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M6.5 8.5h1" />
-          <path id="Vector 3972" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M9.5 8.5h1" />
+      id="Pen-Tool--Streamline-Core" >
+        <desc>{"Pen Tool Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="pen-tool">
+          <path id="Vector 2523" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M1.881 4.75366 0.607224 12.8209c-0.052946 0.3353 0.236533 0.6248 0.571866 0.5719l8.06725 -1.2738c0.44506 -0.0703 0.78816 -0.4295 0.83796 -0.8773L10.5 7.5l-4 -4 -3.74167 0.41574c-0.44782 0.04976 -0.80706 0.39286 -0.87733 0.83792Z" />
+          <path id="Vector 2524" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m6.5 3.5 2 -3" />
+          <path id="Vector 2525" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m10.5 7.5 3 -2" />
+          <path id="Vector 2526" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 13 4 -4" />
+          <path id="Vector 2527" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m4 8 2 2" />
         </g>
       </svg>
   );
@@ -183,7 +180,7 @@ export function FolderIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
       id="Open-Folder--Streamline-Core" >
         <desc>{"Open Folder Streamline Icon: https://streamlinehq.com"}</desc>
         <g id="open-folder--open-folder-navigation-direction-directory">
-          <path id="Vector 3867" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M11.5 6V4.5c0 -0.55228 -0.4477 -1 -1 -1h-5l-0.31063 -1.24254C5.07807 1.8123 4.67809 1.5 4.21922 1.5H1.5c-0.552285 0 -1 0.44772 -1 1v9c0 0.5523 0.447715 1 1 1h5" strokeWidth={1} />
+          <path id="Vector 3867" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M11.5 6V4.5c0 -0.55228 -0.4477 -1 -1 -1h-5l-0.31063 -1.24254C5.07807 1.8123 4.67809 1.5 4.21922 1.5H1.5c-0.552285 0 -1 0.44772 -1 1v9c0 0.5523 0.447715 1 1 1h5" />
           <path id="Vector 4361" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M6.5 12.5h4.7192c0.4589 0 0.8589 -0.3123 0.9702 -0.7575l1.2973 -5.18933c0.0088 -0.03531 0.0133 -0.07158 0.0133 -0.10798v0C13.5 6.19932 13.3007 6 13.0548 6H4.77946c-0.45826 0 -0.85787 0.31148 -0.96974 0.75587L2.99301 10" />
         </g>
       </svg>
@@ -202,8 +199,8 @@ export function ArrowLeftIcon({ className, ...props }: SVGProps<SVGSVGElement>) 
       id="Line-Arrow-Left-1--Streamline-Core" >
         <desc>{"Line Arrow Left 1 Streamline Icon: https://streamlinehq.com"}</desc>
         <g id="line-arrow-left-1--arrow-keyboard-left">
-          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 7H0.5" strokeWidth={1} />
-          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m4.5 3 -4 4 4 4" strokeWidth={1} />
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 7H0.5" />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m4.5 3 -4 4 4 4" />
         </g>
       </svg>
   );
@@ -221,8 +218,8 @@ export function ArrowRightIcon({ className, ...props }: SVGProps<SVGSVGElement>)
       id="Line-Arrow-Right-1--Streamline-Core" >
         <desc>{"Line Arrow Right 1 Streamline Icon: https://streamlinehq.com"}</desc>
         <g id="line-arrow-right-1--arrow-right-keyboard">
-          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M0.5 7h13" strokeWidth={1} />
-          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m9.5 11 4 -4 -4 -4" strokeWidth={1} />
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M0.5 7h13" />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m9.5 11 4 -4 -4 -4" />
         </g>
       </svg>
   );
@@ -240,9 +237,90 @@ export function RssIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
       id="Rss-Symbol--Streamline-Core" >
         <desc>{"Rss Symbol Streamline Icon: https://streamlinehq.com"}</desc>
         <g id="rss-symbol--wireless-feed-rss-transmit-broadcast">
-          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.41607 13c0.77938 0 1.41119 -0.6316 1.41119 -1.4106 0 -0.7791 -0.63181 -1.4106 -1.41119 -1.4106s-1.41119 0.6315 -1.41119 1.4106c0 0.779 0.63181 1.4106 1.41119 1.4106Z" strokeWidth={1} />
-          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13 11.8148c0 -1.4202 -0.2798 -2.82655 -0.8235 -4.13866 -0.5437 -1.31211 -1.3407 -2.50432 -2.34532 -3.50857 -1.00465 -1.00424 -2.19734 -1.80085 -3.50997 -2.34434C5.00857 1.27973 3.6017 1 2.18091 1" strokeWidth={1} />
-          <path id="Vector_3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.40662 5.47668c0.80305 0 1.59824 0.15811 2.34016 0.4653 0.74193 0.30719 1.41606 0.75745 1.9839 1.32506 0.56785 0.56762 1.01829 1.24148 1.3256 1.98311 0.30732 0.74162 0.46549 1.53645 0.46549 2.33925" strokeWidth={1} />
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.41607 13c0.77938 0 1.41119 -0.6316 1.41119 -1.4106 0 -0.7791 -0.63181 -1.4106 -1.41119 -1.4106s-1.41119 0.6315 -1.41119 1.4106c0 0.779 0.63181 1.4106 1.41119 1.4106Z" />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13 11.8148c0 -1.4202 -0.2798 -2.82655 -0.8235 -4.13866 -0.5437 -1.31211 -1.3407 -2.50432 -2.34532 -3.50857 -1.00465 -1.00424 -2.19734 -1.80085 -3.50997 -2.34434C5.00857 1.27973 3.6017 1 2.18091 1" />
+          <path id="Vector_3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.40662 5.47668c0.80305 0 1.59824 0.15811 2.34016 0.4653 0.74193 0.30719 1.41606 0.75745 1.9839 1.32506 0.56785 0.56762 1.01829 1.24148 1.3256 1.98311 0.30732 0.74162 0.46549 1.53645 0.46549 2.33925" />
+        </g>
+      </svg>
+  );
+}
+
+export function SunIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Brightness-4--Streamline-Core" >
+        <desc>{"Brightness 4 Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="brightness-4--bright-adjust-brightness-adjustment-sun-raise-controls-dot">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M7 10.25c1.79493 0 3.25 -1.45507 3.25 -3.25S8.79493 3.75 7 3.75 3.75 5.20507 3.75 7 5.20507 10.25 7 10.25Z" />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M7 0.5v1" />
+          <path id="Vector_3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M7 12.5v1" />
+          <path id="Vector_4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 7h-1" />
+          <path id="Vector_5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M1.5 7h-1" />
+          <path id="Vector_6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m11.6 2.40002 -0.71 0.71" />
+          <path id="Vector_7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m3.11002 10.89 -0.71 0.71" />
+          <path id="Vector_8" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m11.6 11.6 -0.71 -0.71" />
+          <path id="Vector_9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m3.11002 3.11002 -0.71 -0.71" />
+        </g>
+      </svg>
+  );
+}
+
+export function MoonIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Angled-Moon--Streamline-Core" >
+        <desc>{"Angled Moon Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="angled-moon--astronomy-moon-science-space-crescent">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M12 10.48c-1.1617 -0.0071 -2.30054 -0.323 -3.29986 -0.91537 -0.99931 -0.59235 -1.82311 -1.43981 -2.38693 -2.4555 -0.56381 -1.01568 -0.84736 -2.16304 -0.82157 -3.32444 0.02579 -1.16139 0.36 -2.29504 0.96835 -3.28469 -1.60282 0.281382 -3.0435 1.14934 -4.0414 2.4348 -0.9979 1.28546 -1.481555 2.89636 -1.35674 4.5189 0.12481 1.62254 0.84914 3.1405 2.0319 4.2582 1.18276 1.1178 2.73924 1.7552 4.36624 1.7881 1.11313 0.0028 2.2081 -0.282 3.17871 -0.8269 0.9707 -0.5449 1.7841 -1.3313 2.3613 -2.2831 -0.3307 0.0546 -0.6649 0.0847 -1 0.09Z" /></g></svg>
+  );
+}
+
+export function Bars3Icon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Hamburger-Menu-1--Streamline-Core" >
+        <desc>{"Hamburger Menu 1 Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="hamburger-menu-1--button-parallel-horizontal-lines-menu-navigation-three-hamburger">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 2H0.5" />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 7H0.5" />
+          <path id="Vector_3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M13.5 12H0.5" />
+        </g>
+      </svg>
+  );
+}
+
+export function XMarkIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Delete-1--Streamline-Core" >
+        <desc>{"Delete 1 Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="delete-1--remove-add-button-buttons-delete-cross-x-mathematics-multiply-math">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m12.5 1.5 -11 11" strokeWidth={1} />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1.5 1.5 11 11" strokeWidth={1} />
         </g>
       </svg>
   );
