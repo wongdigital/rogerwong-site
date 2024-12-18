@@ -5,6 +5,7 @@ category: "Side Projects"
 tags:
   - "App Development"
   - "Design"
+excerpt: "I'm really proud to announce that DesignScene for iPad has shipped today. From idea to release, it's been about a year in the making."
 ---
 
 I'm really proud to announce that [DesignScene for iPad](http://www.designsceneapp.com/ "DesignScene: An inspiration explorer for iPad") has shipped today. From idea to release, it's been about a year in the making. Here's a little trailer I made in case you missed it:

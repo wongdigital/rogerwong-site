@@ -5,6 +5,7 @@ category: "Side Projects"
 tags:
   - "App Development"
   - "Design"
+excerpt: "Yesterday Lunar/Theory (my partner David and I) launched version 2.0 of our iPad app DesignScene. Take a look at the trailer…"
 ---
 
 Yesterday Lunar/Theory (my partner David and I) launched version 2.0 of our iPad app DesignScene. Take a look at the trailer:

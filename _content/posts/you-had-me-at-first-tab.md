@@ -5,6 +5,7 @@ category: "Reviews"
 tags:
   - "Apple"
   - "Design"
+excerpt: "Customer and user experience is not always about the website, the phone call, or person-to-person interaction in a store. It can also come through the form of packaging."
 ---
 
 Customer and user experience is not always about the website, the phone call, or person-to-person interaction in a store. It can also come through the form of packaging.

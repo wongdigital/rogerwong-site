@@ -6,6 +6,7 @@ tags:
   - "Advertising"
   - "Design"
   - "Industry Insights"
+excerpt: "Yesterday the design and advertising community was abuzz over the leaked presentation deck for the new Pepsi logo by the Arnell Group. Yes it is absolutely a work of pure horseshit. But, I was reminded of the decks that my colleagues and I create every day and how somebody's horseshit may be someone else's chocolate cake."
 ---
 
 ![Pepsi](/images/pepsi.gif)

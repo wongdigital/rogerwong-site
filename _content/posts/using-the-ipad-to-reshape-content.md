@@ -7,6 +7,7 @@ tags:
   - "Design"
   - "Industry Insights"
   - "Technology Industry"
+excerpt: "_The New York Times_ recently published an article about how apps and web services are enabling consumers to customize how they read their online content. From apps like Flipboard and Pulse to services like Readability and Instapaper, users are increasingly demanding to consume content whenever, wherever and however they want."
 ---
 
 _**This post was [originally published](http://blog.agencypja.com/2011/02/03/interactive/using-the-ipad-to-reshape-content/ "Using the iPad to Reshape Content | PJA: Bow & Arrow") on [Bow & Arrow from PJA](http://blog.agencypja.com/ "PJA: Bow & Arrow") (my employer) on February 3, 2011.**_

@@ -5,7 +5,7 @@ category: "Side Projects"
 tags:
   - "Personal Projects"
   - "Political Art"
-  - "Social Issues"
+  - "Politics"
 ---
 
 Here's my latest personal project…

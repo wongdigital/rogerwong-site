@@ -6,6 +6,7 @@ tags:
   - "Advertising"
   - "Design"
   - "Industry Insights"
+excerpt: "Fellow Razorfisher and social media guru Shiv Singh asks, in the age of social media, do big ideas matter less? Truth be told, I've been thinking about how to craft my reaction to this since I first read a similar tweet from Michael Lebowitz, CEO of Big Spaceship…"
 ---
 
 Fellow Razorfisher and social media guru [Shiv Singh](http://twitter.com/shivsingh) asks, in the age of social media, [do big ideas matter less](http://www.goingsocialnow.com/2009/07/does-sim-mean-big-ideas-matter.html "Does SIM mean big ideas matter less? - Going Social Now")? Truth be told, I've been thinking about how to craft my reaction to this since I first read a [similar tweet](http://twitter.com/bigspaceship/status/2533832520) from [Michael Lebowitz](http://twitter.com/bigspaceship), CEO of [Big Spaceship](http://www.bigspaceship.com/ "Big Spaceship | A Digital Creative Agency") about how the old ad agency creative partnerships are being replaced with other roles.

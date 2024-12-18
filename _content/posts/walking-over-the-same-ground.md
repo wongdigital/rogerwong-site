@@ -4,6 +4,7 @@ date: "2013-04-13"
 category: "Notes"
 tags:
   - "Advertising"
+excerpt: "Watching the premiere of _Mad Men_ season six, I _loved_ that Peggy Olson blasted her creative team for bringing her three variations on the same idea. These are words to remember."
 ---
 
 ![Peggy Idea](/images/peggy_idea.jpg)

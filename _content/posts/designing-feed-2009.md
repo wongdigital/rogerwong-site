@@ -5,6 +5,8 @@ category: "Case Studies"
 tags:
   - "Design"
   - "Process"
+excerpt: "FEED 2009 has now been released and I feel privileged to have been a part of this one. If you haven't already checked it out, please do so. The report and findings are very compelling and eye-opening. I wanted to share a little bit about the process we went through in designing the new report."
+
 ---
 
 ![FEED 2009 Book](/images/FEED09_Book.jpg)

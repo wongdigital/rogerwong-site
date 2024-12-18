@@ -6,6 +6,7 @@ tags:
   - "Advertising"
   - "Design"
   - "Industry Insights"
+excerpt: "There's been a lot of chatter in recent weeks about how so-called \"digital\" agencies are or are not ready to be the lead for a campaign. But I think the question is a little off."
 ---
 
 There's been a lot of [chatter](http://twitter.com/bmorrissey/status/5661756184) in recent weeks about how so-called "digital" agencies [are](http://adage.com/digitalnext/post?article_id=140498 "Why Digital Agencies Are Indeed Ready to Lead - Advertising Age - DigitalNext") or [are not](http://adage.com/digitalnext/post?article_id=140166 "Why Digital Agencies Aren't Ready to Lead - Advertising Age - DigitalNext") ready to be the lead for a campaign. But I think the question is a little off.
