@@ -42,4 +42,3 @@ Social Issues
 Technical Workflows
 Technology Industry
 Tools
-UX Design
