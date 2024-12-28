@@ -1,6 +1,6 @@
 ---
 title: "Design’s Purpose Remains Constant"
-date: "2024-12-27"
+date: "2024-12-28"
 category: "Essays"
 tags:
   - "Design"
