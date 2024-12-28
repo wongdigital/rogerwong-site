@@ -31,7 +31,7 @@ If you think about it, the UX design profession has already evolved significantl
 
 As the thirst for all things digital proliferated, design rose to meet the challenge. Design schools started to add interaction design to their curricula, and lots of younger graphic designers were adapting and working on websites. We used the tools we knew—Adobe Illustrator and Photoshop—and added Macromedia Director and Flash as projects allowed. 
 
-Director was the tool of choice for those making CD-ROMs in San Francisco’s [Multimedia Gulch](https://www.nytimes.com/1994/09/04/style/gurus-of-multimedia-gulch.html?unlocked_article_code=1.kk4.JJIb.X31BDfNpO1PP&smid=url-share) in the early 1990s. It was an easy transition for designers and developers when the web arrived just a few years later in the [dot-com boom](https://en.wikipedia.org/wiki/Dot-com_bubble).
+Director was the tool of choice for those making [CD-ROMs](https://wapo.st/3ZU1oZ4) in San Francisco’s [Multimedia Gulch](https://www.nytimes.com/1994/09/04/style/gurus-of-multimedia-gulch.html?unlocked_article_code=1.kk4.JJIb.X31BDfNpO1PP&smid=url-share) in the early 1990s. It was an easy transition for designers and developers when the web arrived just a few years later in the [dot-com boom](https://en.wikipedia.org/wiki/Dot-com_bubble).
 
 In a short span of twenty years, designers added many mediums to their growing list: CD-ROMs, websites, [WAP sites](https://en.wikipedia.org/wiki/Wireless_Application_Protocol), responsive websites, mobile apps, tablet apps, web apps, and AR/VR experiences.
  

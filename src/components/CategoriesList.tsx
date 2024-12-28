@@ -33,7 +33,7 @@ export default async function CategoriesList() {
             {(() => {
               const CategoryIcon = categories[name].icon;
               return (
-                <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5" />
+                <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5 text-slate-400" />
               );
             })()}
             <Link 
