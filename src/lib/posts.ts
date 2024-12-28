@@ -9,6 +9,7 @@ import { getTimezoneOffset } from 'date-fns-tz'
 import { parseISO } from 'date-fns'
 import remarkSmartypants from 'remark-smartypants';
 import { categories, type Category } from './categories';
+import { toTitleCase } from '@/lib/text-utils';
 
 const postsDirectory = path.join(process.cwd(), '_content/posts')
 
@@ -26,12 +27,6 @@ type PostData = {
   contentHtml?: string;
 }
 
-// Add a map of special case words
-const specialCaseWords = new Map([
-  ['ux', 'UX'],
-  // Add more special cases as needed
-]);
-
 function normalizeCategory(category: string | undefined): string {
   if (!category) return 'Uncategorized';
   
@@ -47,20 +42,7 @@ function normalizeTags(tags: string[] | undefined): string[] | undefined {
   if (!tags) return undefined;
   
   return tags
-    .map(tag => 
-      tag
-        .split(' ')
-        .map(word => {
-          // Check for special cases first
-          const lowerWord = word.toLowerCase();
-          if (specialCaseWords.has(lowerWord)) {
-            return specialCaseWords.get(lowerWord);
-          }
-          // Default title case handling
-          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-        })
-        .join(' ')
-    )
+    .map(tag => toTitleCase(tag))
     .filter(Boolean);
 }
 

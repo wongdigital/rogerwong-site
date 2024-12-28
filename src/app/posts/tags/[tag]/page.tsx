@@ -6,6 +6,7 @@ import TagsList from '@/components/TagsList';
 import Pagination from '@/components/Pagination';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { toTitleCase } from '@/lib/text-utils';
 
 const POSTS_PER_PAGE = 10;
 
@@ -35,11 +36,10 @@ export default async function TagPage({ params, searchParams }: Props) {
   const { page } = await searchParams;
   const currentPage = Number(page) || 1;
   
-  // Decode and denormalize the tag parameter for display
-  const decodedTag = decodeURIComponent(tag)
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+  // Decode and normalize the tag parameter for display
+  const decodedTag = toTitleCase(
+    decodeURIComponent(tag).replace(/-/g, ' ')
+  );
   
   // Filter posts by tag using case-insensitive comparison
   const allPosts = await getSortedPostsData();
