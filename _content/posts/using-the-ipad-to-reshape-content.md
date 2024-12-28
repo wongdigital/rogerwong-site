@@ -7,6 +7,7 @@ tags:
   - "Design"
   - "Industry Insights"
   - "Technology Industry"
+  - "UX Design"
 excerpt: "_The New York Times_ recently published an article about how apps and web services are enabling consumers to customize how they read their online content. From apps like Flipboard and Pulse to services like Readability and Instapaper, users are increasingly demanding to consume content whenever, wherever and however they want."
 ---
 
