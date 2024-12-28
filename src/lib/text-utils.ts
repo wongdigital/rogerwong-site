@@ -1,7 +1,7 @@
-export const specialCaseWords = new Map([
+const specialCaseWords = new Map([
     ['ux', 'UX'],
     // Add more special cases as needed
-  ]);
+]);
   
 export function toTitleCase(text: string): string {
     return text
@@ -14,4 +14,4 @@ export function toTitleCase(text: string): string {
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
       })
       .join(' ');
-  }
+}
