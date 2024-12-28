@@ -27,12 +27,6 @@ type PostData = {
   contentHtml?: string;
 }
 
-// Add a map of special case words
-const specialCaseWords = new Map([
-  ['ux', 'UX'],
-  // Add more special cases as needed
-]);
-
 function normalizeCategory(category: string | undefined): string {
   if (!category) return 'Uncategorized';
   
