@@ -9,7 +9,7 @@ tags:
   - "Industry Insights"
 imageSrc: "/images/design-constant-featured.jpg"
 imageAlt: "A stylized digital illustration of a person reclining in an Eames lounge chair and ottoman, rendered in a neon-noir style with deep blues and bright coral red accents. The person is shown in profile, wearing glasses and holding what appears to be a device or notebook. The scene includes abstract geometric lines cutting across the composition and a potted plant in the background. The lighting creates dramatic shadows and highlights, giving the illustration a modern, cyberpunk aesthetic."
-excerpt: "Scary words for the UX profession: \"Digital systems, not people, will do much of the craft of (screen-level) interaction design.\" But here’s the truth—this isn’t the first time we’ve faced a shift like this. Just as we adapted from print to digital, and from CD-ROMs to the web, designers will evolve again. The tools may change, but the purpose of design remains constant. And that’s what makes our craft enduring."
+excerpt: "Scary words for the UX profession: “Digital systems, not people, will do much of the craft of (screen-level) interaction design.” But here’s the truth—this isn’t the first time we’ve faced a shift like this. Just as we adapted from print to digital, and from CD-ROMs to the web, designers will evolve again. The tools may change, but the purpose of design remains constant. And that’s what makes our craft enduring."
 ---
 
 Fabricio Teixeira and Caio Braga, in their annual [The State of UX report](https://trends.uxdesign.cc/):
@@ -42,6 +42,7 @@ Designers have had to understand the limitations of each medium, picking up craf
 Concept. Back then, that’s how I referred to creative strategy. It was [drilled into me at design school](/posts/concept-does-not-equal-layout) and in my first job as a designer. Sega.com was a game in and of itself to celebrate gamers and gaming. Pixar.com was a storybook about how Pixar made its movies, emphasizing its storytelling prowess. The Mitsubishi Lancer microsite leaned on the Lancer’s history as a rally car, reminding visitors of its racing heritage. These were all ideas that emotionally connected the brand with the consumer, to lean on what the audience knew to be true and deepened it.
 
 ![Screenshot of Pixar.com from 2001, showing a character page for "A Bug's Life". The page features the classic Pixar logo, navigation menu, and a large image of an animated beetle character. The text describes how the film's insects maintain realistic traits despite their stylized designs. The interface uses Internet Explorer's classic toolbar and window design.](/images/design-constant-pixar.png)
+_When I designed Pixar.com, I purposefully made the site linear, like a storybook._
 
 Concept was also the currency of creative departments at ad agencies. The classic copywriter and art director pairing came up with different ideas for ads. These ideas aren’t [just executions of TV commercials](/posts/walking-over-the-same-ground). Instead, they were the messages the brands wanted to convey, in a way that consumers would be open to them.
 
@@ -60,6 +61,7 @@ In one sense, this alleviates having to make yet another select input. Instead, 
 In today’s technology companies’ squad, aka [Spotify model](https://www.atlassian.com/agile/agile-at-scale/spotify), every squad has a three-headed leadership team consisting of a product manager, a designer, and an engineering or tech lead. This cross-functional leadership team is a direct descendent of the copywriter-art director creative team pioneered by [Bill Bernbach](https://en.wikipedia.org/wiki/William_Bernbach) in 1960, sparking the so-called [“creative revolution”](https://www.oneclub.org/articles/all/-view/the-creative-revolution-of-the-60s/) in advertising.
 
 ![A triptych of iconic 1960s DDB print advertisements showing: left - a Native American person in traditional dress eating rye bread, with text "You don't have to be Jewish to love Levy's"; center - a Volkswagen Beetle with the single word "Lemon." beneath it; right - a smiling woman with a caption "Avis can't afford not to be nice." These ads demonstrate DDB's revolutionary minimalist advertising style.](/images/design-constant-ddb.jpg)
+_Ads by DDB during the creative revolution of the 1960s_
 
 When I was at Organic in 2005, we debuted a mantra called, [Three Minds](https://web.archive.org/web/20080723022726/http://threeminds.organic.com/masthead.html).
 > Great advertising was often created in “pairs”—a copywriter and an art director. In the digital world, the creation process is more complex. Strategists, designers, information architects, media specialists, and technologists must come together to create great experiences. Quite simply, it takes ThreeMinds.
