@@ -5,6 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import { categories, type Category } from '@/lib/categories';
+import MDXContent from './MDXContent';
+import { remark } from 'remark';
+import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
+import remarkSmartypants from 'remark-smartypants';
+
 interface PostPreviewProps {
   title: string;
   date: string;
@@ -27,6 +33,19 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   category,
 }) => {
   const CategoryIcon = categories[category].icon;
+  const [processedExcerpt, setProcessedExcerpt] = React.useState(excerpt);
+
+  React.useEffect(() => {
+    async function processMarkdown() {
+      const processed = await remark()
+        .use(html, { sanitize: false })
+        .use(remarkGfm)
+        .use(remarkSmartypants)
+        .process(excerpt);
+      setProcessedExcerpt(processed.toString());
+    }
+    processMarkdown();
+  }, [excerpt]);
 
   return (
     <div className="mb-4 space-y-2">
@@ -62,7 +81,9 @@ const PostPreview: React.FC<PostPreviewProps> = ({
           />
         </Link>
       )}
-      <p className="text-slate-600 dark:text-slate-200">{excerpt}</p>
+      <div className="prose prose-slate dark:prose-dark">
+        <MDXContent content={processedExcerpt} />
+      </div>
     </div>
   );
 };
