@@ -52,7 +52,7 @@ I would argue that concept is also product strategy. It’s the point of view th
 
 In more recent years, with the rise of UI kits, pre-made templates, and design systems like Material UI, the visual design of user interfaces has become a commodity. I call this moment “peak UI”—when fundamental user interface patterns have reached ubiquity, and no new patterns will or should be invented. Users take what they know from one interface and apply that knowledge to new ones. To change that is to break [Jakob’s Law](https://lawsofux.com/jakobs-law/) and reduce usability. Of course, when new modalities like voice and AI came on the scene, we needed to invent new user interface patterns, but those are few and far between.
 
-And just like how [AI-powered coding assistants](https://rogerwong.me/posts/replatforming-with-a-lot-of-help-from-ai) are generating code based on human-written code, the leading UI software program [Figma is training its AI](https://www.figma.com/blog/introducing-figma-ai/) on its users’ files. Pretty soon, designers will be able to generate UIs via a prompt. And those generated UIs will be good enough because they’ll follow the patterns users are already familiar with.
+And just like how [AI-powered coding assistants](/posts/replatforming-with-a-lot-of-help-from-ai) are generating code based on human-written code, the leading UI software program [Figma is training its AI](https://www.figma.com/blog/introducing-figma-ai/) on users’ files. Pretty soon, designers will be able to generate UIs via a prompt. And those generated UIs will be good enough because they’ll follow the patterns users are already familiar with. (Combined with an in-house design system, the feature will be even more useful.)
 
 In one sense, this alleviates having to make yet another select input. Instead, opening up time for more strategic—and IMHO, more fun—challenges.
 
@@ -61,12 +61,12 @@ In one sense, this alleviates having to make yet another select input. Instead, 
 In today’s technology companies’ squad, aka [Spotify model](https://www.atlassian.com/agile/agile-at-scale/spotify), every squad has a three-headed leadership team consisting of a product manager, a designer, and an engineering or tech lead. This cross-functional leadership team is a direct descendent of the copywriter-art director creative team pioneered by [Bill Bernbach](https://en.wikipedia.org/wiki/William_Bernbach) in 1960, sparking the so-called [“creative revolution”](https://www.oneclub.org/articles/all/-view/the-creative-revolution-of-the-60s/) in advertising.
 
 ![A triptych of iconic 1960s DDB print advertisements showing: left - a Native American person in traditional dress eating rye bread, with text "You don't have to be Jewish to love Levy's"; center - a Volkswagen Beetle with the single word "Lemon." beneath it; right - a smiling woman with a caption "Avis can't afford not to be nice." These ads demonstrate DDB's revolutionary minimalist advertising style.](/images/design-constant-ddb.jpg)
-_Ads by DDB during the creative revolution of the 1960s_
+_Ads by DDB during the creative revolution of the 1960s. The firm paired copywriters and art directors to create ads centered on a single idea._
 
 When I was at Organic in 2005, we debuted a mantra called, [Three Minds](https://web.archive.org/web/20080723022726/http://threeminds.organic.com/masthead.html).
 > Great advertising was often created in “pairs”—a copywriter and an art director. In the digital world, the creation process is more complex. Strategists, designers, information architects, media specialists, and technologists must come together to create great experiences. Quite simply, it takes ThreeMinds.
 
-At its most simplistic, PMs own the why; designers, own the what; and engineers own the how. But the creative act is a lot messier than that and the lines aren’t as clean as we want them to be. 
+At its most simplistic, PMs own the why; designers, own the what; and engineers own the how. But the creative act is a lot messier than that and the lines aren’t as firm in practice. 
 
 The reality is there’s blurriness between each discipline’s area of responsibility. I asked my friend, [Byrne Reese](https://www.linkedin.com/in/byrnereese), Group Product Manager at RingCentral, about that fuzziness between PMs and designers, and here’s what he had to say:
 > I have a bias towards letting a PM drive product strategy. But a good product designer will have a strong point of view here, because they will also see the big picture alongside the PM. It is hard for them not to because for them to do their role well, they need to do competitive analysis, they need to talk to customers, they need to understand the market. Given that, they can’t help it but have a point of view on product strategy. 
@@ -88,7 +88,7 @@ Zooming out, UX design and product design had been neck and neck. But once the z
 
 Looking at the jobs posted on LinkedIn at the moment, and you’ll find nearly 70% more product designer job postings than ones for UX designer—1,354 versus 802.
 
-As Christoper K. Wong wrote so succinctly, [product design is overtaking UX](https://dataanddesign.substack.com/p/product-design-is-overtaking-ux-and).
+As Christoper K. Wong wrote so succinctly, [product design is overtaking UX](https://dataanddesign.substack.com/p/product-design-is-overtaking-ux-and). Companies are demanding more from their designers.
 
 ## Design Has Always Been About the Why
 
