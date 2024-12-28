@@ -80,7 +80,7 @@ In the last few years, companies have switched from hiring UX designers to hirin
 
 ![Chart of Google Trends data for searches for "UX design" and "product design"](/images/design-constant-google-trends.png)
 
-The Google Trends data here isn’t conclusive, but you can see a slow decline for “UX design” since January 2023 and a steady incline for “product design” since 2021. In September 2024, “product design” overtook “UX design.” (The jump at the start of 2022 is due to a change in Google’s data collection system, so look at the relative comparison between the two lines.)
+The Google Trends data here isn’t conclusive, but you can see a slow decline for “UX design” starting in January 2023 and a steady incline for “product design” since 2021. In September 2024, “product design” overtook “UX design.” (The jump at the start of 2022 is due to a change in Google’s data collection system, so look at the relative comparison between the two lines.)
 
 Zooming out, UX design and product design had been neck and neck. But once the zero interest-rate period ([ZIRP](https://en.wikipedia.org/wiki/Zero_interest-rate_policy)) era hit and tech companies were [flush with cash](https://www.theguardian.com/technology/2023/apr/11/techscape-zirp-tech-boom), there’s a jump in UX design. My theory is because companies could afford to have designers focus on their area of expertise—optimizing user interactions. At around March 2022, when ZIRP was coming to an end and the tech layoffs started, UX design declines while product design rises.
 
