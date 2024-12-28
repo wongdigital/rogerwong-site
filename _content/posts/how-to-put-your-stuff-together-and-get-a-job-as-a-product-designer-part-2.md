@@ -4,7 +4,7 @@ date: "2021-12-07"
 category: "Guides"
 tags:
   - "Career Advice"
-  - "Design"
+  - "UX Design"
 imageSrc: "/images/Portfolio-7_1920x722.jpg"
 imageAlt: "Illustration of a portfolio"
 excerpt: "Your portfolio is often a hiring manager's first real look at your work. Learn how to create a compelling portfolio website that showcases your best projects through clear, focused case studies—while avoiding common pitfalls that can turn recruiters away."

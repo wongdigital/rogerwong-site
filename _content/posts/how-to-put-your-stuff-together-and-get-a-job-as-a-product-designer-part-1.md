@@ -4,7 +4,7 @@ date: "2021-12-06"
 category: "Guides"
 tags:
   - "Career Advice"
-  - "Design"
+  - "UX Design"
 imageSrc: "/images/Resume-1_1920x722.jpg"
 imageAlt: "Illustration of a resume"
 excerpt: "After decades of experience hiring designers, I've learned what makes candidates stand out. In this first part of a three-part series, I share essential tips for crafting your resume and LinkedIn profile to catch a hiring manager's attention. The key? Remember that design leaders are your users—we're busy people who need to quickly assess if you're the right fit."
