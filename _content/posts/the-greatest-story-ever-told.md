@@ -9,7 +9,7 @@ imageSrc: "/images/the-greatest-story-ever-told-hero.jpg"
 imageAlt: "Photo of Kamala Harris"
 excerpt: "Under immense pressure, under the highest of expectations, Kamala Harris outperformed in her acceptance speech at the DNC, delivering way beyond what anyone anticipated. Her biography is what makes her relatable. It illustrates her values. And her story is the American story."
 ---
-Due to a work event, I wasn't able to watch Kamala Harris's acceptance speech at the DNC live on Thursday night. But I watched it about an hour later and was floored. Under immense pressure, under the highest of expectations, Kamala outperformed, delivering way beyond what anyone anticipated. Her biography is what makes her relatable. It illustrates her values. And her story is the American story.
+I was floored. Under immense pressure, under the highest of expectations, Kamala outperformed, delivering way beyond what anyone anticipated. Her biography is what makes her relatable. It illustrates her values. And her story is the American story.
 
 When she talked about her immigrant parents, I thought about mine. My dad was a cook and a taxicab driver. My mother worked as a waitress. My sister and I grew up squarely in the middle class, in a rented flat in the San Francisco working class neighborhood of North Beach (yes, back in the 1970s and '80s it was working class). Our school, though a private parochial one, was also attended by students from around the neighborhood, also mostly kids of immigrants. Education was a top value in our immigrant families and they made sacrifices to pay for our schooling.
 
