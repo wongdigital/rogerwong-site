@@ -84,7 +84,7 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
       <head>
         <Script
           id="schema-markup"
@@ -95,7 +95,7 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
+      <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} overflow-x-hidden`}>
         <Providers>
           <div className="container mx-auto px-4">
             <SkipToMain />

@@ -110,7 +110,7 @@ export default async function Post({ params }: Props) {
         {formatDate(postData.date)}&nbsp;&nbsp;•&nbsp;&nbsp;{readTime} read
       </div>
       {postData.imageSrc && postData.imageAlt && (
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] mb-8">
+        <div className="relative w-[100vw] left-[50%] right-[50%] translate-x-[-50%] mb-8">
           <div className="md:aspect-[2.66/1] aspect-[4/3] w-full overflow-hidden">
             <Image 
               src={postData.imageSrc} 
