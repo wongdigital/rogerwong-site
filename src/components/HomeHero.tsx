@@ -16,7 +16,7 @@ export default function HomeHero() {
           <div className="md:w-7/12 content-center order-2 md:order-1">
             <h2 className="page-title">
               I&rsquo;m <Link href="/about" className="link-primary">Roger Wong</Link>, 
-              a seasoned design leader and creative director of the brand and software studio Wong.Digital. Currently leading design at <a href="https://www.buildops.com" target="_blank" className="link-primary">BuildOps</a>.
+              a seasoned design leader and creative director of the brand and software design studio Wong.Digital. Currently leading design at <a href="https://www.buildops.com" target="_blank" className="link-primary">BuildOps</a>.
             </h2>
           </div>
           <div className="md:w-5/12 order-1 md:order-2 flex justify-start">
