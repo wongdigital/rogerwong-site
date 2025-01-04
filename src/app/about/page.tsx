@@ -52,8 +52,8 @@ export default async function About() {
                     <li>Managed team of over 40 creatives to support Samsung Mobile</li>
                     <li>Created an iPad app that Apple deemed “App of the Week”</li>
                     <li>Redesigned CBS.com, eBay Motors, Visa Signature</li>
-                    <li>Created the original Genius Bar video loops and reservation system for Apple retail stores</li>
-                    <li>Worked directly with Steve Jobs on the “Welcome” animation for Mac OS X, Pixar.com, and pitch decks</li>
+                    <li>Created the original <Link href="/posts/the-soul-of-the-apple-store-genius-bar">Genius Bar video loops</Link> and reservation system for Apple retail stores</li>
+                    <li>Worked directly with Steve Jobs on the <Link href="/posts/thank-you-steve">“Welcome” animation for Mac OS X</Link>, Pixar.com, and pitch decks</li>
                 </ul>
                 </div>
             </div>
