@@ -123,3 +123,8 @@ button,
 .prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"], [class~="not-prose"] *)):after {
     content: none; /* Override to remove close quote */
 }
+
+.prose blockquote {
+  @apply py-0;
+  @apply text-slate-500 dark:text-slate-400;
+}
