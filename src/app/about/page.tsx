@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { BlueSkyIcon, InstagramIcon, ThreadsIcon, LinkedInIcon } from '@/lib/icons'
 
 export default async function About() {
   
@@ -19,12 +20,24 @@ export default async function About() {
               />
               <p>I am a forward-thinking design leader with extensive experience in cultivating brand loyalty and enhancing customer experiences for prominent tech companies like <Link href="/posts/the-apple-design-process">Apple</Link>, Microsoft, Cisco, and Intel. My career spans over two decades during which I founded <a href="https://wong.digital" target="_blank">Wong.Digital</a>, led design at Convex as VP, and managed significant creative teams, notably for Samsung Mobile. My passion for innovation is demonstrated through my cofounding of Transported VR, a pioneering venture in virtual reality real estate, and my side project of developing an AI tool to assist designers in <Link href="/posts/how-i-built-and-launched-an-ai-powered-app">crafting brand strategies</Link>. My contributions to the design field have been recognized by <em>Communication Arts</em>, <em>Graphis</em>, One Show, Clio Awards, and Cannes Lions. Holding a BFA in graphic design from the California College of the Arts, I have also contributed to academics as a professor and advisory board member at San Diego City College. I live in San Diego with my family. I do not surf.</p>
               <h3>Follow Me</h3>
-              <ul>
-                <li><a href="https://www.linkedin.com/in/rogerwong/" target="_blank" className="link-primary">LinkedIn</a></li>
-                <li><a href="https://bsky.app/profile/lunarboy.com" target="_blank" className="link-primary">Bluesky</a></li>
-                <li><a href="https://www.threads.net/@lunarboy" target="_blank" className="link-primary">Threads</a></li>
-                <li><a href="https://www.instagram.com/lunarboy/" target="_blank" className="link-primary">Instagram</a></li>
-              </ul>
+              <div className="flex flex-col space-y-4 !mt-4">
+                <a href="https://www.threads.net/@lunarboy" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                  <ThreadsIcon className="w-5 h-5" />
+                  <span>Threads</span>
+                </a>
+                <a href="https://bsky.app/profile/lunarboy.com" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                  <BlueSkyIcon className="w-5 h-5" />
+                  <span>Bluesky</span>
+                </a>
+                <a href="https://www.instagram.com/lunarboy/" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                  <InstagramIcon className="w-5 h-5" />
+                  <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rogerwong/" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                  <LinkedInIcon className="w-5 h-5" />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
             </div>
           </main>
           <aside className="w-full md:w-5/12 space-y-8">

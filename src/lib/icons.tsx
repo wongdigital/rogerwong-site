@@ -325,3 +325,82 @@ export function XMarkIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
       </svg>
   );
 }
+
+export function BlueSkyIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Bluesky-Logo--Streamline-Core" >
+        <desc>{"Bluesky Social Media Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="bluesky-social-media">
+          <path id="Vector 6048" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.3887 1.04605C2.97088 1.25817 5.267 2.28399 7 5.74997c1.733 -3.46598 4.0291 -4.4918 4.6113 -4.70392C11.7034 1.0125 11.7996 1 11.8976 1 12.5065 1 13 1.49355 13 2.10237v3.3976c0 1.38071 -1.1193 2.5 -2.5 2.5h-1c0.8154 0.27401 1.6616 0.78917 2.2318 1.17604 0.4364 0.29617 0.6479 0.82449 0.4428 1.31049 -0.1818 0.4308 -0.4914 0.9727 -1.0111 1.4711 -0.4897 0.4695 -0.9549 0.7387 -1.31874 0.8927 -0.4572 0.1935 -0.95701 0.0334 -1.29206 -0.333C8.03948 11.9561 7.30893 10.9857 7 9.75c-0.30893 1.2357 -1.03948 2.2061 -1.5527 2.7673 -0.33505 0.3664 -0.83486 0.5265 -1.29206 0.333 -0.36388 -0.154 -0.82902 -0.4232 -1.31869 -0.8927 -0.51971 -0.4984 -0.82938 -1.0403 -1.01116 -1.4711 -0.20508 -0.486 0.00639 -1.01432 0.44286 -1.31049C2.8384 8.78914 3.68463 8.27398 4.5 7.99997h-1c-1.38071 0 -2.5 -1.11929 -2.5 -2.5v-3.3976C1 1.49355 1.49355 1 2.10237 1c0.09798 0 0.19427 0.0125 0.28633 0.04605Z" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}
+
+export function LinkedInIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Linkedin-Logo--Streamline-Core" >
+        <desc>{"Linkedin Logo Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="linkedin--network-linkedin-professional">
+          <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M1.13867 5.44917c0 -0.76217 0.48502 -0.64339 1.15811 -0.64339 0.67308 0 1.1482 -0.11878 1.1482 0.64339v7.42373c0 0.7721 -0.48502 0.6137 -1.1482 0.6137 -0.66319 0 -1.15811 0.1584 -1.15811 -0.6137V5.44917Z" strokeWidth={1} />
+          <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M3.21191 2.6939c0.24078 -0.24819 0.37424 -0.58114 0.37155 -0.92691 -0.01254 -0.33543 -0.15273 -0.6534 -0.39191 -0.888905C2.95237 0.642582 2.63226 0.507337 2.29668 0.5c-0.33657 0.007203 -0.6578 0.142113 -0.89858 0.377383 -0.24079 0.235267 -0.3831 0.553297 -0.3981 0.889607 0.00484 0.34518 0.14211 0.6753 0.38344 0.92215 0.24132 0.24686 0.56826 0.39156 0.91324 0.40422 0.3457 -0.00779 0.67445 -0.15128 0.91523 -0.39946Z" strokeWidth={1} />
+          <path id="Vector_3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M5.4248 5.44915c0 -0.42563 0.15838 -0.584 0.40584 -0.6335 0.24745 -0.04949 1.09871 0 1.39566 0 0.29695 0 0.41573 0.48502 0.40583 0.85126 0.25401 -0.34091 0.59125 -0.61093 0.97945 -0.78423 0.38821 -0.17331 0.81439 -0.2441 1.23777 -0.2056 0.41575 -0.02542 0.83225 0.03691 1.22235 0.18295 0.39 0.14603 0.745 0.3725 1.0419 0.66469 0.2969 0.29219 0.5289 0.64356 0.6811 1.03129s0.2211 0.80314 0.2023 1.21924v5.06795c0 0.7721 -0.4751 0.6137 -1.1482 0.6137s-1.1482 0.1584 -1.1482 -0.6137V8.88386c0.0174 -0.20377 -0.0092 -0.4089 -0.0781 -0.60146s-0.1785 -0.36804 -0.3212 -0.51452 -0.31529 -0.26053 -0.506 -0.33441 -0.39508 -0.10585 -0.59924 -0.09374c-0.20321 -0.00517 -0.4052 0.0329 -0.59259 0.11166 -0.1874 0.07877 -0.35592 0.19645 -0.49442 0.34524 -0.1385 0.14879 -0.24381 0.32531 -0.30897 0.51786 -0.06515 0.19255 -0.08866 0.39675 -0.06897 0.59907v3.95934c0 0.7721 -0.48501 0.6137 -1.1581 0.6137s-1.14821 0.1584 -1.14821 -0.6137V5.44915Z" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}
+
+export function ThreadsIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Meta-Thread-Logo--Streamline-Core" >
+        <desc>{"Meta Thread Logo Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="social-meta-thread--social-meta-thread-short-message">
+          <path id="Vector 4694" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M5.09545 4.81982c0.86899 -1.41379 3.44595 -1.5936 4.36231 0.35852 0.91634 1.95212 0.53788 4.88026 -2.29071 4.88026 -2.8286 0 -3.04771 -3.60542 0.49799 -3.60542C11.2107 6.45318 12 8.30683 12 10c0 2.0824 -2.11744 3.5 -4.99998 3.5C3.5 13.5 1.5 11 1.5 7S3.5 0.5 7.00002 0.5c3.31948 0 5.08118 2.45502 5.52548 3.80187" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}
+
+export function InstagramIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 14 14" 
+      className={className}
+      {...props}
+      strokeWidth="1"
+      id="Instagram-Logo--Streamline-Core" >
+        <desc>{"Instagram Logo Streamline Icon: https://streamlinehq.com"}</desc>
+        <g id="instagram">
+          <path id="Rectangle 2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M1 3.57143C1 2.15127 2.15127 1 3.57144 1h6.85716c1.4202 0 2.5715 1.15127 2.5715 2.57143v6.85717c0 1.4201 -1.1513 2.5714 -2.5715 2.5714H3.57144C2.15127 13 1 11.8487 1 10.4286V3.57143Z" strokeWidth={1} />
+          <g id="Group 4546">
+            <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M10.46 3.65613c-0.1381 0 -0.25 -0.11193 -0.25 -0.25s0.1119 -0.25 0.25 -0.25" strokeWidth={1} />
+            <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M10.46 3.65613c0.138 0 0.25 -0.11193 0.25 -0.25s-0.112 -0.25 -0.25 -0.25" strokeWidth={1} />
+          </g>
+          <path id="Ellipse 11" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M4.45 7a2.55 2.55 0 1 0 5.1 0 2.55 2.55 0 1 0 -5.1 0" strokeWidth={1} />
+        </g>
+      </svg>
+  );
+}

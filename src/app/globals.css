@@ -10,17 +10,17 @@ body {
 
 /* Add base transitions for theme switching */
 :root {
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
 }
 
 /* Add transitions for theme switching */
 *, *::before, *::after {
-  transition: background-color 0.3s ease,
-              border-color 0.3s ease,
-              color 0.3s ease,
-              fill 0.3s ease,
-              opacity 0.3s ease,
-              box-shadow 0.3s ease;
+  transition: background-color 0.1s ease,
+              border-color 0.1s ease,
+              color 0.1s ease,
+              fill 0.1s ease,
+              opacity 0.1s ease,
+              box-shadow 0.1s ease;
 }
 
 /* Exclude transitions for media elements */

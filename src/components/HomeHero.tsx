@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { BlueSkyIcon,InstagramIcon, ThreadsIcon, LinkedInIcon } from '@/lib/icons'
+
 export default function HomeHero() {
   // Define the paths outside the component for better readability
   const squirclePath = {
@@ -18,6 +20,20 @@ export default function HomeHero() {
               I&rsquo;m <Link href="/about" className="link-primary">Roger Wong</Link>, 
               a seasoned design leader and creative director of the brand and software design studio Wong.Digital. Currently leading design at <a href="https://www.buildops.com" target="_blank" className="link-primary">BuildOps</a>.
             </h2>
+            <div className="flex space-x-8 mt-10">
+              <a href="https://www.threads.net/@lunarboy" target="_blank" className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                <ThreadsIcon className="w-5 h-5" />
+              </a>
+              <a href="https://bsky.app/profile/lunarboy.com" target="_blank" className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                <BlueSkyIcon className="w-5 h-5" />
+              </a>
+              <a href="https://www.instagram.com/lunarboy/" target="_blank" className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                <InstagramIcon className="w-5 h-5" />
+              </a>
+              <a href="https://www.linkedin.com/in/rogerwong/" target="_blank" className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                <LinkedInIcon className="w-5 h-5" />
+              </a>
+            </div>
           </div>
           <div className="md:w-5/12 order-1 md:order-2 flex justify-start">
             <div className="relative w-36 h-36 md:w-72 md:h-72">
