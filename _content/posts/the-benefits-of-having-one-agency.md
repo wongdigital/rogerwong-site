@@ -17,7 +17,7 @@ Despite the maturing of digital agencies such as [Razorfish](http://www.razorfis
 
 [![Client Campaign Anatomy: The Way It Is Now](/images/client-campaign-anatomy-now.png)](/images/client-campaign-anatomy-now.png)
 
-OK, the end-zone is down that way 50 yards! Make sure you talk to each other along the way. Now go! \[[Download PDF](https://www.dropbox.com/s/o426m0wkc5yjns1/client-campaign-anatomy-now.pdf?dl=0)\] [![Creative Commons License](/images/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/us/)
+OK, the end-zone is down that way 50 yards! Make sure you talk to each other along the way. Now go! \[[Download PDF](https://www.dropbox.com/s/o426m0wkc5yjns1/client-campaign-anatomy-now.pdf?dl=0)\]
 
 I've seen it time and time again: if you want an integrated marketing campaign, how could you possibly brief all the companies and hope they work together and come back with something good and cohesive? The agencies will pay lip-service and _say_ they're collaborating, but there's only so much collaboration that can happen in reality. Each agency is moving fast and really has no time to talk to the others. Plus there is always unspoken political jockeying for protecting the work each agency _does_ have and trying to steal more business from the others. I strongly believe that this model is inefficient (money and time), makes agency people insane, and creates less-than-stellar campaigns.
 
@@ -25,13 +25,13 @@ What should instead happen is the client needs to brief one agency who will crea
 
 [![Client Campaign Anatomy: The Way It Should Be](/images/client-campaign-anatomy-should.png)](/images/client-campaign-anatomy-should.png)
 
-Let the one Agency bring in specialists as needed to serve the idea. \[[Download PDF](https://www.dropbox.com/s/qi2r3kzjtdkgd3n/client-campaign-anatomy-should.pdf?dl=0)\] [![Creative Commons License](/images/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/us/)
+Let the one Agency bring in specialists as needed to serve the idea. \[[Download PDF](https://www.dropbox.com/s/qi2r3kzjtdkgd3n/client-campaign-anatomy-should.pdf?dl=0)\]
 
 Agencies should not be labeled "digital," for digital is only a tactic. I'd say the same with "traditional." What clients should ask for is strong strategic work that drives results. Let the agency—regardless of its label—decide on who to sub-contract to if necessary.
 
 When we see clients trust their agency and its vision, we witness great work all around:
 
-- [TBWA\\Chiat\\Day](http://www.youtube.com/watch?v=AAvRHko37UE "YouTube - Apple "Get a Mac" Web ad: "Ultimate Upgrade"") + [Apple](http://movies.apple.com/movies/us/apple/getamac/apple_getamac_i-can-do-anything_20081215_640x360.mov "I can do anything")
+- [TBWA\\Chiat\\Day](http://www.youtube.com/watch?v=AAvRHko37UE) + [Apple](http://movies.apple.com/movies/us/apple/getamac/apple_getamac_i-can-do-anything_20081215_640x360.mov)
 - [Crispin Porter + Bogusky](http://bits.blogs.nytimes.com/2009/01/09/are-facebook-friends-worth-their-weight-in-beef/ "The Value of a Facebook Friend? About 37 Cents - Bits Blog - NYTimes.com") + [Burger King](http://bits.blogs.nytimes.com/2009/01/15/whopper-sacrifice-de-friended-on-facebook/ "‘Whopper Sacrifice’ De-Friended on Facebook - Bits Blog - NYTimes.com")
 - [Goodby, Silverstein Partners](http://motionographer.com/theater/sprint-value/ "Sprint Value | Motionographer | Motion graphics, design, animation, filmmaking and visual effects") + [Sprint](http://now.sprint.com/ "Sprint: Plug into Now.")
 
