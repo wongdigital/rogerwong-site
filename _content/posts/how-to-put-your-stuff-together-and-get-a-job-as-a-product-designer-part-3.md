@@ -4,6 +4,7 @@ date: "2021-12-08"
 category: "Guides"
 tags:
   - "Career Advice"
+  - "Resources"
   - "UX Design"
 imageSrc: "/images/Interview-12_1920x722.jpg"
 imageAlt: "Illustration of an interview"

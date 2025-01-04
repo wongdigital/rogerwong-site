@@ -4,6 +4,7 @@ date: "2021-12-06"
 category: "Guides"
 tags:
   - "Career Advice"
+  - "Resources"
   - "UX Design"
 imageSrc: "/images/Resume-1_1920x722.jpg"
 imageAlt: "Illustration of a resume"

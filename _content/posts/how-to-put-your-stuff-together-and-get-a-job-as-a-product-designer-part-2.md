@@ -4,6 +4,7 @@ date: "2021-12-07"
 category: "Guides"
 tags:
   - "Career Advice"
+  - "Resources"
   - "UX Design"
 imageSrc: "/images/Portfolio-7_1920x722.jpg"
 imageAlt: "Illustration of a portfolio"
