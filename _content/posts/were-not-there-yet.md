@@ -7,7 +7,7 @@ tags:
   - "Social Issues"
 imageSrc: "/images/not-there-yet-hero.jpg"
 imageAlt: "Silhouette of human evolution stages over a background of red blood splatters, symbolizing violence and primal instincts."
-excerpt: "Yesterday, my Facebook filled with “Me too” posts—stark reminders of pervasive harassment. Later, I heard the harrowing story of a Rohingya survivor, exposing humanity’s capacity for cruelty. Despite millennia of evolution, our primal instincts—aggression, territorialism, tribalism—still pull us back. But progress depends on resisting them and building a future of empathy and cooperation. We must do better. Together."
+excerpt: "Yesterday, my Facebook filled with \"Me too\" posts—stark reminders of pervasive harassment. Later, I heard the harrowing story of a Rohingya survivor, exposing humanity’s capacity for cruelty. Despite millennia of evolution, our primal instincts—aggression, territorialism, tribalism—still pull us back. But progress depends on resisting them and building a future of empathy and cooperation. We must do better. Together."
 ---
 ## Sex
 

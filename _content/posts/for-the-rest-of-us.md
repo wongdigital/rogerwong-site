@@ -8,7 +8,7 @@ tags:
   - "Industry Insights"
 imageSrc: "/images/your-verse-hero.jpg"
 imageAlt: "Still from Apple's Your Verse ad"
-excerpt: "Apple's recent advertising campaigns 'Your Verse' and 'Powerful' aren't just commercials—they're rallying cries for the faithful. As a long-time Apple fan and former employee, I see these ads following in the footsteps of the legendary 'Think Different' campaign, serving to inspire existing users rather than convert new ones."
+excerpt: "Apple's recent advertising campaigns \"Your Verse\" and \"Powerful\" aren't just commercials—they're rallying cries for the faithful. As a long-time Apple fan and former employee, I see these ads following in the footsteps of the legendary \"Think Different\" campaign, serving to inspire existing users rather than convert new ones."
 ---
 
 From an advertising standpoint, I believe Apple has been on fire recently. (Disclaimer: I have been an Apple fanboy since 1985 and used to [work there](https://rogerwong.me/posts/thank-you-steve/ "Thank you, Steve") many years ago.) Beginning with the “What will your verse be?” iPad ad that debuted in mid-January, they’ve continued with the “You’re more powerful than you think” iPhone 5S that began airing recently.
