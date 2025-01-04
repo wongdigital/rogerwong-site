@@ -19,6 +19,12 @@ if (typeof window !== 'undefined') {
 }
 
 export default function MDXContent({ content }: Props) {
+  // Add safety check for content
+  if (!content || typeof content !== 'string') {
+    console.warn('MDXContent received invalid content:', content);
+    return null;
+  }
+
   const options: HTMLReactParserOptions = {
     replace: (domNode) => {
       if (domNode instanceof Element) {
@@ -77,5 +83,10 @@ export default function MDXContent({ content }: Props) {
     }
   };
 
-  return parse(content, options);
+  try {
+    return parse(content, options);
+  } catch (error) {
+    console.error('Error parsing content:', error);
+    return null;
+  }
 }

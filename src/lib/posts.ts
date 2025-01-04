@@ -113,6 +113,11 @@ export function getSortedPostsData(): PostData[] {
       const postDate = parseISO(`${post.date}T00:00:00`)
       return todayWithOffset >= postDate;
     })
+    .map(post => ({
+      ...post,
+      content: typeof post.content === 'string' ? post.content : '',
+      excerpt: typeof post.excerpt === 'string' ? post.excerpt : ''
+    }))
     .sort((a, b) => {
       if (a.date < b.date) {
         return 1;
