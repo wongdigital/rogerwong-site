@@ -5,11 +5,9 @@ category: "Notes"
 tags:
   - "Design"
   - "Resources"
-# imageSrc: "/images/we-re-all-publishers-featured.jpg"
-# imageAlt: "A tablet displaying \"Butterick's Practical Typography 2nd Edition\" alongside two typography-focused books: \"The Mac is not a typewriter\" with a vintage typewriter on its cover, and a blue book titled \"Stop Stealing Sheep & find out how type works\" by Erik Spiekermann and E.M. Ginger. The items are arranged on a weathered wood surface."
-excerpt: "I’ve had Matthew Butterick’s “Practical Typography” website/ebook bookmarked since I discovered it over ten years ago. It’s making the rounds again, and I think it’s a good reminder that we are all “professional writers” as he describes…"
+excerpt: "I’ve had Matthew Butterick’s _Practical Typography_ website/ebook bookmarked since I discovered it over ten years ago. It’s making the rounds again, and I think it’s a good reminder that we are all “professional writers” as he describes…"
 ---
-I’ve had [Matthew Butterick’s “Practical Typography”](https://practicaltypography.com/) website/ebook bookmarked since I discovered it over ten years ago. It’s making the rounds again, and I think it’s a good reminder that we are all “professional writers” as he describes:
+I’ve had [Matthew Butterick’s _Practical Typography_](https://practicaltypography.com/) website/ebook bookmarked since I discovered it over ten years ago. It’s making the rounds again, and I think it’s a good reminder that we are all “professional writers” as he describes:
 
 > When we think of “professional writers” we probably think of novelists, screenwriters, or journalists. But the programmer, the scientist, the lawyer—and you, if your work depends on presenting written ideas—all deserve to be called professional writers.
 >
