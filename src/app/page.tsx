@@ -6,6 +6,7 @@ import { getSortedLinklogData } from '../lib/linklog';
 import HomeHero from '../components/HomeHero';
 import Link from 'next/link'
 import { ArrowRightIcon } from '@/lib/icons'
+import MostRead from '../components/MostRead';
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
@@ -64,6 +65,9 @@ export default async function Home() {
               More Links 
               <ArrowRightIcon className="w-4 h-4" />
             </Link>
+            <div className="mt-12">
+              <MostRead />
+            </div>
           </div>
         </div>
       </section>

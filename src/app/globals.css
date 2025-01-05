@@ -31,6 +31,11 @@ svg {
   transition: none;
 }
 
+/* Override clip-path for MostRead thumbnails */
+.most-read-thumbnail img {
+  clip-path: none !important;
+}
+
 .page-title {
   @apply text-2xl md:text-3xl font-bold mb-4 text-slate-600 dark:text-slate-200;
 }
