@@ -3,7 +3,7 @@ import { RssIcon } from '@/lib/icons';
 
 export default function Footer() {
   return (
-    <div className="py-4 mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 dark:text-slate-400">
+    <div className="py-4 mt-8 flex flex-col md:flex-row justify-between items-start text-sm text-slate-500 dark:text-slate-400">
       <div>
         © 1995&ndash;{new Date().getFullYear()} Roger Wong. All rights reserved.
       </div>
