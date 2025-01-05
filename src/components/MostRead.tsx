@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { formatDate } from '@/lib/utils'
 import { calculateReadTime } from '@/lib/readTime'
 import { categories, type Category } from '@/lib/categories'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
 import type { ReactElement } from 'react'
 
 const MAX_RETRIES = 3;
@@ -65,7 +65,7 @@ export default function MostRead(): ReactElement {
   const intervalRef = useRef<NodeJS.Timeout>();
   const timeoutRef = useRef<NodeJS.Timeout>();
 
-  async function fetchMostRead() {
+  const fetchMostRead = useCallback(async () => {
     try {
       const response = await fetchWithRetry('/api/most-read');
       const data = await response.json();
@@ -100,7 +100,7 @@ export default function MostRead(): ReactElement {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, []);
 
   useEffect(() => {
     fetchMostRead();
@@ -114,7 +114,7 @@ export default function MostRead(): ReactElement {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, []);
+  }, [fetchMostRead]);
 
   if (isLoading) {
     return (
