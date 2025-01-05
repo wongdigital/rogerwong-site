@@ -18,7 +18,7 @@ export default async function Home() {
       <HomeHero />
       <div className="h-[1px] bg-slate-300 dark:bg-slate-700 w-full"></div>
       <section className="my-8 py-8">
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-8">
           <div className="w-full lg:w-7/12">
             <h3 className="section-heading">Latest Posts</h3>
             <div className="space-y-8 mb-4">
@@ -47,24 +47,26 @@ export default async function Home() {
             </div>
           </div>
           <div className="w-full lg:w-5/12">
-            <h3 className="section-heading">Latest Links</h3>
-            <div className="mb-8">
-              {sortedLinks.slice(0, 6).map((link, index) => (
-                <LinklogPreview
-                  key={index}
-                  title={link.title}
-                  linkUrl={link.linkUrl}
-                  linkSource={link.linkSource}
-                />
-              ))}
+            <div className="mt-4 md:mt-0">
+              <h3 className="section-heading">Latest Links</h3>
+              <div className="mb-8">
+                {sortedLinks.slice(0, 6).map((link, index) => (
+                  <LinklogPreview
+                    key={index}
+                    title={link.title}
+                    linkUrl={link.linkUrl}
+                    linkSource={link.linkSource}
+                  />
+                ))}
+              </div>
+              <Link 
+                className="button-outline" 
+                href="/linklog"
+              >
+                More Links 
+                <ArrowRightIcon className="w-4 h-4" />
+              </Link>
             </div>
-            <Link 
-              className="button-outline" 
-              href="/linklog"
-            >
-              More Links 
-              <ArrowRightIcon className="w-4 h-4" />
-            </Link>
             <div className="mt-12">
               <MostRead />
             </div>
