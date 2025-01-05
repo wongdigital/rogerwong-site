@@ -6,7 +6,8 @@ import { getSortedLinklogData } from '../lib/linklog';
 import HomeHero from '../components/HomeHero';
 import Link from 'next/link'
 import { ArrowRightIcon } from '@/lib/icons'
-import MostRead from '../components/MostRead';
+import MostRead, { MostReadSkeleton } from '../components/MostRead';
+import { Suspense } from 'react';
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
@@ -68,7 +69,9 @@ export default async function Home() {
               </Link>
             </div>
             <div className="mt-12">
-              <MostRead />
+              <Suspense fallback={<MostReadSkeleton />}>
+                <MostRead />
+              </Suspense>
             </div>
           </div>
         </div>

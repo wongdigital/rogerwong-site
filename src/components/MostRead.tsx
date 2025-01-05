@@ -5,12 +5,11 @@ import Link from 'next/link'
 import { formatDate } from '@/lib/utils'
 import { calculateReadTime } from '@/lib/readTime'
 import { categories, type Category } from '@/lib/categories'
-import { useEffect, useState, useRef, useCallback } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import type { ReactElement } from 'react'
 
 const MAX_RETRIES = 3;
 const INITIAL_RETRY_DELAY = 1000; // 1 second
-const ERROR_RETRY_INTERVAL = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 
 function getMillisecondsUntil1AM(): number {
   const now = new Date();
@@ -43,7 +42,12 @@ async function fetchWithRetry(
   delay: number = INITIAL_RETRY_DELAY
 ): Promise<Response> {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+      },
+      cache: 'no-store'
+    });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -58,55 +62,69 @@ async function fetchWithRetry(
   }
 }
 
+export function MostReadSkeleton(): ReactElement {
+  return (
+    <div>
+      <h3 className="section-heading">Most Read</h3>
+      <div className="space-y-6">
+        {[...Array(5)].map((_, i) => (
+          <div key={i} className="flex gap-4 animate-pulse">
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-slate-200 dark:bg-slate-700 rounded" />
+            <div className="flex-1">
+              <div className="h-5 bg-slate-200 dark:bg-slate-700 rounded w-3/4 mb-2" />
+              <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-1/2" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function MostRead(): ReactElement {
   const [posts, setPosts] = useState<Post[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
   const intervalRef = useRef<NodeJS.Timeout>();
   const timeoutRef = useRef<NodeJS.Timeout>();
 
-  const fetchMostRead = useCallback(async () => {
-    try {
-      const response = await fetchWithRetry('/api/most-read');
-      const data = await response.json();
-      setPosts(data);
-      setError(null);
-      
-      // Schedule next refresh for 1 AM
+  useEffect(() => {
+    let isMounted = true;
+
+    async function fetchData() {
+      try {
+        const response = await fetchWithRetry('/api/most-read');
+        const data = await response.json();
+        
+        if (isMounted) {
+          setPosts(data);
+        }
+      } catch (error) {
+        console.error('Error fetching most read data:', error);
+      }
+    }
+
+    // Initial fetch
+    fetchData();
+
+    // Schedule next refresh for 1 AM
+    const refreshAtOneAM = () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
       timeoutRef.current = setTimeout(() => {
-        fetchMostRead();
+        fetchData();
         // Set up daily refresh after first 1 AM refresh
         if (intervalRef.current) {
           clearInterval(intervalRef.current);
         }
-        intervalRef.current = setInterval(fetchMostRead, 24 * 60 * 60 * 1000);
+        intervalRef.current = setInterval(fetchData, 24 * 60 * 60 * 1000);
       }, getMillisecondsUntil1AM());
-      
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'An error occurred');
-      console.error('Error fetching most read posts:', err);
-      
-      // On error, set shorter retry interval
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-      intervalRef.current = setInterval(fetchMostRead, ERROR_RETRY_INTERVAL);
-    } finally {
-      setIsLoading(false);
-    }
-  }, []);
+    };
 
-  useEffect(() => {
-    fetchMostRead();
+    refreshAtOneAM();
 
-    // Clean up intervals and timeouts on unmount
+    // Clean up
     return () => {
+      isMounted = false;
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
@@ -114,33 +132,10 @@ export default function MostRead(): ReactElement {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [fetchMostRead]);
-
-  if (isLoading) {
-    return (
-      <div>
-        <h3 className="section-heading">Most Read</h3>
-        <div className="space-y-6">
-          {[...Array(5)].map((_, i) => (
-            <div key={i} className="flex gap-4 animate-pulse">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-slate-200 dark:bg-slate-700 rounded" />
-              <div className="flex-1">
-                <div className="h-5 bg-slate-200 dark:bg-slate-700 rounded w-3/4 mb-2" />
-                <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-1/2" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return <></>;
-  }
+  }, []);
 
   if (posts.length === 0) {
-    return <></>;
+    return <MostReadSkeleton />;
   }
 
   return (
