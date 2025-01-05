@@ -5,12 +5,11 @@ import Link from 'next/link'
 import { formatDate } from '@/lib/utils'
 import { calculateReadTime } from '@/lib/readTime'
 import { categories, type Category } from '@/lib/categories'
-import { useEffect, useState, useRef, useCallback, use } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import type { ReactElement } from 'react'
 
 const MAX_RETRIES = 3;
 const INITIAL_RETRY_DELAY = 1000; // 1 second
-const ERROR_RETRY_INTERVAL = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 
 function getMillisecondsUntil1AM(): number {
   const now = new Date();
@@ -82,71 +81,56 @@ export function MostReadSkeleton(): ReactElement {
   );
 }
 
-// Create a promise cache
-let mostReadPromise: Promise<Post[]> | null = null;
-let lastFetchTime = 0;
-const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
-
-async function fetchMostReadData(): Promise<Post[]> {
-  const now = Date.now();
-  
-  // Return cached promise if it exists and is still valid
-  if (mostReadPromise && (now - lastFetchTime < CACHE_DURATION)) {
-    return mostReadPromise;
-  }
-
-  // Create new promise and cache it
-  const url = new URL('/api/most-read', 'http://localhost:3000');
-  if (typeof window !== 'undefined') {
-    url.protocol = window.location.protocol;
-    url.host = window.location.host;
-  }
-
-  mostReadPromise = fetchWithRetry(url.toString())
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      return response.json();
-    })
-    .catch(error => {
-      mostReadPromise = null; // Clear cache on error
-      console.error('Error fetching most read data:', error);
-      throw error;
-    });
-  
-  lastFetchTime = now;
-  return mostReadPromise;
-}
-
 export default function MostRead(): ReactElement {
-  const [error, setError] = useState<string | null>(null);
+  const [posts, setPosts] = useState<Post[]>([]);
   const intervalRef = useRef<NodeJS.Timeout>();
   const timeoutRef = useRef<NodeJS.Timeout>();
 
-  // Use the promise directly - this will suspend if the promise is not resolved
-  const posts = use(fetchMostReadData());
-
   useEffect(() => {
+    let isMounted = true;
+
+    async function fetchData() {
+      try {
+        const url = new URL('/api/most-read', 'http://localhost:3000');
+        if (typeof window !== 'undefined') {
+          url.protocol = window.location.protocol;
+          url.host = window.location.host;
+        }
+
+        const response = await fetchWithRetry(url.toString());
+        const data = await response.json();
+        
+        if (isMounted) {
+          setPosts(data);
+        }
+      } catch (error) {
+        console.error('Error fetching most read data:', error);
+      }
+    }
+
+    // Initial fetch
+    fetchData();
+
     // Schedule next refresh for 1 AM
     const refreshAtOneAM = () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
       timeoutRef.current = setTimeout(() => {
-        mostReadPromise = null; // Clear cache to force refresh
+        fetchData();
         // Set up daily refresh after first 1 AM refresh
         if (intervalRef.current) {
           clearInterval(intervalRef.current);
         }
-        intervalRef.current = setInterval(() => {
-          mostReadPromise = null; // Clear cache to force refresh
-        }, 24 * 60 * 60 * 1000);
+        intervalRef.current = setInterval(fetchData, 24 * 60 * 60 * 1000);
       }, getMillisecondsUntil1AM());
     };
 
     refreshAtOneAM();
 
-    // Clean up intervals and timeouts on unmount
+    // Clean up
     return () => {
+      isMounted = false;
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
@@ -156,12 +140,8 @@ export default function MostRead(): ReactElement {
     };
   }, []);
 
-  if (error) {
-    return <></>;
-  }
-
   if (posts.length === 0) {
-    return <></>;
+    return <MostReadSkeleton />;
   }
 
   return (
