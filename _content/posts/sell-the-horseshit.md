@@ -11,7 +11,7 @@ excerpt: "Yesterday the design and advertising community was abuzz over the leak
 
 ![Pepsi](/images/pepsi.gif)
 
-Yesterday the design and advertising community was [abuzz over the leaked presentation deck](http://www.reddit.com/r/funny/comments/7w0i2/pepsi_logo_a_response/c07k9l7) [PDF](https://www.dropbox.com/scl/fi/zy6249oczn7btw0jpn20q/pepsi_gravitational_field.pdf?rlkey=xuo7tiomhotqb213s9vuyaia7&dl=0) for the new Pepsi logo by the [Arnell Group](http://www.arnellgroup.com/ "Arnell Group"). Yes it is absolutely a work of pure horseshit. But, I was reminded of the decks that my colleagues and I create every day and how somebody's horseshit may be someone else's chocolate cake.
+Yesterday the design and advertising community was [abuzz over the leaked presentation deck](http://www.reddit.com/r/funny/comments/7w0i2/pepsi_logo_a_response/c07k9l7) ([PDF](https://www.dropbox.com/scl/fi/zy6249oczn7btw0jpn20q/pepsi_gravitational_field.pdf?rlkey=xuo7tiomhotqb213s9vuyaia7&dl=0)) for the new Pepsi logo by the [Arnell Group](http://www.arnellgroup.com/ "Arnell Group"). Yes it is absolutely a work of pure horseshit. But, I was reminded of the decks that my colleagues and I create every day and how somebody's horseshit may be someone else's chocolate cake.
 
 We all have to sell our work. Ideally the concepts and ideas come from a well-formed strategy, but that doesn't always happen. Many times the strategy must back into the creative. In other words sometimes you might have a great idea that you'll need to justify after the fact.
 
