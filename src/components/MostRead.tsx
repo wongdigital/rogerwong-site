@@ -91,13 +91,7 @@ export default function MostRead(): ReactElement {
 
     async function fetchData() {
       try {
-        const url = new URL('/api/most-read', 'http://localhost:3000');
-        if (typeof window !== 'undefined') {
-          url.protocol = window.location.protocol;
-          url.host = window.location.host;
-        }
-
-        const response = await fetchWithRetry(url.toString());
+        const response = await fetchWithRetry('/api/most-read');
         const data = await response.json();
         
         if (isMounted) {
