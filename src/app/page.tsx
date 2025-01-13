@@ -11,7 +11,7 @@ import { Suspense } from 'react';
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
-  const latestPosts = allPostsData.slice(0, 3); // Get the three most recent posts
+  const latestPosts = allPostsData.slice(0, 5); // Get the 5 most recent posts
   const sortedLinks = getSortedLinklogData();
   
   return (
