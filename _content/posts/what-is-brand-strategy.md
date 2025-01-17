@@ -22,7 +22,9 @@ Imagine a smoky wood-paneled conference room. Five men in smart suits sit around
 > 
 > But he also talked about a deeper bond with the product. Nostalgia. It’s delicate, but potent.
 
-https://youtu.be/rq3n2sJ43Hg?si=a62Frvz6vTiashrR&t=72
+<div style="position:relative;padding-top:56.25%;" class="rounded overflow-hidden"><iframe src="https://iframe.mediadelivery.net/embed/187277/4af2dc09-cf74-4e4d-9140-18a684660217?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+
+<!-- https://youtu.be/rq3n2sJ43Hg?si=a62Frvz6vTiashrR&t=72 YouTube backup -->
 
 _Courtesy of Lions Gate Entertainment, Inc._
 
