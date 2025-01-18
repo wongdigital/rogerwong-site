@@ -10,6 +10,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import remarkGfm from 'remark-gfm';
 import remarkSmartypants from 'remark-smartypants';
+import { remarkVideo } from '@/lib/remarkVideo';
 
 interface PostPreviewProps {
   title: string;
@@ -41,6 +42,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
         .use(html, { sanitize: false })
         .use(remarkGfm)
         .use(remarkSmartypants)
+        .use(remarkVideo)
         .process(excerpt);
       setProcessedExcerpt(processed.toString());
     }
