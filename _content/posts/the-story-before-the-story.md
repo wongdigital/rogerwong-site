@@ -4,7 +4,12 @@ date: "2025-01-17"
 category: "Notes"
 tags:
   - "Design"
-excerpt: "TEXT"
+excerpt: |
+  James Poniewozik, writing for The New York Times:
+
+  > Whether they work in sand or spores, heavy-handed metaphor is the true material of choice for all these opening titles. The series are different in genres and tone. But all of them seem to have collectively decided that the best way to convey the sense of epic event TV is with an overture of shape-shifting, literal-minded screen-saver art.
+
+  His point is that a recent trend in "prestige TV" main titles is to use particle effects…
 ---
 [James Poniewozik, writing for _The New York Times_](https://www.nytimes.com/2025/01/13/arts/television/tv-title-sequences.html?unlocked_article_code=1.p04.EM8b.HNJUOQvepcfj&smid=url-share):
 > Whether they work in sand or spores, heavy-handed metaphor is the true material of choice for all these opening titles. The series are different in genres and tone. But all of them seem to have collectively decided that the best way to convey the sense of epic event TV is with an overture of shape-shifting, literal-minded screen-saver art.
