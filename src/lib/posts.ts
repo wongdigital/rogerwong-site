@@ -75,6 +75,7 @@ export async function getPostData(id: string): Promise<PostData | null> {
   return {
     id,
     contentHtml,
+    content: matterResult.content,
     ...(matterResult.data as Omit<PostData, 'id' | 'contentHtml' | 'category' | 'tags'>),
     category,
     tags

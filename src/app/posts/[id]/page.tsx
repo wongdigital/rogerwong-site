@@ -81,7 +81,7 @@ export default async function Post({ params }: Props) {
     notFound();
   }
 
-  const readTime = calculateReadTime(postData.contentHtml || '');
+  const readTime = calculateReadTime(postData.content || '');
 
   const jsonLd = {
     "@context": "https://schema.org",
