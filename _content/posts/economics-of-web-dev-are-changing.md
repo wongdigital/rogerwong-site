@@ -32,3 +32,5 @@ Bjarnason ends with seven suggestions for those in the industry. I'll just quote
 > Don’t get tied to a single platform for distribution or promotion. Every use of a silo should push those interested to a venue you control such as a newsletter or website.
 
 In other words, whatever you do, own your audience. Don't farm that out to a platform like X/Twitter, Threads, or TikTok.
+
+Of course, there are a lot of parallels to be drawn between what's happening in the development and software engineering industries to [what's happening in design](/posts/designs-purpose-remains-constant).
