@@ -1,5 +1,6 @@
 const specialCaseWords = new Map([
     ['ux', 'UX'],
+    ['ai', 'AI'],
     // Add more special cases as needed
 ]);
   
