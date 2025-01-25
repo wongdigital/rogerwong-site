@@ -80,7 +80,7 @@ _Clickthrough rates by entities on the Google search results page. Source: First
 
 There's a fear that AI answer engines and agentic AI will be the death of creative web design. But what if we're looking at this all wrong? What if this evolution presents an interesting creative challenge instead?
 
-Just as we once pushed the boundaries of Flash and JavaScript to create award-winning experiences for FWA, designers will need to find innovative ways to work within new constraints. The fact that AI agents like Operator need obvious buttons and clear navigation isn't necessarily a death sentence for creativity—it's just a new set of constraints to work with. After all, some of the most creative periods in web design came from working within technical limitations. (Remember when we did layouts using tables?!)
+Just as we once pushed the boundaries of Flash and JavaScript to create award-winning experiences for FWA, designers will need to [find innovative ways](/posts/designs-purpose-remains-constant) to work within new constraints. The fact that AI agents like Operator need obvious buttons and clear navigation isn't necessarily a death sentence for creativity—it's just a new set of constraints to work with. After all, some of the most creative periods in web design came from working within technical limitations. (Remember when we did layouts using tables?!)
 
 The accessibility movement has already pushed us to think about making websites more structured and navigable. The rise of AI agents is adding another dimension to this evolution, pushing us to find that sweet spot between machine efficiency and human delight.
 
