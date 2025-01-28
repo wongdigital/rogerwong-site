@@ -60,7 +60,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
   return (
     <div className="flex flex-col md:flex-row gap-8">
-      <section className="lg:w-7/12 py-8 lg:py-20 md:py-10">
+      <section className="lg:w-7/12 py-8 lg:py-20 md:py-10 max-w-[746px]">
         <header className="mb-8">
           <h1 className="page-title">Posts in {decodedCategory}</h1>
         </header>

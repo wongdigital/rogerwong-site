@@ -50,7 +50,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
   }, [excerpt]);
 
   return (
-    <div className="mb-4 space-y-2">
+    <div className="mb-4 space-y-2 max-w-[746px]">
       <div className="text-sm">
         <CategoryIcon className="w-4 h-4 inline-block mr-2 -mt-0.5 text-slate-400 dark:text-slate-400" />
         <Link 

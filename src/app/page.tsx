@@ -15,12 +15,12 @@ export default async function Home() {
   const sortedLinks = getSortedLinklogData();
   
   return (
-    <div className="max-w-full overflow-x-hidden">
+    <div className="max-w-[1280px] mx-auto">
       <HomeHero />
       <div className="h-[1px] bg-slate-300 dark:bg-slate-700 w-full"></div>
       <section className="my-8 py-8">
         <div className="flex flex-col md:flex-row gap-8 md:gap-8">
-          <div className="w-full lg:w-7/12">
+          <div className="w-full lg:w-7/12 max-w-[746px] lg:mx-auto">
             <h3 className="section-heading">Latest Posts</h3>
             <div className="space-y-8 mb-4">
               {latestPosts.map((post) => (
