@@ -21,13 +21,13 @@ export default async function About() {
               <p>I am a forward-thinking design leader with extensive experience in cultivating brand loyalty and enhancing customer experiences for prominent tech companies like <Link href="/posts/the-apple-design-process">Apple</Link>, Microsoft, Cisco, and Intel. My career spans over two decades during which I founded <a href="https://wong.digital" target="_blank">Wong.Digital</a>, led design at Convex as VP, and managed significant creative teams, notably for Samsung Mobile. My passion for innovation is demonstrated through my cofounding of Transported VR, a pioneering venture in virtual reality real estate, and my side project of developing an AI tool to assist designers in <Link href="/posts/how-i-built-and-launched-an-ai-powered-app">crafting brand strategies</Link>. My contributions to the design field have been recognized by <em>Communication Arts</em>, <em>Graphis</em>, One Show, Clio Awards, and Cannes Lions. Holding a BFA in graphic design from the California College of the Arts, I have also contributed to academics as a professor and advisory board member at San Diego City College. I live in San Diego with my family. I do not surf.</p>
               <h3>Follow Me</h3>
               <div className="flex flex-col space-y-4 !mt-4">
-                <a href="https://www.threads.net/@lunarboy" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
-                  <ThreadsIcon className="w-5 h-5" />
-                  <span>Threads</span>
-                </a>
                 <a href="https://bsky.app/profile/lunarboy.com" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
                   <BlueSkyIcon className="w-5 h-5" />
                   <span>Bluesky</span>
+                </a>
+                <a href="https://www.threads.net/@lunarboy" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
+                  <ThreadsIcon className="w-5 h-5" />
+                  <span>Threads</span>
                 </a>
                 <a href="https://www.instagram.com/lunarboy/" target="_blank" className="flex items-center space-x-2 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">
                   <InstagramIcon className="w-5 h-5" />
@@ -50,7 +50,7 @@ export default async function About() {
                     <li>Cofounded VR real estate startup, Transported</li>
                     <li>Built and managed an in-house creative agency at TrueCar</li>
                     <li>Managed team of over 40 creatives to support Samsung Mobile</li>
-                    <li>Created an iPad app that Apple deemed “App of the Week”</li>
+                    <li>Created DesignScene, an iPad app that Apple deemed “App of the Week”</li>
                     <li>Redesigned CBS.com, eBay Motors, Visa Signature</li>
                     <li>Created the original <Link href="/posts/the-soul-of-the-apple-store-genius-bar">Genius Bar video loops</Link> and reservation system for Apple retail stores</li>
                     <li>Worked directly with Steve Jobs on the <Link href="/posts/thank-you-steve">“Welcome” animation for Mac OS X</Link>, Pixar.com, and pitch decks</li>
