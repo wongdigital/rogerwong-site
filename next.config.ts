@@ -296,6 +296,11 @@ const nextConfig: NextConfig = {
         source: "/links/page/:page(\\d+)",
         destination: "/linklog?page=:page",
         permanent: true,
+      },
+      {
+        "source": "/posts/trump-2-unleased",
+        "destination": "/posts/trump-2-unleashed",
+        "permanent": true
       }
     ]
   }
