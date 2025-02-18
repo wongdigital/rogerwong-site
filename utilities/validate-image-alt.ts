@@ -3,7 +3,7 @@ import { join } from 'path';
 import chalk from 'chalk';
 import path from 'path';
 
-const POSTS_DIRECTORY = join(process.cwd(), '_content/posts');
+const POSTS_DIRECTORY = join(process.cwd(), '../_content/posts');
 
 interface ImageMatch {
   fullMatch: string;
