@@ -68,7 +68,7 @@ function validateDirectory(dir) {
 }
 
 // Validate both regular posts and linklog posts
-const directories = ['_posts', '_linklog'];
+const directories = ['../_content/posts', '../_content/linklog'];
 let success = true;
 
 directories.forEach(dir => {
