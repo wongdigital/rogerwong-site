@@ -83,8 +83,8 @@ export function MostReadSkeleton(): ReactElement {
 
 export default function MostRead(): ReactElement {
   const [posts, setPosts] = useState<Post[]>([]);
-  const intervalRef = useRef<NodeJS.Timeout>();
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     let isMounted = true;
