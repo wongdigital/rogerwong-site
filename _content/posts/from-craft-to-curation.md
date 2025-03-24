@@ -31,7 +31,7 @@ For each of the core disciplines, execution was paramount. (Arguably, product ma
 
 ### Vibe Coding and Vibe Design
 
-With new AI tools like Cursor and Lovable coming into the mix, the nature of implementation fundamentally changes. In Karpathy’s tweet about vibe coding, he says, “…I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works.” He’s telling the LLM what he wants—his intent—and the AI delivers, with some cajoling. Jakob Nielsen picks up on this thread and applies it to [vibe design](https://www.uxtigers.com/post/vibe-coding-vibe-design). “Vibe design applies similar AI-assisted principles to UX design and user research, by focusing on high-level intent while delegating execution to AI.” 
+With new AI tools like [Cursor](/posts/replatforming-with-a-lot-of-help-from-ai) and Lovable coming into the mix, the nature of implementation fundamentally changes. In Karpathy’s tweet about vibe coding, he says, “…I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works.” He’s telling the LLM what he wants—his intent—and the AI delivers, with some cajoling. Jakob Nielsen picks up on this thread and applies it to [vibe design](https://www.uxtigers.com/post/vibe-coding-vibe-design). “Vibe design applies similar AI-assisted principles to UX design and user research, by focusing on high-level intent while delegating execution to AI.” 
 
 He goes on:
 > …vibe design emphasizes describing the desired feeling or outcome of a design, and letting AI propose the visual or interactive solutions​. Rather than manually drawing every element, a designer might say to an AI tool, “The interface feels a bit too formal; make it more playful and engaging,” and the AI could suggest color changes, typography tweaks, or animation accents to achieve that vibe. This is analogous to vibe coding’s natural language prompts, except the AI’s output is a design mockup or updated UI style instead of code.
@@ -67,6 +67,7 @@ Obviously, with AI, engineering is more accessible, but so are traditional produ
 ### From Technical Execution to Strategic Direction & Taste Curation
 
 In the AI-augmented product development landscape, articulating vision and intent becomes significantly more valuable than implementation skills. While AI can generate better and better code and design assets, it can’t determine what is worth building or why.
+
 [Mike Krieger](https://www.thetwentyminutevc.com/mike-krieger), cofounder of Instagram and now Chief Product Officer at Anthropic, identifies this change clearly. He believes the true bottleneck in product development is shifting to “alignment, deciding what to build, solving real user problems, and figuring out a cohesive product strategy.” These are all areas he describes as “very human problems” that we’re “at least three years away from models solving.” 
 
 This makes taste and judgement even more important. When everyone can generate good-enough, decent work via AI, having a strong point of view becomes a differentiator. To repeat Leo Paz, “Human taste is now more important than ever as codegen tools make everyone a 10x engineer.” The ability to recognize and curate quality outputs becomes as valuable as creating them manually.
@@ -108,7 +109,7 @@ Concrete examples of this cross-functionality are already emerging:
 This doesn't mean that all specialization disappears. As Diana Hu from YC notes:
 > Zero-to-one will be great for vibe coding where founders can ship features very quickly. But once they hit product market fit, they're still going to have a lot of really hardcore systems engineering, where you need to get from the one to n and you need to hire very different kinds of people. 
 
-The result is a more nuanced specialization landscape. Early-stage products benefit from generalists who can work across domains with AI assistance. As products mature, deeper expertise remains valuable but is focused on different aspects: system architecture rather than implementation details, information architecture rather than UI production, product strategy rather than feature specification.
+The result is a more nuanced specialization landscape. Early-stage products benefit from [generalists](/posts/breadth-vs-depth) who can work across domains with AI assistance. As products mature, deeper expertise remains valuable but is focused on different aspects: system architecture rather than implementation details, information architecture rather than UI production, product strategy rather than feature specification.
 
 Team structures are evolving in response:
 - Smaller, more fluid teams with less rigid role definitions
@@ -128,7 +129,7 @@ Product professionals who succeed in this new landscape will be those who embrac
 
 For product managers, double down on developing the abilities to extract profound insights from user conversations and articulate clear, compelling problem statements. Your value will increasingly come from knowing which problems are worth solving rather than specifying how to solve them. AI also can’t align stakeholders and prioritize the work.
 
-For designers, invest in strengthening your design direction skills. The best designers will evolve from skilled craftspeople to visionaries who can guide AI toward creating experiences that resonate emotionally with users. Develop your critical eye and the language to articulate what makes a design succeed or fail.
+For designers, invest in strengthening your design direction skills. The best designers will evolve from skilled craftspeople to visionaries who can guide AI toward creating experiences that resonate emotionally with users. Develop your critical eye and the language to articulate what makes a design succeed or fail. Remember that [design has always been about the why](/posts/designs-purpose-remains-constant).
 
 For engineers, emphasize systems thinking and architecture over implementation details. Your unique value will come from designing resilient, scalable systems and making critical technical decisions that AI cannot yet make autonomously.
 
