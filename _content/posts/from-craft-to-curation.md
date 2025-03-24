@@ -80,9 +80,9 @@ Each role maintains its core focus while delegating much of the execution to AI 
 
 ### From Process Execution to User Understanding
 
-![In a scene from the film "Black Runner," Replicant Leon Kowalski can't quite understand how to respond to the situation about the incapacitated tortoise.](/images/from-craft-to-curation-blade-runner.jpg)
+![In a scene from the film "Blade Runner," Replicant Leon Kowalski can't quite understand how to respond to the situation about the incapacitated tortoise.](/images/from-craft-to-curation-blade-runner.jpg)
 
-_In a scene from the film "Black Runner," Replicant Leon Kowalski can't quite understand how to respond to the situation about the incapacitated tortoise._
+_In a scene from the film "Blade Runner," Replicant Leon Kowalski can't quite understand how to respond to the situation about the incapacitated tortoise._
 
 While AI is great at summarizing mountains of text, it can’t yet replicate human empathy or understand nuanced user needs. The human ability to interpret context, detect unstated problems, and understand emotional responses remains irreplaceable.
 
